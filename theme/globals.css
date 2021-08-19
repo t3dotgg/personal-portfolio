@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oxanium:wght@300;400;500;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  --orange: #e86e38;
+  --red: #f72405;
+  --pink: #ffaa84;
+  --black: #121517;
+  --montserrat: "Montserrat";
+  --oxanium: "Oxanium";
+}
+
+body {
+  box-sizing: border-box;
+  background: var(--black);
+}

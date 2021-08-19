@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+const withLinaria = require("next-linaria");
+
+module.exports = withLinaria({
   reactStrictMode: true,
-}
+  linaria: {},
+});
