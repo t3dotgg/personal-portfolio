@@ -13,14 +13,14 @@ html {
   --orange: #e86e38;
   --red: #f72405;
   --pink: #ffaa84;
-  --black: #121517;
+  --darkbrown: #121517;
   --montserrat: "Montserrat";
   --oxanium: "Oxanium";
 }
 
 body {
   box-sizing: border-box;
-  background: var(--black);
+  background: var(--darkbrown);
 }
 
 body div:first-child {
