@@ -21,7 +21,7 @@ export const LogoLink = styled.a`
   font-size: 2.2rem;
   margin-left: 1rem;
   text-shadow: 0 0.1rem hsl(18, 21%, 23%), 0 0.2rem hsl(18, 21%, 23%),
-    0 0.3rem hsl(18, 21%, 23%), 0 0 1rem ${theme.Red};
+    0 0.3rem hsl(18, 21%, 23%), 0 0 1rem #f72405ba;
   ${focusStyles};
 `;
 
