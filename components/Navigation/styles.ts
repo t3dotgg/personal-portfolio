@@ -31,3 +31,30 @@ export const NarutoFace = styled(NarutoFaceSVG)`
   margin-right: 1rem;
   filter: drop-shadow(0 0 0.1rem ${theme.Red});
 `;
+
+export const IconsWrapper = styled.div`
+  position: fixed;
+  height: 17rem;
+  width: 2rem;
+  top: 45%;
+  left: 6%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .icon {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+`;
+
+export const IconLink = styled.a`
+  width: 1.6rem;
+  height: 1.6rem;
+  color: ${theme.Red};
+  text-decoration: none;
+  ${focusStyles}
+`;
