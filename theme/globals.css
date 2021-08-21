@@ -22,3 +22,7 @@ body {
   box-sizing: border-box;
   background: var(--black);
 }
+
+body div:first-child {
+  display: flex;
+}
