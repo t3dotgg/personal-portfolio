@@ -23,8 +23,9 @@ body {
   background: var(--darkbrown);
 }
 
-body div:first-child {
+body div[id^="__next"] {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: column;
 }
