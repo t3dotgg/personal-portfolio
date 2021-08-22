@@ -16,9 +16,9 @@ export const NavigationWrapper = styled.nav`
 export const LogoLink = styled.a`
   text-decoration: none;
   color: ${theme.Orange};
-  font-family: ${theme.Montserrat};
+  font-family: ${theme.Oxanium};
   font-weight: 700;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin-left: 1rem;
   text-shadow: 0 0.1rem hsl(18, 21%, 23%), 0 0.2rem hsl(18, 21%, 23%),
     0 0.3rem hsl(18, 21%, 23%), 0 0 1rem #f72405ba;
@@ -34,9 +34,9 @@ export const NarutoFace = styled(NarutoFaceSVG)`
 
 export const IconsWrapper = styled.div`
   position: fixed;
-  height: 17rem;
+  height: 14rem;
   width: 2rem;
-  top: 45%;
+  top: 46%;
   left: 6%;
   transform: translate(-50%, -50%);
   background-color: transparent;
@@ -57,4 +57,42 @@ export const IconLink = styled.a`
   color: ${theme.Red};
   text-decoration: none;
   ${focusStyles}
+`;
+
+export const MobileNavigationWrapper = styled.div`
+  width: 100vw;
+  height: 8rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 0.2rem solid ${theme.Orange};
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 -0.5rem 1rem black;
+`;
+
+export const MobileLink = styled.a`
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 6rem;
+  width: 8rem;
+  color: ${theme.Pink};
+  ${focusStyles}
+  .icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    fill: currentColor;
+  }
+`;
+
+export const MobileLinkText = styled.span`
+  font-family: ${theme.Oxanium};
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: ${theme.Orange};
 `;
