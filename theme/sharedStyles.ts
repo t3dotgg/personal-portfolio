@@ -9,3 +9,12 @@ export const focusStyles = css`
     outline: none;
   }
 `;
+
+export const secondFocusStyles = css`
+  &:focus-visible {
+    outline: 2px ridge #ffb123;
+  }
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+`;

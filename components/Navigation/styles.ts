@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import NarutoFaceSVG from "../../assets/naruto-face.svg";
-import { focusStyles } from "../../theme/sharedStyles";
+import { focusStyles, secondFocusStyles } from "../../theme/sharedStyles";
 import { theme } from "../../theme/theme";
 
 export const NavigationWrapper = styled.nav`
@@ -79,10 +79,10 @@ export const MobileLink = styled.a`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 6rem;
-  width: 8rem;
+  height: 5.5rem;
+  width: 7.5rem;
   color: ${theme.Pink};
-  ${focusStyles}
+  ${secondFocusStyles}
   .icon {
     width: 2.2rem;
     height: 2.2rem;
@@ -93,6 +93,6 @@ export const MobileLink = styled.a`
 export const MobileLinkText = styled.span`
   font-family: ${theme.Oxanium};
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: ${theme.Orange};
 `;
