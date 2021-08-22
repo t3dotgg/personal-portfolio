@@ -24,7 +24,7 @@ export const Navigation = () => (
       <Link href="/" passHref>
         <LogoLink>Tiger Abrodi</LogoLink>
       </Link>
-      <NarutoFace />
+      <NarutoFace aria-hidden="true" />
       <IconsWrapper>
         <Link
           href="https://www.linkedin.com/in/tiger-abrodi-467695195/"
