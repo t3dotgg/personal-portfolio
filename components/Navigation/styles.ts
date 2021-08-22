@@ -11,6 +11,7 @@ export const NavigationWrapper = styled.nav`
   justify-content: space-between;
   background-color: ${theme.DarkBrown};
   box-shadow: 0 0.2rem 0.2rem black;
+  position: relative;
 `;
 
 export const LogoLink = styled.a`
@@ -34,6 +35,7 @@ export const NarutoFace = styled(NarutoFaceSVG)`
 
 export const IconsWrapper = styled.div`
   position: fixed;
+  z-index: 10;
   height: 14rem;
   width: 2rem;
   top: 46%;
@@ -61,6 +63,7 @@ export const IconLink = styled.a`
 
 export const MobileNavigationWrapper = styled.div`
   width: 100vw;
+  z-index: 10;
   height: 8rem;
   position: fixed;
   bottom: 0;

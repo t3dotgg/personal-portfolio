@@ -1,8 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { Home } from "../components/Home";
 import { Navigation } from "../components/Navigation";
 
-const Home: NextPage = () => {
+const Page: NextPage = () => {
   return (
     <>
       <Head>
@@ -14,8 +15,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
+      <Home />
     </>
   );
 };
 
-export default Home;
+export default Page;
