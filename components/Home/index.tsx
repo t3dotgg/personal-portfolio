@@ -1,5 +1,5 @@
 import Link from "next/link";
-import TigerSVG from "../../assets/tiger.svg";
+import { TigerGraphic } from "./TigerGraphic";
 import {
   HomeDescription,
   HomeLink,
@@ -40,5 +40,6 @@ export const Home = () => (
         <HomeLink>Get In Touch</HomeLink>
       </Link>
     </HomeWrapper>
+    <TigerGraphic />
   </HomeSection>
 );
