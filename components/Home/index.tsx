@@ -13,7 +13,7 @@ import {
 export const Home = () => (
   <HomeSection>
     <HomeWrapper>
-      <HomeTitle>Hi, I&apos;m Tiger.</HomeTitle>
+      <HomeTitle id="#home">Hi, I&apos;m Tiger.</HomeTitle>
       <HomeSubtitle>I craft things for the web.</HomeSubtitle>
       <HomeDescription>
         I’m a Frontend Craftsman based in Germany who is heavily into
@@ -33,10 +33,7 @@ export const Home = () => (
           </DescriptionLink>
         </Link>{" "}
       </HomeDescription>
-      <Link
-        href="mailto:tigerabrodi@gmail.com?subject=Mail%20To%20Tiger%20Abrodi"
-        passHref
-      >
+      <Link href="mailto:tigerabrodi@gmail.com" passHref>
         <HomeLink>Get In Touch</HomeLink>
       </Link>
     </HomeWrapper>
