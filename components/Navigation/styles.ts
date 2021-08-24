@@ -99,3 +99,32 @@ export const MobileLinkText = styled.span`
   font-size: 1.4rem;
   color: ${theme.Orange};
 `;
+
+export const SkipLink = styled.a`
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  text-decoration: underline;
+
+  &:focus {
+    position: absolute;
+    top: 16%;
+    left: 3%;
+    width: 18rem;
+    height: 5rem;
+    color: ${theme.Orange};
+    background-color: ${theme.DarkBrown};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: ${theme.Montserrat};
+    font-weight: 500;
+    box-shadow: 0 0.2rem 0.2rem black;
+    outline: 2px ridge ${theme.Orange};
+  }
+`;

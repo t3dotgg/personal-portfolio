@@ -13,7 +13,7 @@ import {
 export const Home = () => (
   <HomeSection>
     <HomeWrapper>
-      <HomeTitle id="#home">Hi, I&apos;m Tiger.</HomeTitle>
+      <HomeTitle id="home">Hi, I&apos;m Tiger.</HomeTitle>
       <HomeSubtitle>I craft things for the web.</HomeSubtitle>
       <HomeDescription>
         I’m a Frontend Craftsman based in Germany who is heavily into

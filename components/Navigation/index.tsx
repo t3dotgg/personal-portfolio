@@ -16,11 +16,15 @@ import {
   MobileNavigationWrapper,
   MobileLink,
   MobileLinkText,
+  SkipLink,
 } from "./styles";
 
 export const Navigation = () => (
   <>
     <NavigationWrapper>
+      <Link href="#home" passHref>
+        <SkipLink>Skip The Navigation</SkipLink>
+      </Link>
       <Link href="/" passHref>
         <LogoLink>Tiger Abrodi</LogoLink>
       </Link>
