@@ -11,7 +11,10 @@ export const NavigationWrapper = styled.nav`
   justify-content: space-between;
   background-color: ${theme.DarkBrown};
   box-shadow: 0 0.2rem 0.2rem black;
-  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
 `;
 
 export const LogoLink = styled.a`
@@ -74,6 +77,7 @@ export const MobileNavigationWrapper = styled.div`
   align-items: center;
   justify-content: space-evenly;
   box-shadow: 0 -0.5rem 1rem black;
+  background-color: ${theme.DarkBrown};
 `;
 
 export const MobileLink = styled.a`
