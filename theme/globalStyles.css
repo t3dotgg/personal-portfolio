@@ -6,16 +6,16 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
   --orange: #e86e38;
   --red: #f72405;
   --pink: #ffaa84;
   --darkbrown: #121517;
   --montserrat: "Montserrat";
   --oxanium: "Oxanium";
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
