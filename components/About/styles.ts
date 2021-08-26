@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import RightArrowSVG from "../../assets/right-arrow.svg";
 import { theme } from "../../theme/theme";
 
 export const AboutSection = styled.section`
@@ -75,5 +76,39 @@ export const TechnologiesText = styled.p`
 
 export const TechnologiesContainer = styled.div`
   height: 80%;
-  width: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 23rem;
+  position: relative;
+  left: 1.5rem;
+`;
+
+export const TechnologiesList = styled.ul`
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+`;
+
+export const TechnologyItem = styled.li`
+  height: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+`;
+
+export const RightArrow = styled(RightArrowSVG)`
+  height: 1rem;
+  width: 1rem;
+`;
+
+export const TechnologyText = styled.span`
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: ${theme.Oxanium};
+  color: ${theme.Orange};
+  padding-left: 0.5rem;
 `;
