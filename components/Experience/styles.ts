@@ -54,6 +54,8 @@ export const ExperienceItem = styled.li`
 export const AccordionButton = styled.button`
   width: 100%;
   height: 5rem;
+  position: relative;
+  z-index: 10;
   border-radius: 0.7rem;
   background-color: ${theme.Orange};
   display: grid;
@@ -76,20 +78,31 @@ export const AccordionButton = styled.button`
 `;
 
 export const AccordionContent = styled.ul`
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  visibility: hidden;
   position: relative;
   bottom: 0.5rem;
+  height: 2rem;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  li {
+    visibility: hidden;
+  }
   &[aria-hidden="false"] {
+    visibility: visible;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
     height: 23rem;
     width: 100%;
     border: 0.2rem solid ${theme.Orange};
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
     box-shadow: 0 0.2rem 0.2rem black;
+    transition: all 0.3s ease-in-out;
+    li {
+      visibility: visible;
+    }
   }
 `;
 
