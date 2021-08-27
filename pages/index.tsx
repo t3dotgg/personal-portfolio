@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { About } from "../components/About";
+import { Experience } from "../components/Experience";
 import { Home } from "../components/Home";
 import { Navigation } from "../components/Navigation";
 
@@ -18,6 +19,7 @@ const Page: NextPage = () => {
       <Navigation />
       <Home />
       <About />
+      <Experience />
     </>
   );
 };
