@@ -3,6 +3,7 @@ import Head from "next/head";
 import { About } from "../components/About";
 import { Contact } from "../components/Contact";
 import { Experience } from "../components/Experience";
+import { Footer } from "../components/Footer";
 import { Home } from "../components/Home";
 import { Navigation } from "../components/Navigation";
 import { Work } from "../components/Work";
@@ -24,6 +25,7 @@ const Page: NextPage = () => {
       <Experience />
       <Work />
       <Contact />
+      <Footer />
     </>
   );
 };
