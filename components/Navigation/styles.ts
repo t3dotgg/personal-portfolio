@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import NarutoFaceSVG from "../../assets/naruto-face.svg";
+import { media } from "../../theme/media";
 import { focusStyles, secondFocusStyles } from "../../theme/sharedStyles";
 import { theme } from "../../theme/theme";
 
@@ -19,6 +20,9 @@ export const NavigationWrapper = styled.nav<{ shouldShowShadow: boolean }>`
     css`
       box-shadow: 0 0.2rem 0.2rem black;
     `};
+  ${media.tablet} {
+    height: 9rem;
+  }
 `;
 
 export const LogoLink = styled.a`
@@ -31,6 +35,10 @@ export const LogoLink = styled.a`
   text-shadow: 0 0.1rem hsl(18, 21%, 23%), 0 0.2rem hsl(18, 21%, 23%),
     0 0.3rem hsl(18, 21%, 23%), 0 0 1rem #f72405ba;
   ${focusStyles};
+  ${media.tablet} {
+    font-size: 3rem;
+    margin-left: 2rem;
+  }
 `;
 
 export const NarutoFace = styled(NarutoFaceSVG)`
@@ -38,6 +46,11 @@ export const NarutoFace = styled(NarutoFaceSVG)`
   width: 4.2rem;
   margin-right: 1rem;
   filter: drop-shadow(0 0 0.1rem ${theme.Red});
+  ${media.tablet} {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 2rem;
+  }
 `;
 
 export const IconsWrapper = styled.div`
@@ -58,6 +71,11 @@ export const IconsWrapper = styled.div`
     height: 100%;
     fill: currentColor;
   }
+  ${media.tablet} {
+    height: 24rem;
+    width: 3rem;
+    left: 4%;
+  }
 `;
 
 export const IconLink = styled.a`
@@ -66,6 +84,10 @@ export const IconLink = styled.a`
   color: ${theme.Red};
   text-decoration: none;
   ${focusStyles}
+  ${media.tablet} {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
 `;
 
 export const MobileNavigationWrapper = styled.div`
@@ -82,6 +104,9 @@ export const MobileNavigationWrapper = styled.div`
   justify-content: space-evenly;
   box-shadow: 0 -0.5rem 1rem black;
   background-color: ${theme.DarkBrown};
+  ${media.tablet} {
+    display: none;
+  }
 `;
 
 export const MobileLink = styled.a`
@@ -94,10 +119,18 @@ export const MobileLink = styled.a`
   width: 7.5rem;
   color: ${theme.Pink};
   ${secondFocusStyles}
-  .icon {
+  .icon-nav {
     width: 2.2rem;
     height: 2.2rem;
     fill: currentColor;
+    ${media.tablet} {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+  ${media.tablet} {
+    justify-content: space-between;
+    height: 5.2rem;
   }
 `;
 
@@ -106,6 +139,9 @@ export const MobileLinkText = styled.span`
   font-weight: 500;
   font-size: 1.4rem;
   color: ${theme.Orange};
+  ${media.tablet} {
+    font-size: 1.8rem;
+  }
 `;
 
 export const SkipLink = styled.a`

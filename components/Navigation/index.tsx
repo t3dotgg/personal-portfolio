@@ -33,6 +33,30 @@ export const Navigation = () => {
         <Link href="/" passHref>
           <LogoLink>Tiger Abrodi</LogoLink>
         </Link>
+        <Link href="#about" passHref>
+          <MobileLink>
+            <FaceSVG aria-hidden="true" />
+            <MobileLinkText>About</MobileLinkText>
+          </MobileLink>
+        </Link>
+        <Link href="#experience" passHref>
+          <MobileLink>
+            <TimelineSVG aria-hidden="true" />
+            <MobileLinkText>Experience</MobileLinkText>
+          </MobileLink>
+        </Link>
+        <Link href="#work" passHref>
+          <MobileLink>
+            <HammerSVG aria-hidden="true" />
+            <MobileLinkText>Work</MobileLinkText>
+          </MobileLink>
+        </Link>
+        <Link href="#contact" passHref>
+          <MobileLink>
+            <MailSVG aria-hidden="true" />
+            <MobileLinkText>Contact</MobileLinkText>
+          </MobileLink>
+        </Link>
         <NarutoFace aria-hidden="true" />
         <IconsWrapper>
           <Link
