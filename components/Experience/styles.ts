@@ -5,7 +5,7 @@ import RightArrowSVG from "../../assets/right-arrow.svg";
 import DownArrowSVG from "../../assets/down-arrow.svg";
 import UpArrowSVG from "../../assets/up-arrow.svg";
 
-export const ExperienceSection = styled.div`
+export const ExperienceSection = styled.section`
   width: 100vw;
   display: grid;
   grid-template-areas: "title" "description" "items" ".";
