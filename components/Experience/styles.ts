@@ -9,7 +9,7 @@ export const ExperienceSection = styled.section`
   width: 100vw;
   display: grid;
   grid-template-areas: "title" "description" "items" ".";
-  grid-template-rows: 5rem 5rem auto 8rem;
+  grid-template-rows: 5rem 5rem auto 3rem;
   align-items: center;
   justify-items: center;
 `;
@@ -55,7 +55,7 @@ export const AccordionButton = styled.button`
   width: 100%;
   height: 5rem;
   position: relative;
-  z-index: 10;
+  z-index: 5;
   border-radius: 0.7rem;
   background-color: ${theme.Orange};
   display: grid;
@@ -99,7 +99,7 @@ export const AccordionContent = styled.ul`
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
     box-shadow: 0 0.2rem 0.2rem black;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     li {
       visibility: visible;
     }
