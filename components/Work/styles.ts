@@ -45,7 +45,7 @@ export const WorkItem = styled.li`
   justify-items: center;
   grid-template-areas: "title title" "description description" "demo demo" "code live";
   border-bottom: 0.2rem solid ${theme.Orange};
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 `;
 
 export const ItemTitle = styled.h2`
