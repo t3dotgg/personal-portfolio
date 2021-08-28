@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../theme/media";
 import { focusStyles, secondFocusStyles } from "../../theme/sharedStyles";
 import { theme } from "../../theme/theme";
 
@@ -7,6 +8,9 @@ export const HomeSection = styled.section`
   width: 100vw;
   background-color: ${theme.DarkBrown};
   position: relative;
+  ${media.custom(360)} {
+    height: 48rem;
+  }
 `;
 
 export const HomeWrapper = styled.div`
