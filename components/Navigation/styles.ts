@@ -1,20 +1,24 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import NarutoFaceSVG from "../../assets/naruto-face.svg";
 import { focusStyles, secondFocusStyles } from "../../theme/sharedStyles";
 import { theme } from "../../theme/theme";
 
-export const NavigationWrapper = styled.nav`
+export const NavigationWrapper = styled.nav<{ shouldShowShadow: boolean }>`
   width: 100vw;
   height: 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: ${theme.DarkBrown};
-  box-shadow: 0 0.2rem 0.2rem black;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 10;
+  ${(props) =>
+    props.shouldShowShadow &&
+    css`
+      box-shadow: 0 0.2rem 0.2rem black;
+    `};
 `;
 
 export const LogoLink = styled.a`
@@ -131,4 +135,15 @@ export const SkipLink = styled.a`
     box-shadow: 0 0.2rem 0.2rem black;
     outline: 2px ridge ${theme.Orange};
   }
+`;
+
+export const IntersectingElement = styled.div`
+  height: 0.1rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  visibility: hidden;
+  z-index: -1000;
 `;
