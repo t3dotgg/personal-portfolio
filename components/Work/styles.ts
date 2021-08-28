@@ -44,6 +44,8 @@ export const WorkItem = styled.li`
   align-items: center;
   justify-items: center;
   grid-template-areas: "title title" "description description" "demo demo" "code live";
+  border-bottom: 0.2rem solid ${theme.Orange};
+  padding-bottom: 1rem;
 `;
 
 export const ItemTitle = styled.h2`
