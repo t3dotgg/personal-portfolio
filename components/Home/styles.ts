@@ -63,6 +63,7 @@ export const HomeLink = styled.a`
   font-family: ${theme.Oxanium};
   font-weight: 500;
   font-size: 1.2rem;
+  box-shadow: 0 0.2rem 0.2rem black;
   ${focusStyles}
 `;
 
