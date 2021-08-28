@@ -110,9 +110,9 @@ export const MobileLinkText = styled.span`
 
 export const SkipLink = styled.a`
   position: absolute;
-  left: -999px;
-  width: 1px;
-  height: 1px;
+  left: -99rem;
+  width: 0.1rem;
+  height: 0.1rem;
   top: auto;
   text-decoration: underline;
 
@@ -133,7 +133,7 @@ export const SkipLink = styled.a`
     font-family: ${theme.Montserrat};
     font-weight: 500;
     box-shadow: 0 0.2rem 0.2rem black;
-    outline: 2px ridge ${theme.Orange};
+    outline: 0.2rem ridge ${theme.Orange};
   }
 `;
 
