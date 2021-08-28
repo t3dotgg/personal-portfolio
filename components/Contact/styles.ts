@@ -32,6 +32,7 @@ export const ContactDescription = styled.p`
 export const DescriptionLink = styled.a`
   color: ${theme.Pink};
   text-decoration: underline;
+  padding: 0 0.5rem;
   ${secondFocusStyles}
 `;
 
