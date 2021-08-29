@@ -9,7 +9,13 @@ export const HomeSection = styled.section`
   background-color: ${theme.DarkBrown};
   position: relative;
   ${media.custom(360)} {
-    height: 60rem;
+    height: 46rem;
+  }
+  ${media.custom(375)} {
+    height: 50rem;
+  }
+  ${media.custom(410)} {
+    height: 55rem;
   }
   ${media.tablet} {
     height: 100vh;
