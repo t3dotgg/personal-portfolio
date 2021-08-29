@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import RightArrowSVG from "../../assets/right-arrow.svg";
+import { media } from "../../theme/media";
 import { theme } from "../../theme/theme";
 
 export const AboutSection = styled.section`
@@ -16,6 +17,16 @@ export const AboutSection = styled.section`
     ".";
   grid-template-rows: 12rem 5rem 29rem 40rem 8rem;
   margin-top: 4rem;
+  ${media.tablet} {
+    margin-top: 0;
+    align-items: center;
+    grid-template-areas:
+      "title image"
+      "text image"
+      "text technologies";
+    grid-template-rows: 11rem 14rem 57rem;
+    width: 90vw;
+  }
 `;
 
 export const AboutImage = styled.img`
@@ -27,6 +38,11 @@ export const AboutImage = styled.img`
   width: 10rem;
   border-radius: 50%;
   position: relative;
+  ${media.tablet} {
+    width: 25rem;
+    height: 25rem;
+    box-shadow: 0 0.3rem 0.5rem black;
+  }
 `;
 
 export const AboutTitle = styled.h1`
@@ -35,6 +51,10 @@ export const AboutTitle = styled.h1`
   color: ${theme.Pink};
   font-weight: 600;
   font-size: 3rem;
+  ${media.tablet} {
+    font-size: 6rem;
+    align-self: flex-end;
+  }
 `;
 
 export const AboutTextWrapper = styled.p`
@@ -50,6 +70,14 @@ export const AboutTextWrapper = styled.p`
   text-align: center;
   width: 25ch;
   height: 100%;
+  ${media.tablet} {
+    font-size: 2rem;
+    align-self: flex-start;
+    justify-content: space-evenly;
+    height: 80%;
+    line-height: 1.5;
+    width: 27ch;
+  }
 `;
 
 export const AboutText = styled.span`
@@ -63,6 +91,10 @@ export const TechnologiesWrapper = styled.div`
   align-items: center;
   justify-content: space-evenly;
   height: 100%;
+  ${media.tablet} {
+    margin-top: 7rem;
+    width: 100%;
+  }
 `;
 
 export const TechnologiesText = styled.p`
@@ -72,6 +104,11 @@ export const TechnologiesText = styled.p`
   width: 26ch;
   text-align: center;
   color: ${theme.Orange};
+  ${media.tablet} {
+    font-size: 2.2rem;
+    font-family: ${theme.Oxanium};
+    line-height: 1.5;
+  }
 `;
 
 export const TechnologiesContainer = styled.div`
@@ -82,6 +119,11 @@ export const TechnologiesContainer = styled.div`
   width: 23rem;
   position: relative;
   left: 1.5rem;
+  ${media.tablet} {
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const TechnologiesList = styled.ul`
@@ -91,6 +133,9 @@ export const TechnologiesList = styled.ul`
   align-items: flex-start;
   justify-content: space-evenly;
   flex-direction: column;
+  ${media.tablet} {
+    align-items: center;
+  }
 `;
 
 export const TechnologyItem = styled.li`
@@ -103,6 +148,10 @@ export const TechnologyItem = styled.li`
 export const RightArrow = styled(RightArrowSVG)`
   height: 1rem;
   width: 1rem;
+  ${media.tablet} {
+    height: 1.7rem;
+    width: 1.7rem;
+  }
 `;
 
 export const TechnologyText = styled.span`
@@ -111,4 +160,8 @@ export const TechnologyText = styled.span`
   font-family: ${theme.Oxanium};
   color: ${theme.Orange};
   padding-left: 0.5rem;
+  ${media.tablet} {
+    font-size: 1.7rem;
+    padding-left: 1rem;
+  }
 `;
