@@ -21,7 +21,7 @@ export const NavigationWrapper = styled.nav<{ shouldShowShadow: boolean }>`
       box-shadow: 0 0.2rem 0.2rem black;
     `};
   ${media.tablet} {
-    height: 9rem;
+    height: 11rem;
   }
 `;
 
@@ -36,7 +36,7 @@ export const LogoLink = styled.a`
     0 0.3rem hsl(18, 21%, 23%), 0 0 1rem #f72405ba;
   ${focusStyles};
   ${media.tablet} {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-left: 2rem;
   }
 `;
@@ -47,8 +47,8 @@ export const NarutoFace = styled(NarutoFaceSVG)`
   margin-right: 1rem;
   filter: drop-shadow(0 0 0.1rem ${theme.Red});
   ${media.tablet} {
-    width: 5rem;
-    height: 5rem;
+    width: 5.5rem;
+    height: 5.5rem;
     margin-right: 2rem;
     position: relative;
     bottom: 0.5rem;
@@ -129,16 +129,36 @@ export const NavLink = styled.a`
     width: 2.2rem;
     height: 2.2rem;
     fill: currentColor;
+    transition: all 0.2s;
+    path {
+      transition: all 0.2s;
+    }
     ${media.tablet} {
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 3rem;
+      height: 3rem;
     }
   }
   ${media.tablet} {
     justify-content: space-between;
-    height: 5.4rem;
-    min-width: 7rem;
+    min-width: 11rem;
     width: auto;
+    height: 6rem;
+    transition: all 0.2s;
+    &:hover {
+      height: 6.3rem;
+      span {
+        font-size: 2rem;
+        color: ${theme.Red};
+      }
+      .icon-nav {
+        fill: ${theme.Orange};
+        width: 3.2rem;
+        height: 3.2rem;
+        path {
+          fill: ${theme.Orange};
+        }
+      }
+    }
   }
 `;
 
@@ -148,6 +168,8 @@ export const LinkText = styled.span`
   font-size: 1.4rem;
   color: ${theme.Orange};
   ${media.tablet} {
+    font-weight: 600;
+    transition: all 0.2s;
     font-size: 2rem;
   }
 `;
