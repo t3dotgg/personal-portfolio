@@ -18,7 +18,7 @@ export const NavigationWrapper = styled.nav<{ shouldShowShadow: boolean }>`
   ${(props) =>
     props.shouldShowShadow &&
     css`
-      box-shadow: 0 0.2rem 0.2rem black;
+      box-shadow: 0 0.3rem 0.2rem black;
     `};
   ${media.tablet} {
     height: 11rem;
