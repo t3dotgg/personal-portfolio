@@ -4,6 +4,7 @@ import { theme } from "../../theme/theme";
 import RightArrowSVG from "../../assets/right-arrow.svg";
 import DownArrowSVG from "../../assets/down-arrow.svg";
 import UpArrowSVG from "../../assets/up-arrow.svg";
+import { media } from "../../theme/media";
 
 export const ExperienceSection = styled.section`
   width: 100vw;
@@ -12,6 +13,15 @@ export const ExperienceSection = styled.section`
   grid-template-rows: 5rem 5rem auto 3rem;
   align-items: center;
   justify-items: center;
+  ${media.tablet} {
+    grid-template-areas:
+      "title"
+      "description"
+      "."
+      "items";
+    grid-template-rows: 10rem 7rem 5rem auto;
+    margin-top: 10rem;
+  }
 `;
 
 export const ExperienceTitle = styled.h1`
@@ -20,6 +30,9 @@ export const ExperienceTitle = styled.h1`
   font-size: 3rem;
   font-weight: 600;
   color: ${theme.Pink};
+  ${media.tablet} {
+    font-size: 6rem;
+  }
 `;
 
 export const ExperienceDescription = styled.p`
@@ -30,6 +43,10 @@ export const ExperienceDescription = styled.p`
   width: 24ch;
   text-align: center;
   color: ${theme.Orange};
+  ${media.tablet} {
+    font-size: 3rem;
+    width: 29ch;
+  }
 `;
 
 export const ExperienceItemList = styled.ul`
@@ -39,6 +56,9 @@ export const ExperienceItemList = styled.ul`
   justify-content: space-evenly;
   width: 100vw;
   margin: 2rem 0;
+  ${media.tablet} {
+    margin: 0;
+  }
 `;
 
 export const ExperienceItem = styled.li`
@@ -49,6 +69,9 @@ export const ExperienceItem = styled.li`
   width: 25.8rem;
   position: relative;
   left: 0.75rem;
+  ${media.tablet} {
+    width: 47rem;
+  }
 `;
 
 export const AccordionButton = styled.button`
@@ -75,6 +98,11 @@ export const AccordionButton = styled.button`
     font-weight: bold;
   }
   ${focusStyles}
+  ${media.tablet} {
+    border-radius: 0.5rem;
+    grid-template-columns: 73% 27%;
+    height: 6.3rem;
+  }
 `;
 
 export const AccordionContent = styled.ul`
@@ -100,6 +128,10 @@ export const AccordionContent = styled.ul`
     border-bottom-left-radius: 1rem;
     box-shadow: 0 0.2rem 0.2rem black;
     transition: all 0.2s ease-in-out;
+    ${media.tablet} {
+      height: 45rem;
+      border: 0.3rem solid ${theme.Orange};
+    }
     li {
       visibility: visible;
     }
@@ -115,6 +147,9 @@ export const AccordionButtonTextWrapper = styled.div`
   width: 100%;
   height: 100%;
   justify-content: space-between;
+  ${media.tablet} {
+    font-size: 1.4rem;
+  }
 `;
 
 export const AccordionButtonText = styled.span`
@@ -125,6 +160,10 @@ export const AccordionOpenArrow = styled(DownArrowSVG)`
   width: 3rem;
   height: 1.6rem;
   grid-area: arrow;
+  ${media.tablet} {
+    width: 6rem;
+    height: 3rem;
+  }
 `;
 
 export const AccordionCloseArrow = styled(UpArrowSVG)`
@@ -132,6 +171,10 @@ export const AccordionCloseArrow = styled(UpArrowSVG)`
   height: 1.6rem;
   fill: ${theme.DarkBrown};
   grid-area: arrow;
+  ${media.tablet} {
+    height: 3rem;
+    width: 6rem;
+  }
 `;
 
 export const AccordionContentItem = styled.li`
@@ -140,11 +183,18 @@ export const AccordionContentItem = styled.li`
   justify-content: space-between;
   width: auto;
   padding-left: 1rem;
+  ${media.tablet} {
+    padding-left: 2rem;
+  }
 `;
 
 export const AccordionRightArrow = styled(RightArrowSVG)`
   width: 1rem;
   height: 1rem;
+  ${media.tablet} {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 `;
 
 export const AccordionContentText = styled.p`
@@ -155,4 +205,10 @@ export const AccordionContentText = styled.p`
   font-size: 0.8rem;
   align-self: center;
   max-width: 43ch;
+  ${media.tablet} {
+    position: relative;
+    bottom: 0.2rem;
+    padding-left: 1rem;
+    font-size: 1.4rem;
+  }
 `;
