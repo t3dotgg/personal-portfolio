@@ -107,30 +107,14 @@ export const HomeLink = styled.a`
     box-shadow: 0 0.2rem 0.2rem black;
     align-self: center;
     padding: 1.7rem 3rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     position: relative;
     transition: all 0.2s ease-in-out;
-    &::after {
-      content: "";
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -5;
-      width: 100%;
-      height: 100%;
-      transform: scaleY(0);
-      transition: all 0.2s ease-in-out;
-      transform-origin: bottom;
-      background-color: ${theme.Orange};
-    }
     &:hover {
       color: ${theme.DarkBrown};
-      border: 0.2rem solid ${theme.Orange};
+      background-color: ${theme.Orange};
       &:active {
         transform: scale(0.98);
-      }
-      &::after {
-        transform: scaleY(1);
       }
     }
   }
@@ -140,4 +124,11 @@ export const DescriptionLink = styled.a`
   color: ${theme.Pink};
   text-decoration: underline;
   ${secondFocusStyles}
+  ${media.tablet} {
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
