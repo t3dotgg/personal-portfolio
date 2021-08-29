@@ -94,17 +94,45 @@ export const HomeLink = styled.a`
   text-decoration: none;
   border-radius: 0.3rem;
   padding: 1rem 1.5rem;
-  border: 0.1rem solid var(--orange);
+  border: 0.1rem solid ${theme.Orange};
   font-family: ${theme.Oxanium};
   font-weight: 500;
   font-size: 1.2rem;
   box-shadow: 0 0.1rem 0.2rem black;
   ${focusStyles}
   ${media.tablet} {
+    box-shadow: none;
+    font-weight: 600;
     border: 0.2rem solid ${theme.Orange};
+    box-shadow: 0 0.2rem 0.2rem black;
     align-self: center;
     padding: 1.7rem 3rem;
     font-size: 1.8rem;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    &::after {
+      content: "";
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -5;
+      width: 100%;
+      height: 100%;
+      transform: scaleY(0);
+      transition: all 0.2s ease-in-out;
+      transform-origin: bottom;
+      background-color: ${theme.Orange};
+    }
+    &:hover {
+      color: ${theme.DarkBrown};
+      border: 0.2rem solid ${theme.Orange};
+      &:active {
+        transform: scale(0.98);
+      }
+      &::after {
+        transform: scaleY(1);
+      }
+    }
   }
 `;
 
