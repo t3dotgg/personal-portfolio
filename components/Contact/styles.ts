@@ -42,7 +42,7 @@ export const ContactLink = styled.a`
   text-decoration: none;
   border-radius: 0.3rem;
   padding: 1rem 1.5rem;
-  border: 0.1rem solid var(--orange);
+  border: 0.1rem solid ${theme.Orange};
   font-family: ${theme.Oxanium};
   font-weight: 500;
   font-size: 1.2rem;
