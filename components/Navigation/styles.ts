@@ -73,6 +73,9 @@ export const IconsWrapper = styled.div`
     height: 100%;
     fill: currentColor;
   }
+  ${media.custom(360)} {
+    height: 17rem;
+  }
   ${media.tablet} {
     width: 3rem;
     left: 4%;
