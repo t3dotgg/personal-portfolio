@@ -20,9 +20,11 @@ import {
   IntersectingElement,
 } from "./styles";
 import { useOnScreen } from "../../hooks/useOnScreen";
+import { useMedia } from "../../hooks/useMedia";
 
 export const Navigation = () => {
   const { isVisible, setIntersectingElement } = useOnScreen();
+  const isTabletLayout = useMedia("min", "768");
   return (
     <>
       <IntersectingElement ref={setIntersectingElement} />
@@ -33,30 +35,34 @@ export const Navigation = () => {
         <Link href="/" passHref>
           <LogoLink>Tiger Abrodi</LogoLink>
         </Link>
-        <Link href="#about" passHref>
-          <NavLink>
-            <FaceSVG aria-hidden="true" />
-            <LinkText>About</LinkText>
-          </NavLink>
-        </Link>
-        <Link href="#experience" passHref>
-          <NavLink>
-            <TimelineSVG aria-hidden="true" />
-            <LinkText>Experience</LinkText>
-          </NavLink>
-        </Link>
-        <Link href="#work" passHref>
-          <NavLink>
-            <HammerSVG aria-hidden="true" />
-            <LinkText>Work</LinkText>
-          </NavLink>
-        </Link>
-        <Link href="#contact" passHref>
-          <NavLink>
-            <MailSVG aria-hidden="true" />
-            <LinkText>Contact</LinkText>
-          </NavLink>
-        </Link>
+        {isTabletLayout && (
+          <>
+            <Link href="#about" passHref>
+              <NavLink>
+                <FaceSVG aria-hidden="true" />
+                <LinkText>About</LinkText>
+              </NavLink>
+            </Link>
+            <Link href="#experience" passHref>
+              <NavLink>
+                <TimelineSVG aria-hidden="true" />
+                <LinkText>Experience</LinkText>
+              </NavLink>
+            </Link>
+            <Link href="#work" passHref>
+              <NavLink>
+                <HammerSVG aria-hidden="true" />
+                <LinkText>Work</LinkText>
+              </NavLink>
+            </Link>
+            <Link href="#contact" passHref>
+              <NavLink>
+                <MailSVG aria-hidden="true" />
+                <LinkText>Contact</LinkText>
+              </NavLink>
+            </Link>
+          </>
+        )}
         <NarutoFace aria-hidden="true" />
         <IconsWrapper>
           <Link
