@@ -50,6 +50,8 @@ export const NarutoFace = styled(NarutoFaceSVG)`
     width: 5rem;
     height: 5rem;
     margin-right: 2rem;
+    position: relative;
+    bottom: 0.5rem;
   }
 `;
 
@@ -72,9 +74,10 @@ export const IconsWrapper = styled.div`
     fill: currentColor;
   }
   ${media.tablet} {
-    height: 24rem;
     width: 3rem;
     left: 4%;
+    height: 30vh;
+    top: 50%;
   }
 `;
 
@@ -85,8 +88,8 @@ export const IconLink = styled.a`
   text-decoration: none;
   ${focusStyles}
   ${media.tablet} {
-    width: 2.1rem;
-    height: 2.1rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 `;
 
@@ -109,7 +112,7 @@ export const MobileNavigationWrapper = styled.div`
   }
 `;
 
-export const MobileLink = styled.a`
+export const NavLink = styled.a`
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -130,17 +133,19 @@ export const MobileLink = styled.a`
   }
   ${media.tablet} {
     justify-content: space-between;
-    height: 5.2rem;
+    height: 5.4rem;
+    min-width: 7rem;
+    width: auto;
   }
 `;
 
-export const MobileLinkText = styled.span`
+export const LinkText = styled.span`
   font-family: ${theme.Oxanium};
   font-weight: 500;
   font-size: 1.4rem;
   color: ${theme.Orange};
   ${media.tablet} {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 `;
 

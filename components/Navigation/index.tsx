@@ -14,8 +14,8 @@ import {
   IconsWrapper,
   IconLink,
   MobileNavigationWrapper,
-  MobileLink,
-  MobileLinkText,
+  NavLink,
+  LinkText,
   SkipLink,
   IntersectingElement,
 } from "./styles";
@@ -34,28 +34,28 @@ export const Navigation = () => {
           <LogoLink>Tiger Abrodi</LogoLink>
         </Link>
         <Link href="#about" passHref>
-          <MobileLink>
+          <NavLink>
             <FaceSVG aria-hidden="true" />
-            <MobileLinkText>About</MobileLinkText>
-          </MobileLink>
+            <LinkText>About</LinkText>
+          </NavLink>
         </Link>
         <Link href="#experience" passHref>
-          <MobileLink>
+          <NavLink>
             <TimelineSVG aria-hidden="true" />
-            <MobileLinkText>Experience</MobileLinkText>
-          </MobileLink>
+            <LinkText>Experience</LinkText>
+          </NavLink>
         </Link>
         <Link href="#work" passHref>
-          <MobileLink>
+          <NavLink>
             <HammerSVG aria-hidden="true" />
-            <MobileLinkText>Work</MobileLinkText>
-          </MobileLink>
+            <LinkText>Work</LinkText>
+          </NavLink>
         </Link>
         <Link href="#contact" passHref>
-          <MobileLink>
+          <NavLink>
             <MailSVG aria-hidden="true" />
-            <MobileLinkText>Contact</MobileLinkText>
-          </MobileLink>
+            <LinkText>Contact</LinkText>
+          </NavLink>
         </Link>
         <NarutoFace aria-hidden="true" />
         <IconsWrapper>
@@ -85,28 +85,28 @@ export const Navigation = () => {
         </IconsWrapper>
         <MobileNavigationWrapper>
           <Link href="#about" passHref>
-            <MobileLink>
+            <NavLink>
               <FaceSVG aria-hidden="true" />
-              <MobileLinkText>About</MobileLinkText>
-            </MobileLink>
+              <LinkText>About</LinkText>
+            </NavLink>
           </Link>
           <Link href="#experience" passHref>
-            <MobileLink>
+            <NavLink>
               <TimelineSVG aria-hidden="true" />
-              <MobileLinkText>Experience</MobileLinkText>
-            </MobileLink>
+              <LinkText>Experience</LinkText>
+            </NavLink>
           </Link>
           <Link href="#work" passHref>
-            <MobileLink>
+            <NavLink>
               <HammerSVG aria-hidden="true" />
-              <MobileLinkText>Work</MobileLinkText>
-            </MobileLink>
+              <LinkText>Work</LinkText>
+            </NavLink>
           </Link>
           <Link href="#contact" passHref>
-            <MobileLink>
+            <NavLink>
               <MailSVG aria-hidden="true" />
-              <MobileLinkText>Contact</MobileLinkText>
-            </MobileLink>
+              <LinkText>Contact</LinkText>
+            </NavLink>
           </Link>
         </MobileNavigationWrapper>
       </NavigationWrapper>
