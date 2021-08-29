@@ -175,6 +175,12 @@ export const SkipLink = styled.a`
     font-weight: 500;
     box-shadow: 0 0.2rem 0.2rem black;
     outline: 0.2rem ridge ${theme.Orange};
+    ${media.tablet} {
+      width: 22rem;
+      height: 6rem;
+      font-size: 1.8rem;
+      left: 2%;
+    }
   }
 `;
 
