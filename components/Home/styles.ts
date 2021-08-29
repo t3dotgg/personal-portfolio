@@ -9,7 +9,10 @@ export const HomeSection = styled.section`
   background-color: ${theme.DarkBrown};
   position: relative;
   ${media.custom(360)} {
-    height: 48rem;
+    height: 60rem;
+  }
+  ${media.tablet} {
+    height: 100vh;
   }
 `;
 
@@ -31,6 +34,18 @@ export const HomeWrapper = styled.div`
   align-items: flex-end;
   justify-items: flex-start;
   justify-content: space-between;
+  ${media.tablet} {
+    grid-template-areas:
+      "title"
+      "subtitle"
+      "description"
+      "link";
+    height: 50rem;
+    top: 35%;
+    left: 40%;
+    width: 52rem;
+    grid-template-rows: 20% 10% 40% 23%;
+  }
 `;
 
 export const HomeTitle = styled.h1`
@@ -39,6 +54,9 @@ export const HomeTitle = styled.h1`
   font-weight: bold;
   font-size: 4rem;
   color: ${theme.Red};
+  ${media.tablet} {
+    font-size: 6rem;
+  }
 `;
 
 export const HomeSubtitle = styled.h2`
@@ -47,6 +65,9 @@ export const HomeSubtitle = styled.h2`
   font-family: ${theme.Montserrat};
   font-weight: 600;
   color: ${theme.Pink};
+  ${media.tablet} {
+    font-size: 4rem;
+  }
 `;
 
 export const HomeDescription = styled.p`
@@ -55,6 +76,10 @@ export const HomeDescription = styled.p`
   font-size: 1.2rem;
   font-weight: 500;
   color: ${theme.Orange};
+  ${media.tablet} {
+    font-size: 1.8rem;
+    align-self: center;
+  }
 `;
 
 export const HomeLink = styled.a`
@@ -69,6 +94,12 @@ export const HomeLink = styled.a`
   font-size: 1.2rem;
   box-shadow: 0 0.1rem 0.2rem black;
   ${focusStyles}
+  ${media.tablet} {
+    border: 0.2rem solid ${theme.Orange};
+    align-self: center;
+    padding: 1.7rem 3rem;
+    font-size: 1.8rem;
+  }
 `;
 
 export const DescriptionLink = styled.a`

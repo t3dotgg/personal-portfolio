@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../theme/media";
 
 export const TigerSVG = styled.svg`
   position: absolute;
@@ -6,6 +7,11 @@ export const TigerSVG = styled.svg`
   transform: translate(-50%, -50%);
   top: 80%;
   left: 70%;
+  ${media.tablet} {
+    top: 60%;
+    height: 47rem;
+    left: 73%;
+  }
 `;
 
 export const TigerGraphic = () => (
