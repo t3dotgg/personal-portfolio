@@ -58,7 +58,7 @@ export const NarutoFace = styled(NarutoFaceSVG)`
 export const IconsWrapper = styled.div`
   position: fixed;
   z-index: 10;
-  height: 14rem;
+  height: 15rem;
   width: 2rem;
   top: 46%;
   left: 6%;
@@ -68,16 +68,11 @@ export const IconsWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  .icon {
-    width: 100%;
-    height: 100%;
-    fill: currentColor;
-  }
   ${media.custom(360)} {
     height: 17rem;
   }
   ${media.tablet} {
-    width: 3rem;
+    width: 4rem;
     left: 4%;
     height: 30vh;
     top: 50%;
@@ -85,14 +80,34 @@ export const IconsWrapper = styled.div`
 `;
 
 export const IconLink = styled.a`
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2rem;
+  height: 2rem;
   color: ${theme.Red};
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .icon {
+    width: 80%;
+    height: 80%;
+    transition: all 0.2s;
+    fill: currentColor;
+  }
   ${focusStyles}
   ${media.tablet} {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3.3rem;
+    height: 3.3rem;
+    transition: all 0.2s;
+    &:hover {
+      transform: translateY(-0.3rem);
+      .icon {
+        fill: ${theme.Orange};
+        transform: scale(1.05);
+        path {
+          fill: ${theme.Orange};
+        }
+      }
+    }
   }
 `;
 
