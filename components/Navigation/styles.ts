@@ -146,6 +146,9 @@ export const NavLink = styled.a`
     transition: all 0.2s;
     &:hover {
       height: 6.3rem;
+      &:active {
+        height: 5.7rem;
+      }
       span {
         font-size: 2rem;
         color: ${theme.Red};
