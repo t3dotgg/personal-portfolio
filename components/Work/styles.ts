@@ -13,6 +13,7 @@ export const WorkSection = styled.section`
   grid-template-areas: "title" "description" "list" ".";
   grid-template-rows: 5rem 5rem auto 3rem;
   ${media.tablet} {
+    margin-top: 15rem;
     grid-template-rows: 10rem 10rem auto;
     grid-template-areas:
       "title"
@@ -128,8 +129,11 @@ const linkStyles = css`
     transition: all 0.2s ease-out;
     &:hover {
       transform: translateY(-0.2rem);
-      filter: brightness(1.5);
-      color: ${theme.Pink};
+      filter: brightness(1.2);
+      text-shadow: 0 0.4rem 0.2rem black;
+      svg {
+        filter: drop-shadow(0 0.2rem 0.2rem black);
+      }
     }
   }
 `;
@@ -160,10 +164,14 @@ export const Github = styled(GithubSVG)`
     fill: ${theme.Pink};
   }
   ${media.tablet} {
-    height: 1.8rem;
-    width: 1.8rem;
-    top: -1.4rem;
-    left: 6.6rem;
+    height: 2rem;
+    width: 2rem;
+    top: -1.6rem;
+    left: 6.5rem;
+    transition: all 0.2s ease-out;
+    path {
+      transition: all 0.2s ease-out;
+    }
   }
 `;
 
@@ -174,9 +182,10 @@ export const External = styled(ExternalSVG)`
   width: 1.1rem;
   ${iconStyles}
   ${media.tablet} {
-    width: 1.8rem;
-    height: 1.8rem;
-    top: -1.4rem;
-    left: 5.3rem;
+    width: 2rem;
+    height: 2rem;
+    top: -1.5rem;
+    left: 5.4rem;
+    transition: all 0.2s ease-out;
   }
 `;
