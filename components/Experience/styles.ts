@@ -20,7 +20,7 @@ export const ExperienceSection = styled.section`
       "."
       "items";
     grid-template-rows: 10rem 7rem 5rem auto;
-    margin-top: 10rem;
+    margin-top: 15rem;
   }
 `;
 
