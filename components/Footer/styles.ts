@@ -3,6 +3,7 @@ import HeartSVG from "../../assets/heart.svg";
 import ExternalSVG from "../../assets/external.svg";
 import { theme } from "../../theme/theme";
 import { media } from "../../theme/media";
+import { focusStyles } from "../../theme/sharedStyles";
 
 export const FooterWrapper = styled.footer`
   height: 13rem;
@@ -44,6 +45,7 @@ export const FooterLink = styled.a`
   position: relative;
   text-decoration: underline;
   margin-left: 0.5rem;
+  ${focusStyles}
   ${media.tablet} {
     margin-left: 0.75rem;
   }
