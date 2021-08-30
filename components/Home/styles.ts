@@ -52,6 +52,12 @@ export const HomeWrapper = styled.div`
     width: 52rem;
     grid-template-rows: 20% 10% 40% 23%;
   }
+  ${media.desktop} {
+    height: 63rem;
+    top: 38%;
+    left: 35%;
+    width: 65rem;
+  }
 `;
 
 export const HomeTitle = styled.h1`
@@ -62,6 +68,9 @@ export const HomeTitle = styled.h1`
   color: ${theme.Red};
   ${media.tablet} {
     font-size: 6rem;
+  }
+  ${media.desktop} {
+    font-size: 7rem;
   }
 `;
 
@@ -74,6 +83,9 @@ export const HomeSubtitle = styled.h2`
   ${media.tablet} {
     font-size: 4rem;
   }
+  ${media.desktop} {
+    font-size: 5rem;
+  }
 `;
 
 export const HomeDescription = styled.p`
@@ -85,6 +97,10 @@ export const HomeDescription = styled.p`
   ${media.tablet} {
     font-size: 1.8rem;
     align-self: center;
+  }
+  ${media.desktop} {
+    font-size: 2.1rem;
+    width: 43ch;
   }
 `;
 
@@ -112,11 +128,15 @@ export const HomeLink = styled.a`
     transition: all 0.2s ease-in-out;
     &:hover {
       color: ${theme.DarkBrown};
+      transform: translateY(-0.2rem);
       background-color: ${theme.Orange};
       &:active {
         transform: scale(0.98);
       }
     }
+  }
+  ${media.desktop} {
+    font-size: 2.3rem;
   }
 `;
 
