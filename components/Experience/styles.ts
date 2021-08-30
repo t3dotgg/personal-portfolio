@@ -99,6 +99,7 @@ export const AccordionButton = styled.button`
   }
   ${focusStyles}
   ${media.tablet} {
+    font-weight: 500;
     border-radius: 0.5rem;
     grid-template-columns: 73% 27%;
     height: 6.3rem;
