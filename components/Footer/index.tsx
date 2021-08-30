@@ -11,7 +11,7 @@ export const Footer = () => {
   return (
     <FooterWrapper>
       <FooterText>
-        Built & Designed with <Heart aria-hidden="true" /> by{" "}
+        Built & Designed with <Heart role="img" aria-label="love" /> by{" "}
         <Link href="https://github.com/tigerabrodi" passHref>
           <FooterLink target="_blank" rel="noopener noreferrer">
             <External aria-hidden="true" />
