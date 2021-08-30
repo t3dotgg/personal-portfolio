@@ -159,6 +159,7 @@ export const NavLink = styled.a`
     width: auto;
     height: 6rem;
     transition: all 0.2s;
+    ${focusStyles};
     &:hover {
       height: 6.3rem;
       &:active {
