@@ -103,6 +103,14 @@ export const AccordionButton = styled.button`
     border-radius: 0.5rem;
     grid-template-columns: 73% 27%;
     height: 6.3rem;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    &[aria-expanded="false"] {
+      &:hover {
+        box-shadow: 0 0.2rem 0.2rem black;
+        transform: translateY(-0.2rem);
+      }
+    }
   }
 `;
 
