@@ -3,6 +3,7 @@ import { theme } from "../../theme/theme";
 import GithubSVG from "../../assets/github.svg";
 import ExternalSVG from "../../assets/external.svg";
 import { focusStyles } from "../../theme/sharedStyles";
+import { media } from "../../theme/media";
 
 export const WorkSection = styled.section`
   width: 100vw;
@@ -11,6 +12,13 @@ export const WorkSection = styled.section`
   align-items: center;
   grid-template-areas: "title" "description" "list" ".";
   grid-template-rows: 5rem 5rem auto 3rem;
+  ${media.tablet} {
+    grid-template-rows: 10rem 10rem auto;
+    grid-template-areas:
+      "title"
+      "description"
+      "list";
+  }
 `;
 
 export const WorkTitle = styled.h1`
@@ -18,6 +26,9 @@ export const WorkTitle = styled.h1`
   font-weight: 600;
   font-size: 3rem;
   color: ${theme.Pink};
+  ${media.tablet} {
+    font-size: 7rem;
+  }
 `;
 
 export const WorkDescription = styled.p`
@@ -27,6 +38,10 @@ export const WorkDescription = styled.p`
   color: ${theme.Orange};
   text-align: center;
   width: 28ch;
+  ${media.tablet} {
+    font-size: 2.5rem;
+    width: 30ch;
+  }
 `;
 
 export const WorkList = styled.ul`
@@ -36,6 +51,9 @@ export const WorkList = styled.ul`
   justify-content: space-evenly;
   margin-top: 3rem;
   row-gap: 2rem;
+  ${media.tablet} {
+    row-gap: 8rem;
+  }
 `;
 
 export const WorkItem = styled.li`
@@ -46,6 +64,12 @@ export const WorkItem = styled.li`
   grid-template-areas: "title title" "description description" "demo demo" "code live";
   border-bottom: 0.2rem solid ${theme.Orange};
   padding-bottom: 0.5rem;
+  ${media.tablet} {
+    width: 55rem;
+    border-bottom: 0.3rem solid ${theme.Orange};
+    box-shadow: 0 0.3rem 1rem black;
+    padding-bottom: 2rem;
+  }
 `;
 
 export const ItemTitle = styled.h2`
@@ -55,6 +79,10 @@ export const ItemTitle = styled.h2`
   font-size: 2rem;
   color: ${theme.Pink};
   text-decoration: underline;
+  ${media.tablet} {
+    font-size: 4.5rem;
+    margin-top: 2rem;
+  }
 `;
 
 export const ItemDescription = styled.p`
@@ -65,6 +93,11 @@ export const ItemDescription = styled.p`
   margin-top: 0.5rem;
   text-align: center;
   color: ${theme.Orange};
+  ${media.tablet} {
+    font-size: 2.3rem;
+    margin-top: 1rem;
+    padding: 0 2rem;
+  }
 `;
 
 export const ItemDemo = styled.img`
@@ -73,6 +106,11 @@ export const ItemDemo = styled.img`
   height: 13rem;
   box-shadow: 0 0.2rem 0.4rem black;
   margin-top: 2rem;
+  ${media.tablet} {
+    width: 47rem;
+    height: 30rem;
+    margin-top: 5rem;
+  }
 `;
 
 const linkStyles = css`
@@ -84,6 +122,10 @@ const linkStyles = css`
   position: relative;
   margin-top: 3rem;
   ${focusStyles}
+  ${media.tablet} {
+    font-size: 3rem;
+    margin-top: 6rem;
+  }
 `;
 
 export const ItemCodeLink = styled.a`
@@ -111,6 +153,12 @@ export const Github = styled(GithubSVG)`
   path {
     fill: ${theme.Pink};
   }
+  ${media.tablet} {
+    height: 1.8rem;
+    width: 1.8rem;
+    top: -1.4rem;
+    left: 6.6rem;
+  }
 `;
 
 export const External = styled(ExternalSVG)`
@@ -119,4 +167,10 @@ export const External = styled(ExternalSVG)`
   height: 1.1rem;
   width: 1.1rem;
   ${iconStyles}
+  ${media.tablet} {
+    width: 1.8rem;
+    height: 1.8rem;
+    top: -1.4rem;
+    left: 5.3rem;
+  }
 `;
