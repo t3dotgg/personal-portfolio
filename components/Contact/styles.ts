@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../theme/media";
 import { focusStyles, secondFocusStyles } from "../../theme/sharedStyles";
 import { theme } from "../../theme/theme";
 
@@ -9,6 +10,14 @@ export const ContactSection = styled.section`
   align-items: center;
   grid-template-areas: "title" "description" "link" ".";
   grid-template-rows: 6rem 15rem 10rem 5rem;
+  ${media.tablet} {
+    grid-template-areas:
+      "title"
+      "description"
+      "link";
+    grid-template-rows: 7rem 19rem 22rem;
+    margin-top: 16rem;
+  }
 `;
 
 export const ContactTitle = styled.h1`
@@ -17,6 +26,9 @@ export const ContactTitle = styled.h1`
   font-weight: 600;
   font-size: 3rem;
   color: ${theme.Pink};
+  ${media.tablet} {
+    font-size: 6rem;
+  }
 `;
 
 export const ContactDescription = styled.p`
@@ -27,6 +39,11 @@ export const ContactDescription = styled.p`
   width: 25ch;
   text-align: center;
   color: ${theme.Orange};
+  ${media.tablet} {
+    width: 35ch;
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
 `;
 
 export const DescriptionLink = styled.a`
@@ -34,6 +51,12 @@ export const DescriptionLink = styled.a`
   text-decoration: underline;
   padding: 0 0.5rem;
   ${secondFocusStyles}
+  ${media.tablet} {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 export const ContactLink = styled.a`
@@ -48,4 +71,20 @@ export const ContactLink = styled.a`
   font-size: 1.2rem;
   box-shadow: 0 0.1rem 0.2rem black;
   ${focusStyles}
+  ${media.tablet} {
+    font-size: 2.5rem;
+    padding: 2rem 4rem;
+    border: 0.2rem solid ${theme.Orange};
+    transition: all 0.2s ease-in;
+    &:hover {
+      background-color: ${theme.Orange};
+      color: ${theme.DarkBrown};
+      transform: translateY(-0.3rem);
+      box-shadow: 0 0.3rem 0.2rem black;
+      &:active {
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.1rem 0.2rem black;
+      }
+    }
+  }
 `;
