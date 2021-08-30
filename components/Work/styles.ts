@@ -125,6 +125,12 @@ const linkStyles = css`
   ${media.tablet} {
     font-size: 3rem;
     margin-top: 6rem;
+    transition: all 0.2s ease-out;
+    &:hover {
+      transform: translateY(-0.2rem);
+      filter: brightness(1.5);
+      color: ${theme.Pink};
+    }
   }
 `;
 
