@@ -77,6 +77,9 @@ export const IconsWrapper = styled.div`
     height: 30vh;
     top: 50%;
   }
+  ${media.desktop} {
+    left: 3%;
+  }
 `;
 
 export const IconLink = styled.a`
@@ -168,6 +171,9 @@ export const NavLink = styled.a`
       span {
         font-size: 2rem;
         color: ${theme.Red};
+        ${media.desktop} {
+          font-size: 2.4rem;
+        }
       }
       .icon-nav {
         fill: ${theme.Orange};
@@ -190,6 +196,9 @@ export const LinkText = styled.span`
     font-weight: 600;
     transition: all 0.2s;
     font-size: 2rem;
+  }
+  ${media.desktop} {
+    font-size: 2.4rem;
   }
 `;
 
