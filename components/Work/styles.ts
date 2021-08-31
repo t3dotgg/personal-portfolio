@@ -20,6 +20,9 @@ export const WorkSection = styled.section`
       "description"
       "list";
   }
+  ${media.desktop} {
+    grid-template-rows: 9rem 14rem auto;
+  }
 `;
 
 export const WorkTitle = styled.h1`
@@ -29,6 +32,9 @@ export const WorkTitle = styled.h1`
   color: ${theme.Pink};
   ${media.tablet} {
     font-size: 7rem;
+  }
+  ${media.desktop} {
+    font-size: 8rem;
   }
 `;
 
@@ -43,6 +49,9 @@ export const WorkDescription = styled.p`
     font-size: 2.5rem;
     width: 30ch;
   }
+  ${media.desktop} {
+    font-size: 2.8rem;
+  }
 `;
 
 export const WorkList = styled.ul`
@@ -54,6 +63,10 @@ export const WorkList = styled.ul`
   row-gap: 2rem;
   ${media.tablet} {
     row-gap: 8rem;
+  }
+  ${media.desktop} {
+    margin-top: 5rem;
+    row-gap: 10rem;
   }
 `;
 
@@ -71,6 +84,10 @@ export const WorkItem = styled.li`
     box-shadow: 0 0.3rem 1rem black;
     padding-bottom: 2rem;
   }
+  ${media.desktop} {
+    width: 60rem;
+    border-bottom: 0.5rem solid ${theme.Orange};
+  }
 `;
 
 export const ItemTitle = styled.h2`
@@ -83,6 +100,9 @@ export const ItemTitle = styled.h2`
   ${media.tablet} {
     font-size: 4.5rem;
     margin-top: 2rem;
+  }
+  ${media.desktop} {
+    font-size: 5rem;
   }
 `;
 
@@ -99,6 +119,9 @@ export const ItemDescription = styled.p`
     margin-top: 1rem;
     padding: 0 2rem;
   }
+  ${media.desktop} {
+    font-size: 2.5rem;
+  }
 `;
 
 export const ItemDemo = styled.img`
@@ -111,6 +134,10 @@ export const ItemDemo = styled.img`
     width: 47rem;
     height: 30rem;
     margin-top: 5rem;
+  }
+  ${media.desktop} {
+    width: 49rem;
+    height: 31rem;
   }
 `;
 
@@ -135,6 +162,10 @@ const linkStyles = css`
         filter: drop-shadow(0 0.2rem 0.2rem black);
       }
     }
+  }
+  ${media.desktop} {
+    font-size: 3.5rem;
+    margin-top: 7rem;
   }
 `;
 
@@ -173,6 +204,12 @@ export const Github = styled(GithubSVG)`
       transition: all 0.2s ease-out;
     }
   }
+  ${media.desktop} {
+    height: 2.3rem;
+    width: 2.3rem;
+    top: -2rem;
+    left: 7.2rem;
+  }
 `;
 
 export const External = styled(ExternalSVG)`
@@ -187,5 +224,11 @@ export const External = styled(ExternalSVG)`
     top: -1.5rem;
     left: 5.4rem;
     transition: all 0.2s ease-out;
+  }
+  ${media.desktop} {
+    width: 2.2rem;
+    height: 2.2rem;
+    top: -1.8rem;
+    left: 6.2rem;
   }
 `;
