@@ -58,6 +58,11 @@ export const HomeWrapper = styled.div`
     left: 35%;
     width: 65rem;
   }
+  ${media.desktopL} {
+    width: 72rem;
+    height: 68rem;
+    top: 39%;
+  }
 `;
 
 export const HomeTitle = styled.h1`
@@ -72,6 +77,9 @@ export const HomeTitle = styled.h1`
   ${media.desktop} {
     font-size: 7rem;
   }
+  ${media.desktopL} {
+    font-size: 8rem;
+  }
 `;
 
 export const HomeSubtitle = styled.h2`
@@ -85,6 +93,9 @@ export const HomeSubtitle = styled.h2`
   }
   ${media.desktop} {
     font-size: 5rem;
+  }
+  ${media.desktopL} {
+    font-size: 5.5rem;
   }
 `;
 
@@ -101,6 +112,9 @@ export const HomeDescription = styled.p`
   ${media.desktop} {
     font-size: 2.1rem;
     width: 43ch;
+  }
+  ${media.desktopL} {
+    width: 47ch;
   }
 `;
 

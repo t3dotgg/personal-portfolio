@@ -17,6 +17,11 @@ export const TigerSVG = styled.svg`
     top: 46%;
     left: 76%;
   }
+  ${media.desktopL} {
+    height: 77rem;
+    top: 44%;
+    left: 77%;
+  }
 `;
 
 export const TigerGraphic = () => (
