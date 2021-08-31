@@ -20,7 +20,7 @@ import {
 export const Work = () => {
   return (
     <WorkSection>
-      <WorkTitle>Work.</WorkTitle>
+      <WorkTitle id="work">Work.</WorkTitle>
       <WorkDescription>
         Some recent side projects I have built, including demos, titles,
         descriptions and links.

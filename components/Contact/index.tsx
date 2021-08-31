@@ -10,7 +10,7 @@ import {
 export const Contact = () => {
   return (
     <ContactSection>
-      <ContactTitle>Contact.</ContactTitle>
+      <ContactTitle id="contact">Contact.</ContactTitle>
       <ContactDescription>
         The fastest way to get in touch with me is by sending me a message on
         <Link href="https://twitter.com/TAbrodi" passHref>

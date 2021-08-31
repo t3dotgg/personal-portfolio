@@ -23,7 +23,7 @@ export const Experience = () => {
 
   return (
     <ExperienceSection>
-      <ExperienceTitle>Experience.</ExperienceTitle>
+      <ExperienceTitle id="experience">Experience.</ExperienceTitle>
       <ExperienceDescription>
         Where I have worked and some of my contributions to the places.
       </ExperienceDescription>
