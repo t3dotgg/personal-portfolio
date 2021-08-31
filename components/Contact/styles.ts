@@ -52,7 +52,6 @@ export const ContactDescription = styled.p`
   }
   ${media.desktop} {
     width: 41ch;
-    font-size: 3rem;
   }
 `;
 
@@ -96,8 +95,5 @@ export const ContactLink = styled.a`
         box-shadow: 0 0.1rem 0.2rem black;
       }
     }
-  }
-  ${media.desktop} {
-    font-size: 2.8rem;
   }
 `;

@@ -120,7 +120,7 @@ export const AccordionButton = styled.button`
     transition: all 0.2s ease-out;
     &[aria-expanded="false"] {
       &:hover {
-        box-shadow: 0 0.2rem 0.2rem black;
+        box-shadow: 0 0.3rem 0.2rem black;
         transform: translateY(-0.2rem);
       }
     }
@@ -158,8 +158,8 @@ export const AccordionContent = styled.ul`
       height: 45rem;
       border: 0.3rem solid ${theme.Orange};
     }
-    ${media.desktop} {
-      height: 45rem;
+    ${media.desktopL} {
+      height: 51rem;
     }
     li {
       visibility: visible;

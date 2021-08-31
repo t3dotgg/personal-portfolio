@@ -89,6 +89,9 @@ export const IconsWrapper = styled.div`
   ${media.desktop} {
     left: 3%;
   }
+  ${media.desktopL} {
+    left: 2%;
+  }
 `;
 
 export const IconLink = styled.a`
@@ -175,7 +178,7 @@ export const NavLink = styled.a`
     &:hover {
       height: 6.3rem;
       &:active {
-        height: 5.7rem;
+        height: 5.9rem;
       }
       span {
         font-size: 2rem;

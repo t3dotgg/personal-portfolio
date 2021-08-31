@@ -28,7 +28,7 @@ export const FooterText = styled.p`
   display: flex;
   align-items: center;
   ${media.tablet} {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 `;
 
@@ -66,6 +66,6 @@ export const External = styled(ExternalSVG)`
     height: 2rem;
     width: 2rem;
     top: -2.2rem;
-    left: 13.6rem;
+    left: 12.5rem;
   }
 `;
