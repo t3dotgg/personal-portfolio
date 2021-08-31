@@ -39,6 +39,10 @@ export const LogoLink = styled.a`
     font-size: 3.5rem;
     margin-left: 3rem;
   }
+  ${media.desktopL} {
+    margin-left: 4rem;
+    font-size: 3.8rem;
+  }
 `;
 
 export const NarutoFace = styled(NarutoFaceSVG)`
@@ -52,6 +56,11 @@ export const NarutoFace = styled(NarutoFaceSVG)`
     margin-right: 2rem;
     position: relative;
     bottom: 0.5rem;
+  }
+  ${media.desktopL} {
+    margin-right: 3rem;
+    height: 6rem;
+    width: 6rem;
   }
 `;
 
@@ -233,6 +242,9 @@ export const SkipLink = styled.a`
       height: 6rem;
       font-size: 1.8rem;
       left: 2%;
+    }
+    ${media.desktopL} {
+      width: 24rem;
     }
   }
 `;
