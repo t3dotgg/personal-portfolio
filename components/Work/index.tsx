@@ -16,10 +16,13 @@ import {
   Github,
   External,
 } from "./styles";
+import { useOnScreen } from "../../hooks/useOnScreen";
 
 export const Work = () => {
+  const { isVisible, setIntersectingElement } = useOnScreen();
+
   return (
-    <WorkSection>
+    <WorkSection ref={setIntersectingElement} shouldFadeIn={isVisible}>
       <WorkTitle id="work">Work.</WorkTitle>
       <WorkDescription>
         Some recent side projects I have built, including demos, titles,

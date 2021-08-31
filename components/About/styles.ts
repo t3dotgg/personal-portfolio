@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import RightArrowSVG from "../../assets/right-arrow.svg";
 import { media } from "../../theme/media";
 import { theme } from "../../theme/theme";
 
-export const AboutSection = styled.section`
+export const AboutSection = styled.section<{ shouldFadeIn: boolean }>`
   display: grid;
   width: 100%;
   align-items: flex-start;
@@ -30,6 +30,15 @@ export const AboutSection = styled.section`
   ${media.desktop} {
     grid-template-rows: 14rem 19rem 57rem;
   }
+  transition: transform 1s, opacity 1.5s;
+  opacity: 0;
+  transform: translateY(2rem);
+  ${(props) =>
+    props.shouldFadeIn &&
+    css`
+      transform: translateY(-2rem);
+      opacity: 1;
+    `};
 `;
 
 export const AboutImage = styled.img`

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useOnScreen } from "../../hooks/useOnScreen";
 import {
   ExperienceDescription,
   ExperienceItem,
@@ -19,10 +20,12 @@ import {
 export const Experience = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
+  const { isVisible, setIntersectingElement } = useOnScreen();
+
   const toggleOpenState = () => setIsOpen(!isOpen);
 
   return (
-    <ExperienceSection>
+    <ExperienceSection ref={setIntersectingElement} shouldFadeIn={isVisible}>
       <ExperienceTitle id="experience">Experience.</ExperienceTitle>
       <ExperienceDescription>
         Where I have worked and some of my contributions to the places.

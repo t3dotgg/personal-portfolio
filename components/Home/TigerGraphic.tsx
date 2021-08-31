@@ -20,7 +20,7 @@ export const TigerSVG = styled.svg`
   ${media.desktopL} {
     height: 77rem;
     top: 44%;
-    left: 77%;
+    left: 74%;
   }
 `;
 

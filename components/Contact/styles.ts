@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { media } from "../../theme/media";
 import { focusStyles, secondFocusStyles } from "../../theme/sharedStyles";
 import { theme } from "../../theme/theme";
 
-export const ContactSection = styled.section`
+export const ContactSection = styled.section<{ shouldFadeIn: boolean }>`
   width: 100%;
   display: grid;
   justify-items: center;
@@ -21,6 +21,15 @@ export const ContactSection = styled.section`
   ${media.desktop} {
     grid-template-rows: 10rem 21rem 26rem;
   }
+  transition: transform 1s, opacity 1.5s;
+  opacity: 0;
+  transform: translateY(2rem);
+  ${(props) =>
+    props.shouldFadeIn &&
+    css`
+      transform: translateY(-2rem);
+      opacity: 1;
+    `};
 `;
 
 export const ContactTitle = styled.h1`

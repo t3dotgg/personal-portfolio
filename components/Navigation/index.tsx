@@ -25,6 +25,7 @@ import { useMedia } from "../../hooks/useMedia";
 export const Navigation = () => {
   const { isVisible, setIntersectingElement } = useOnScreen();
   const isTabletLayout = useMedia("min", "768");
+
   return (
     <>
       <IntersectingElement ref={setIntersectingElement} />

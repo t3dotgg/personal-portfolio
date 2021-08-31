@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { focusStyles } from "../../theme/sharedStyles";
 import { theme } from "../../theme/theme";
 import RightArrowSVG from "../../assets/right-arrow.svg";
@@ -6,7 +6,7 @@ import DownArrowSVG from "../../assets/down-arrow.svg";
 import UpArrowSVG from "../../assets/up-arrow.svg";
 import { media } from "../../theme/media";
 
-export const ExperienceSection = styled.section`
+export const ExperienceSection = styled.section<{ shouldFadeIn: boolean }>`
   width: 100%;
   display: grid;
   grid-template-areas: "title" "description" "items" ".";
@@ -25,6 +25,15 @@ export const ExperienceSection = styled.section`
   ${media.desktop} {
     grid-template-rows: 13rem 8rem 8rem auto;
   }
+  transition: transform 1s, opacity 1.5s;
+  opacity: 0;
+  transform: translateY(2rem);
+  ${(props) =>
+    props.shouldFadeIn &&
+    css`
+      transform: translateY(-2rem);
+      opacity: 1;
+    `};
 `;
 
 export const ExperienceTitle = styled.h1`

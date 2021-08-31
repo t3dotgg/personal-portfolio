@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useOnScreen } from "../../hooks/useOnScreen";
 import {
   ContactSection,
   ContactDescription,
@@ -8,8 +9,10 @@ import {
 } from "./styles";
 
 export const Contact = () => {
+  const { isVisible, setIntersectingElement } = useOnScreen();
+
   return (
-    <ContactSection>
+    <ContactSection ref={setIntersectingElement} shouldFadeIn={isVisible}>
       <ContactTitle id="contact">Contact.</ContactTitle>
       <ContactDescription>
         The fastest way to get in touch with me is by sending me a message on

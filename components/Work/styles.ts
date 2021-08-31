@@ -5,7 +5,7 @@ import ExternalSVG from "../../assets/external.svg";
 import { focusStyles } from "../../theme/sharedStyles";
 import { media } from "../../theme/media";
 
-export const WorkSection = styled.section`
+export const WorkSection = styled.section<{ shouldFadeIn: boolean }>`
   width: 100%;
   display: grid;
   justify-items: center;
@@ -23,6 +23,15 @@ export const WorkSection = styled.section`
   ${media.desktop} {
     grid-template-rows: 9rem 14rem auto;
   }
+  transition: transform 1s, opacity 1.5s;
+  opacity: 0;
+  transform: translateY(2rem);
+  ${(props) =>
+    props.shouldFadeIn &&
+    css`
+      transform: translateY(-2rem);
+      opacity: 1;
+    `};
 `;
 
 export const WorkTitle = styled.h1`
