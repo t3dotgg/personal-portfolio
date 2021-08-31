@@ -37,7 +37,7 @@ export const LogoLink = styled.a`
   ${focusStyles};
   ${media.tablet} {
     font-size: 3.5rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
 `;
 
