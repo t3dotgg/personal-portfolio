@@ -22,6 +22,9 @@ export const ExperienceSection = styled.section`
     grid-template-rows: 10rem 7rem 5rem auto;
     margin-top: 15rem;
   }
+  ${media.desktop} {
+    grid-template-rows: 13rem 8rem 8rem auto;
+  }
 `;
 
 export const ExperienceTitle = styled.h1`
@@ -32,6 +35,9 @@ export const ExperienceTitle = styled.h1`
   color: ${theme.Pink};
   ${media.tablet} {
     font-size: 6rem;
+  }
+  ${media.desktop} {
+    font-size: 8rem;
   }
 `;
 
@@ -46,6 +52,10 @@ export const ExperienceDescription = styled.p`
   ${media.tablet} {
     font-size: 3rem;
     width: 29ch;
+  }
+  ${media.desktop} {
+    font-size: 3rem;
+    width: 40ch;
   }
 `;
 
@@ -71,6 +81,9 @@ export const ExperienceItem = styled.li`
   left: 0.75rem;
   ${media.tablet} {
     width: 47rem;
+  }
+  ${media.desktop} {
+    width: 50rem;
   }
 `;
 
@@ -112,6 +125,10 @@ export const AccordionButton = styled.button`
       }
     }
   }
+  ${media.desktop} {
+    height: 8rem;
+    grid-template-rows: 85%;
+  }
 `;
 
 export const AccordionContent = styled.ul`
@@ -141,6 +158,9 @@ export const AccordionContent = styled.ul`
       height: 45rem;
       border: 0.3rem solid ${theme.Orange};
     }
+    ${media.desktop} {
+      height: 45rem;
+    }
     li {
       visibility: visible;
     }
@@ -159,6 +179,9 @@ export const AccordionButtonTextWrapper = styled.div`
   ${media.tablet} {
     font-size: 1.4rem;
   }
+  ${media.desktop} {
+    font-size: 1.7rem;
+  }
 `;
 
 export const AccordionButtonText = styled.span`
@@ -173,6 +196,10 @@ export const AccordionOpenArrow = styled(DownArrowSVG)`
     width: 6rem;
     height: 3rem;
   }
+  ${media.desktop} {
+    width: 7rem;
+    height: 4rem;
+  }
 `;
 
 export const AccordionCloseArrow = styled(UpArrowSVG)`
@@ -183,6 +210,10 @@ export const AccordionCloseArrow = styled(UpArrowSVG)`
   ${media.tablet} {
     height: 3rem;
     width: 6rem;
+  }
+  ${media.desktop} {
+    height: 4rem;
+    width: 7rem;
   }
 `;
 
@@ -204,6 +235,10 @@ export const AccordionRightArrow = styled(RightArrowSVG)`
     width: 1.5rem;
     height: 1.5rem;
   }
+  ${media.desktop} {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
 `;
 
 export const AccordionContentText = styled.p`
@@ -219,5 +254,8 @@ export const AccordionContentText = styled.p`
     bottom: 0.2rem;
     padding-left: 1rem;
     font-size: 1.4rem;
+  }
+  ${media.desktop} {
+    font-size: 1.5rem;
   }
 `;
