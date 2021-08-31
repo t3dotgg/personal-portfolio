@@ -18,6 +18,9 @@ export const ContactSection = styled.section`
     grid-template-rows: 7rem 19rem 22rem;
     margin-top: 16rem;
   }
+  ${media.desktop} {
+    grid-template-rows: 10rem 21rem 26rem;
+  }
 `;
 
 export const ContactTitle = styled.h1`
@@ -28,6 +31,9 @@ export const ContactTitle = styled.h1`
   color: ${theme.Pink};
   ${media.tablet} {
     font-size: 6rem;
+  }
+  ${media.desktop} {
+    font-size: 8rem;
   }
 `;
 
@@ -43,6 +49,10 @@ export const ContactDescription = styled.p`
     width: 35ch;
     font-size: 2.5rem;
     line-height: 1.3;
+  }
+  ${media.desktop} {
+    width: 41ch;
+    font-size: 3rem;
   }
 `;
 
@@ -86,5 +96,8 @@ export const ContactLink = styled.a`
         box-shadow: 0 0.1rem 0.2rem black;
       }
     }
+  }
+  ${media.desktop} {
+    font-size: 2.8rem;
   }
 `;
