@@ -27,6 +27,9 @@ export const AboutSection = styled.section`
     grid-template-rows: 11rem 14rem 57rem;
     width: 90vw;
   }
+  ${media.desktop} {
+    grid-template-rows: 14rem 19rem 57rem;
+  }
 `;
 
 export const AboutImage = styled.img`
@@ -43,6 +46,10 @@ export const AboutImage = styled.img`
     height: 25rem;
     box-shadow: 0 0.3rem 0.5rem black;
   }
+  ${media.desktop} {
+    width: 30rem;
+    height: 30rem;
+  }
 `;
 
 export const AboutTitle = styled.h1`
@@ -54,6 +61,9 @@ export const AboutTitle = styled.h1`
   ${media.tablet} {
     font-size: 6rem;
     align-self: flex-end;
+  }
+  ${media.desktop} {
+    font-size: 7rem;
   }
 `;
 
@@ -77,6 +87,10 @@ export const AboutTextWrapper = styled.p`
     height: 80%;
     line-height: 1.5;
     width: 27ch;
+  }
+  ${media.desktop} {
+    font-size: 2.3rem;
+    font-weight: 500;
   }
 `;
 
@@ -108,6 +122,9 @@ export const TechnologiesText = styled.p`
     font-size: 2.2rem;
     font-family: ${theme.Oxanium};
     line-height: 1.5;
+  }
+  ${media.desktop} {
+    font-size: 2.5rem;
   }
 `;
 
@@ -163,5 +180,8 @@ export const TechnologyText = styled.span`
   ${media.tablet} {
     font-size: 1.7rem;
     padding-left: 1rem;
+  }
+  ${media.desktop} {
+    font-size: 1.9rem;
   }
 `;
