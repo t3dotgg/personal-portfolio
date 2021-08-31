@@ -15,6 +15,9 @@ export const FooterWrapper = styled.footer`
     align-items: center;
     margin-top: 10rem;
   }
+  ${media.desktop} {
+    height: 17rem;
+  }
 `;
 
 export const FooterText = styled.p`
