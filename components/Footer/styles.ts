@@ -7,7 +7,7 @@ import { focusStyles } from "../../theme/sharedStyles";
 
 export const FooterWrapper = styled.footer`
   height: 13rem;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;

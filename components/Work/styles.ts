@@ -6,7 +6,7 @@ import { focusStyles } from "../../theme/sharedStyles";
 import { media } from "../../theme/media";
 
 export const WorkSection = styled.section`
-  width: 100vw;
+  width: 100%;
   display: grid;
   justify-items: center;
   align-items: center;

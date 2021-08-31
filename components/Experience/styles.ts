@@ -7,7 +7,7 @@ import UpArrowSVG from "../../assets/up-arrow.svg";
 import { media } from "../../theme/media";
 
 export const ExperienceSection = styled.section`
-  width: 100vw;
+  width: 100%;
   display: grid;
   grid-template-areas: "title" "description" "items" ".";
   grid-template-rows: 5rem 5rem auto 3rem;
@@ -64,7 +64,7 @@ export const ExperienceItemList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 100vw;
+  width: 100%;
   margin: 2rem 0;
   ${media.tablet} {
     margin: 0;

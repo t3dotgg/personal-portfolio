@@ -28,4 +28,6 @@ body div[id^="__next"] {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+  width: 100vw;
+  max-width: 100%;
 }

@@ -5,7 +5,7 @@ import { theme } from "../../theme/theme";
 
 export const HomeSection = styled.section`
   height: 43rem;
-  width: 100vw;
+  width: 100%;
   background-color: ${theme.DarkBrown};
   position: relative;
   ${media.custom(360)} {

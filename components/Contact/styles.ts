@@ -4,7 +4,7 @@ import { focusStyles, secondFocusStyles } from "../../theme/sharedStyles";
 import { theme } from "../../theme/theme";
 
 export const ContactSection = styled.section`
-  width: 100vw;
+  width: 100%;
   display: grid;
   justify-items: center;
   align-items: center;

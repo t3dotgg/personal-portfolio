@@ -5,7 +5,7 @@ import { theme } from "../../theme/theme";
 
 export const AboutSection = styled.section`
   display: grid;
-  width: 100vw;
+  width: 100%;
   align-items: flex-start;
   justify-items: center;
   align-content: space-between;

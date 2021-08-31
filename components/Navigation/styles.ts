@@ -5,7 +5,7 @@ import { focusStyles, secondFocusStyles } from "../../theme/sharedStyles";
 import { theme } from "../../theme/theme";
 
 export const NavigationWrapper = styled.nav<{ shouldShowShadow: boolean }>`
-  width: 100vw;
+  width: 100%;
   height: 6rem;
   display: flex;
   align-items: center;
