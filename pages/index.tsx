@@ -20,11 +20,13 @@ const Page: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <Home />
-      <About />
-      <Experience />
-      <Work />
-      <Contact />
+      <main>
+        <Home />
+        <About />
+        <Experience />
+        <Work />
+        <Contact />
+      </main>
       <Footer />
     </>
   );

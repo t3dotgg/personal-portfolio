@@ -70,22 +70,38 @@ export const Navigation = () => {
             href="https://www.linkedin.com/in/tiger-abrodi-467695195/"
             passHref
           >
-            <IconLink target="_blank" rel="noopener noreferrer">
+            <IconLink
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Linked In Profile"
+            >
               <LinkedinSVG aria-hidden="true" />
             </IconLink>
           </Link>
           <Link href="https://twitter.com/TAbrodi" passHref>
-            <IconLink target="_blank" rel="noopener noreferrer">
+            <IconLink
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter Profile"
+            >
               <TwitterSVG aria-hidden="true" />
             </IconLink>
           </Link>
           <Link href="https://github.com/tigerabrodi" passHref>
-            <IconLink target="_blank" rel="noopener noreferrer">
+            <IconLink
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Github Profile"
+            >
               <GithubSVG aria-hidden="true" />
             </IconLink>
           </Link>
           <Link href="https://tigerabrodi.hashnode.dev/" passHref>
-            <IconLink target="_blank" rel="noopener noreferrer">
+            <IconLink
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="My software engineering blog"
+            >
               <PenSVG aria-hidden="true" />
             </IconLink>
           </Link>
