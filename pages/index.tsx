@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { About } from "../components/About";
-import { Contact } from "../components/Contact";
-import { Experience } from "../components/Experience";
-import { Footer } from "../components/Footer";
-import { Home } from "../components/Home";
-import { Navigation } from "../components/Navigation";
-import { Work } from "../components/Work";
+import { About } from "../sections/About";
+import { Contact } from "../sections/Contact";
+import { Experience } from "../sections/Experience";
+import { Footer } from "../sections/Footer";
+import { Home } from "../sections/Home";
+import { Navigation } from "../sections/Navigation";
+import { Work } from "../sections/Work";
 
 const Page: NextPage = () => {
   return (
