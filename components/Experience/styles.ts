@@ -10,7 +10,7 @@ export const ExperienceSection = styled.section<{ shouldFadeIn: boolean }>`
   width: 100%;
   display: grid;
   grid-template-areas: "title" "description" "items" ".";
-  grid-template-rows: 5rem 5rem auto 3rem;
+  grid-template-rows: 5rem 4rem auto 10rem;
   align-items: center;
   justify-items: center;
   ${media.tablet} {
@@ -55,7 +55,7 @@ export const ExperienceDescription = styled.p`
   font-family: ${theme.Oxanium};
   font-size: 1.4rem;
   font-weight: 400;
-  width: 24ch;
+  width: 27ch;
   text-align: center;
   color: ${theme.Orange};
   ${media.tablet} {
@@ -74,7 +74,7 @@ export const ExperienceItemList = styled.ul`
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  margin: 2rem 0;
+  margin-top: 4rem;
   ${media.tablet} {
     margin: 0;
   }

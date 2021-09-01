@@ -7,6 +7,14 @@ export const TigerSVG = styled.svg`
   transform: translate(-50%, -50%);
   top: 80%;
   left: 70%;
+  ${media.custom(360)} {
+    top: 80%;
+    left: 69%;
+  }
+  ${media.custom(375)} {
+    top: 78%;
+    left: 69%;
+  }
   ${media.tablet} {
     top: 60%;
     height: 47rem;

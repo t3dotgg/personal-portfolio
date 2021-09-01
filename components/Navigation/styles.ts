@@ -70,7 +70,7 @@ export const IconsWrapper = styled.div`
   height: 15rem;
   width: 2rem;
   top: 46%;
-  left: 6%;
+  left: 5%;
   transform: translate(-50%, -50%);
   background-color: transparent;
   display: flex;
@@ -78,6 +78,7 @@ export const IconsWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   ${media.custom(360)} {
+    left: 6%;
     height: 17rem;
   }
   ${media.tablet} {

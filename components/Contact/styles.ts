@@ -9,7 +9,7 @@ export const ContactSection = styled.section<{ shouldFadeIn: boolean }>`
   justify-items: center;
   align-items: center;
   grid-template-areas: "title" "description" "link" ".";
-  grid-template-rows: 6rem 15rem 10rem 5rem;
+  grid-template-rows: 5rem 13rem 13rem 2rem;
   ${media.tablet} {
     grid-template-areas:
       "title"
@@ -51,13 +51,16 @@ export const ContactDescription = styled.p`
   font-family: ${theme.Montserrat};
   font-weight: 400;
   font-size: 1.4rem;
-  width: 25ch;
+  line-height: 1.3;
   text-align: center;
   color: ${theme.Orange};
+  width: 26ch;
+  ${media.custom(360)} {
+    width: 28ch;
+  }
   ${media.tablet} {
     width: 35ch;
     font-size: 2.5rem;
-    line-height: 1.3;
   }
   ${media.desktop} {
     width: 41ch;

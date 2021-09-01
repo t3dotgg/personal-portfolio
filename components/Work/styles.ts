@@ -11,7 +11,7 @@ export const WorkSection = styled.section<{ shouldFadeIn: boolean }>`
   justify-items: center;
   align-items: center;
   grid-template-areas: "title" "description" "list" ".";
-  grid-template-rows: 5rem 5rem auto 3rem;
+  grid-template-rows: 5rem 5rem auto 8rem;
   ${media.tablet} {
     margin-top: 15rem;
     grid-template-rows: 10rem 10rem auto;
@@ -80,13 +80,14 @@ export const WorkList = styled.ul`
 `;
 
 export const WorkItem = styled.li`
-  width: 21rem;
   display: grid;
   align-items: center;
   justify-items: center;
   grid-template-areas: "title title" "description description" "demo demo" "code live";
   border-bottom: 0.2rem solid ${theme.Orange};
-  padding-bottom: 0.5rem;
+  box-shadow: 0 0.3rem 1rem black;
+  padding-bottom: 1rem;
+  width: 25rem;
   ${media.tablet} {
     width: 55rem;
     border-bottom: 0.3rem solid ${theme.Orange};
@@ -106,6 +107,7 @@ export const ItemTitle = styled.h2`
   font-size: 2rem;
   color: ${theme.Pink};
   text-decoration: underline;
+  margin-top: 1rem;
   ${media.tablet} {
     font-size: 4.5rem;
     margin-top: 2rem;
@@ -123,10 +125,10 @@ export const ItemDescription = styled.p`
   margin-top: 0.5rem;
   text-align: center;
   color: ${theme.Orange};
+  padding: 0 2rem;
   ${media.tablet} {
     font-size: 2.3rem;
     margin-top: 1rem;
-    padding: 0 2rem;
   }
   ${media.desktop} {
     font-size: 2.5rem;
