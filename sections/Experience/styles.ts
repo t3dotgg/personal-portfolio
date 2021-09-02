@@ -25,7 +25,7 @@ export const ExperienceSection = styled.section<{ shouldFadeIn: boolean }>`
   ${media.desktop} {
     grid-template-rows: 13rem 8rem 8rem auto;
   }
-  transition: transform 1s, opacity 1.5s;
+  transition: transform 1s, opacity 2s;
   opacity: 0;
   transform: translateY(2rem);
   ${(props) =>

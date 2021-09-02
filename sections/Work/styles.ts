@@ -23,7 +23,7 @@ export const WorkSection = styled.section<{ shouldFadeIn: boolean }>`
   ${media.desktop} {
     grid-template-rows: 9rem 14rem auto;
   }
-  transition: transform 1s, opacity 1.5s;
+  transition: transform 1s, opacity 2s;
   opacity: 0;
   transform: translateY(2rem);
   ${(props) =>

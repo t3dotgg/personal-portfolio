@@ -30,7 +30,7 @@ export const AboutSection = styled.section<{ shouldFadeIn: boolean }>`
   ${media.desktop} {
     grid-template-rows: 14rem 19rem 57rem;
   }
-  transition: transform 1s, opacity 1.5s;
+  transition: transform 1s, opacity 2s;
   opacity: 0;
   transform: translateY(2rem);
   ${(props) =>
