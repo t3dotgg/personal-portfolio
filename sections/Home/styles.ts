@@ -1,7 +1,19 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { media } from "../../theme/media";
 import { focusStyles, secondFocusStyles } from "../../theme/sharedStyles";
 import { theme } from "../../theme/theme";
+
+const fadeUp = keyframes`
+  from {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
 
 export const HomeSection = styled.section`
   height: calc(100vh - 14rem);
@@ -14,7 +26,7 @@ export const HomeSection = styled.section`
 `;
 
 export const HomeWrapper = styled.div`
-  height: 30rem;
+  height: 28rem;
   width: 26rem;
   top: 41%;
   left: 53%;
@@ -32,11 +44,10 @@ export const HomeWrapper = styled.div`
   justify-items: flex-start;
   justify-content: space-between;
   ${media.custom(360)} {
-    top: 39%;
-    left: 53%;
-  }
-  ${media.custom(375)} {
+    height: 35rem;
     top: 41%;
+    grid-template-rows: 20% 10% 45% 1% 18%;
+    left: 51%;
   }
   ${media.tablet} {
     grid-template-areas:
@@ -69,6 +80,7 @@ export const HomeTitle = styled.h1`
   font-weight: bold;
   font-size: 4rem;
   color: ${theme.Red};
+  animation: ${fadeUp} 0.4s forwards;
   ${media.tablet} {
     font-size: 6rem;
   }
@@ -86,6 +98,8 @@ export const HomeSubtitle = styled.h2`
   font-family: ${theme.Montserrat};
   font-weight: 600;
   color: ${theme.Pink};
+  opacity: 0;
+  animation: ${fadeUp} 0.3s 0.2s forwards;
   ${media.tablet} {
     font-size: 4rem;
   }
@@ -100,9 +114,15 @@ export const HomeSubtitle = styled.h2`
 export const HomeDescription = styled.p`
   grid-area: description;
   font-family: ${theme.Montserrat};
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: ${theme.Orange};
+  opacity: 0;
+  animation: ${fadeUp} 0.3s 0.4s forwards;
+  ${media.custom(360)} {
+    font-size: 1.2rem;
+    align-self: center;
+  }
   ${media.tablet} {
     font-size: 1.8rem;
     align-self: center;
@@ -127,6 +147,8 @@ export const HomeLink = styled.a`
   font-weight: 500;
   font-size: 1.2rem;
   box-shadow: 0 0.1rem 0.2rem black;
+  opacity: 0;
+  animation: ${fadeUp} 0.3s 0.6s forwards;
   ${focusStyles}
   ${media.tablet} {
     box-shadow: none;

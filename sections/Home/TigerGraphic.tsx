@@ -1,5 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { media } from "../../theme/media";
+
+const fadeUp = keyframes`
+from {
+  transform: translate(-52%, -42%);
+  opacity: 0;
+}
+
+to {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+`;
 
 export const TigerSVG = styled.svg`
   position: absolute;
@@ -7,6 +19,8 @@ export const TigerSVG = styled.svg`
   transform: translate(-50%, -50%);
   top: 80%;
   left: 70%;
+  opacity: 0;
+  animation: ${fadeUp} 0.3s 1s forwards;
   ${media.custom(360)} {
     top: 80%;
     left: 69%;
