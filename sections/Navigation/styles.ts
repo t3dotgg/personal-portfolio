@@ -1,8 +1,20 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import NarutoFaceSVG from "../../assets/naruto-face.svg";
 import { media } from "../../theme/media";
 import { focusStyles, secondFocusStyles } from "../../theme/sharedStyles";
 import { theme } from "../../theme/theme";
+
+const fadeUp = keyframes`
+  from {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
 
 export const NavigationWrapper = styled.nav<{ shouldShowShadow: boolean }>`
   width: 100%;
@@ -103,6 +115,22 @@ export const IconLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  &:nth-of-type(1) {
+    animation: ${fadeUp} 0.3s 1.2s forwards;
+  }
+
+  &:nth-of-type(2) {
+    animation: ${fadeUp} 0.3s 1.3s forwards;
+  }
+
+  &:nth-of-type(3) {
+    animation: ${fadeUp} 0.3s 1.5s forwards;
+  }
+
+  &:nth-of-type(4) {
+    animation: ${fadeUp} 0.3s 1.6s forwards;
+  }
   .icon {
     width: 80%;
     height: 80%;
