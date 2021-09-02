@@ -24,6 +24,21 @@ body {
   background: var(--darkbrown);
 }
 
+body::-webkit-scrollbar {
+  width: 0.7rem;
+  background-color: #0a0d0e;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 0.3rem;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 0.3rem;
+  background-color: var(--orange);
+}
+
 body div[id^="__next"] {
   display: flex;
   align-items: center;
