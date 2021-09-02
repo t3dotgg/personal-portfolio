@@ -25,7 +25,7 @@ export const AboutSection = styled.section<{ shouldFadeIn: boolean }>`
       "text image"
       "text technologies";
     grid-template-rows: 11rem 14rem 57rem;
-    width: 90vw;
+    width: 85%;
   }
   ${media.desktop} {
     grid-template-rows: 14rem 19rem 57rem;
