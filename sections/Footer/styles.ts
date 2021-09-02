@@ -66,6 +66,6 @@ export const External = styled(ExternalSVG)`
     height: 2rem;
     width: 2rem;
     top: -2.2rem;
-    left: 12.5rem;
+    left: 12.6rem;
   }
 `;
