@@ -1,3 +1,4 @@
+import * as React from "react";
 import Link from "next/link";
 import LinkedinSVG from "../../assets/linkedin.svg";
 import GithubSVG from "../../assets/github.svg";
@@ -22,7 +23,11 @@ import {
 import { useOnScreen } from "../../hooks/useOnScreen";
 import { useMedia } from "../../hooks/useMedia";
 
-export const Navigation = () => {
+type MainRefProps = {
+  mainRef: React.MutableRefObject<HTMLElement | null>;
+};
+
+export const Navigation = ({ mainRef }: MainRefProps) => {
   const { isVisible, setIntersectingElement } = useOnScreen();
   const isTabletLayout = useMedia("min", "768");
 
@@ -30,8 +35,10 @@ export const Navigation = () => {
     <>
       <IntersectingElement ref={setIntersectingElement} />
       <NavigationWrapper shouldShowShadow={!isVisible}>
-        <Link href="#home" passHref>
-          <SkipLink>Skip The Navigation</SkipLink>
+        <Link href="#main" passHref>
+          <SkipLink onClick={() => mainRef.current?.focus()}>
+            Skip To Main Content
+          </SkipLink>
         </Link>
         <Link href="/" passHref>
           <LogoLink>Tiger Abrodi</LogoLink>

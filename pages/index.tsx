@@ -1,3 +1,4 @@
+import * as React from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { About } from "../sections/About";
@@ -9,6 +10,8 @@ import { Navigation } from "../sections/Navigation";
 import { Work } from "../sections/Work";
 
 const Page: NextPage = () => {
+  const mainRef = React.useRef<null | HTMLElement>(null);
+
   return (
     <>
       <Head>
@@ -19,8 +22,8 @@ const Page: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navigation />
-      <main>
+      <Navigation mainRef={mainRef} />
+      <main id="main" ref={mainRef} tabIndex={-1}>
         <Home />
         <About />
         <Experience />
