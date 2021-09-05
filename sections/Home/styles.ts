@@ -63,14 +63,15 @@ export const HomeWrapper = styled.div`
   }
   ${media.desktop} {
     height: 63rem;
-    top: 38%;
+    top: 40%;
     left: 35%;
     width: 65rem;
   }
   ${media.desktopL} {
     width: 72rem;
     height: 68rem;
-    top: 39%;
+    left: 30%;
+    top: 42%;
   }
 `;
 
@@ -151,7 +152,6 @@ export const HomeLink = styled.a`
   animation: ${fadeUp} 0.3s 0.6s forwards;
   ${focusStyles}
   ${media.tablet} {
-    box-shadow: none;
     font-weight: 600;
     border: 0.2rem solid ${theme.Orange};
     box-shadow: 0 0.2rem 0.2rem black;
@@ -159,14 +159,10 @@ export const HomeLink = styled.a`
     padding: 1.7rem 3rem;
     font-size: 2rem;
     position: relative;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in;
     &:hover {
       color: ${theme.DarkBrown};
-      transform: translateY(-0.2rem);
       background-color: ${theme.Orange};
-      &:active {
-        transform: scale(0.98);
-      }
     }
   }
   ${media.desktop} {

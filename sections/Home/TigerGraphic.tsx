@@ -40,9 +40,9 @@ export const TigerSVG = styled.svg`
     left: 76%;
   }
   ${media.desktopL} {
-    height: 77rem;
-    top: 44%;
-    left: 74%;
+    height: 80rem;
+    top: 46%;
+    left: 73%;
   }
 `;
 
