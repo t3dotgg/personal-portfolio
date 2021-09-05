@@ -110,7 +110,7 @@ export const IconsWrapper = styled.div`
 export const IconLink = styled.a`
   width: 2rem;
   height: 2rem;
-  color: ${theme.Red};
+  color: ${theme.Orange};
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -136,6 +136,9 @@ export const IconLink = styled.a`
     height: 80%;
     transition: all 0.2s;
     fill: currentColor;
+    path {
+      fill: currentColor;
+    }
   }
   ${focusStyles}
   ${media.tablet} {
@@ -143,12 +146,11 @@ export const IconLink = styled.a`
     height: 3.3rem;
     transition: all 0.2s;
     &:hover {
-      transform: translateY(-0.3rem);
       .icon {
-        fill: ${theme.Orange};
-        transform: scale(1.05);
+        fill: ${theme.Pink};
+        transform: scale(1.02) translateY(-0.2rem);
         path {
-          fill: ${theme.Orange};
+          fill: ${theme.Pink};
         }
       }
     }
