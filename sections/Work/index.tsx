@@ -21,7 +21,9 @@ export const Work = () => {
 
   return (
     <WorkSection ref={setIntersectingElement} shouldFadeIn={isVisible}>
-      <WorkTitle id="work">Work.</WorkTitle>
+      <WorkTitle id="work" tabIndex={-1}>
+        Work.
+      </WorkTitle>
       <WorkDescription>
         Some recent side projects I have built, including demos, titles,
         descriptions and links.

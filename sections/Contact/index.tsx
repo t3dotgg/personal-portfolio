@@ -13,7 +13,9 @@ export const Contact = () => {
 
   return (
     <ContactSection ref={setIntersectingElement} shouldFadeIn={isVisible}>
-      <ContactTitle id="contact">Contact.</ContactTitle>
+      <ContactTitle id="contact" tabIndex={-1}>
+        Contact.
+      </ContactTitle>
       <ContactDescription>
         The fastest way to get in touch with me is by sending me a message on
         <Link href="https://twitter.com/TAbrodi" passHref>

@@ -21,7 +21,9 @@ export const About = () => {
   return (
     <AboutSection ref={setIntersectingElement} shouldFadeIn={isVisible}>
       <AboutImage src={FaceImage.src} alt="Tiger, smiling brightly." />
-      <AboutTitle id="about">About Me.</AboutTitle>
+      <AboutTitle id="about" tabIndex={-1}>
+        About Me.
+      </AboutTitle>
       <AboutTextWrapper>
         <AboutText>
           Hi! I’m Tiger and I love crafting things for the web. I discovered my

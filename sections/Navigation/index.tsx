@@ -27,9 +27,16 @@ type MainRefProps = {
   mainRef: React.MutableRefObject<HTMLElement | null>;
 };
 
+type Ids = "about" | "experience" | "work" | "contact";
+
 export const Navigation = ({ mainRef }: MainRefProps) => {
   const { isVisible, setIntersectingElement } = useOnScreen();
   const isTabletLayout = useMedia("min", "768");
+
+  const focusOnId = (id: Ids) => {
+    const focusTarget = document.querySelector(`#${id}`) as HTMLElement;
+    focusTarget.focus();
+  };
 
   return (
     <>
@@ -46,25 +53,25 @@ export const Navigation = ({ mainRef }: MainRefProps) => {
         {isTabletLayout && (
           <>
             <Link href="#about" passHref>
-              <NavLink>
+              <NavLink onClick={() => focusOnId("about")}>
                 <FaceSVG aria-hidden="true" />
                 <LinkText>About</LinkText>
               </NavLink>
             </Link>
             <Link href="#experience" passHref>
-              <NavLink>
+              <NavLink onClick={() => focusOnId("experience")}>
                 <TimelineSVG aria-hidden="true" />
                 <LinkText>Experience</LinkText>
               </NavLink>
             </Link>
             <Link href="#work" passHref>
-              <NavLink>
+              <NavLink onClick={() => focusOnId("work")}>
                 <HammerSVG aria-hidden="true" />
                 <LinkText>Work</LinkText>
               </NavLink>
             </Link>
             <Link href="#contact" passHref>
-              <NavLink>
+              <NavLink onClick={() => focusOnId("contact")}>
                 <MailSVG aria-hidden="true" />
                 <LinkText>Contact</LinkText>
               </NavLink>

@@ -28,7 +28,9 @@ export const Experience = () => {
 
   return (
     <ExperienceSection ref={setIntersectingElement} shouldFadeIn={isVisible}>
-      <ExperienceTitle id="experience">Experience.</ExperienceTitle>
+      <ExperienceTitle id="experience" tabIndex={-1}>
+        Experience.
+      </ExperienceTitle>
       <ExperienceDescription>
         Where I have worked and some of my contributions to the places.
       </ExperienceDescription>
