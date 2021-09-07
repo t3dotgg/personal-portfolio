@@ -8,6 +8,11 @@ import { Footer } from "../sections/Footer";
 import { Home } from "../sections/Home";
 import { Navigation } from "../sections/Navigation";
 import { Work } from "../sections/Work";
+import FaceImage from "../../assets/avatar.jpeg";
+
+const title = "Tiger Abrodi's Portfolio";
+const description =
+  "About Tiger Abrodi, his experience, his work and how to contact him.";
 
 const Page: NextPage = () => {
   const mainRef = React.useRef<null | HTMLElement>(null);
@@ -15,12 +20,16 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Tiger Abrodis Personal Portfolio</title>
-        <meta
-          name="description"
-          content="More about Tiger Abrodi. His experience, about him, getting in touch with him and some of his work."
-        />
-        <link rel="icon" href="/favicon.ico" />
+        <title>{title}</title>
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@TAbrodi" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={FaceImage.src} />
+
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={FaceImage.src} />
       </Head>
       <Navigation mainRef={mainRef} />
       <main id="main" ref={mainRef} tabIndex={-1}>
