@@ -173,6 +173,10 @@ const linkStyles = css`
         filter: drop-shadow(0 0.2rem 0.2rem black);
       }
     }
+    &:active {
+      transform: translateY(0);
+      text-shadow: 0 0.2rem 0.2rem black;
+    }
   }
   ${media.desktop} {
     font-size: 3.5rem;
