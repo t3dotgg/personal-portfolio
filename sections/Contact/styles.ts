@@ -70,12 +70,29 @@ export const ContactDescription = styled.p`
 export const DescriptionLink = styled.a`
   color: ${theme.Pink};
   text-decoration: underline;
-  padding: 0 0.5rem;
   ${secondFocusStyles}
   ${media.tablet} {
+    display: inline-block;
     text-decoration: none;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.3rem;
+      transform-origin: left;
+      width: 102%;
+      height: 108%;
+      background-color: #f72405ba;
+      transform: scaleX(0) translateX(-0.1rem);
+      border-radius: 0.2rem;
+      transition: all 0.2s ease-out;
+      z-index: -5;
+    }
     &:hover {
-      text-decoration: underline;
+      &::after {
+        transform: scaleX(1) translateX(-0.1rem) rotate(-1deg);
+      }
     }
   }
 `;
