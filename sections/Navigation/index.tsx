@@ -19,6 +19,7 @@ import {
   LinkText,
   SkipLink,
   IntersectingElement,
+  NavigationTabletWrapper,
 } from "./styles";
 import { useOnScreen } from "../../hooks/useOnScreen";
 import { useMedia } from "../../hooks/useMedia";
@@ -51,32 +52,22 @@ export const Navigation = ({ mainRef }: MainRefProps) => {
           <LogoLink>Tiger Abrodi</LogoLink>
         </Link>
         {isTabletLayout && (
-          <>
+          <NavigationTabletWrapper>
             <Link href="#about" passHref>
-              <NavLink onClick={() => focusOnId("about")}>
-                <FaceSVG aria-hidden="true" />
-                <LinkText>About</LinkText>
-              </NavLink>
+              <NavLink onClick={() => focusOnId("about")}>About.</NavLink>
             </Link>
             <Link href="#experience" passHref>
               <NavLink onClick={() => focusOnId("experience")}>
-                <TimelineSVG aria-hidden="true" />
-                <LinkText>Experience</LinkText>
+                Experience.
               </NavLink>
             </Link>
             <Link href="#work" passHref>
-              <NavLink onClick={() => focusOnId("work")}>
-                <HammerSVG aria-hidden="true" />
-                <LinkText>Work</LinkText>
-              </NavLink>
+              <NavLink onClick={() => focusOnId("work")}>Work.</NavLink>
             </Link>
             <Link href="#contact" passHref>
-              <NavLink onClick={() => focusOnId("contact")}>
-                <MailSVG aria-hidden="true" />
-                <LinkText>Contact</LinkText>
-              </NavLink>
+              <NavLink onClick={() => focusOnId("contact")}>Contact.</NavLink>
             </Link>
-          </>
+          </NavigationTabletWrapper>
         )}
         <NarutoFace aria-hidden="true" />
         <IconsWrapper>

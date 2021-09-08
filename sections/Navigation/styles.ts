@@ -33,7 +33,17 @@ export const NavigationWrapper = styled.nav<{ shouldShowShadow: boolean }>`
       box-shadow: 0 0.3rem 0.2rem black;
     `};
   ${media.tablet} {
-    height: 11rem;
+    height: 9rem;
+  }
+`;
+
+export const NavigationTabletWrapper = styled.div`
+  ${media.tablet} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
   }
 `;
 
@@ -67,7 +77,6 @@ export const NarutoFace = styled(NarutoFaceSVG)`
     height: 5.5rem;
     margin-right: 2rem;
     position: relative;
-    bottom: 0.5rem;
   }
   ${media.desktopL} {
     margin-right: 3rem;
@@ -149,6 +158,7 @@ export const IconLink = styled.a`
       .icon {
         fill: ${theme.Pink};
         transform: scale(1.02) translateY(-0.2rem);
+        filter: drop-shadow(0 0.1rem 0.1rem ${theme.Pink});
         path {
           fill: ${theme.Pink};
         }
@@ -200,31 +210,36 @@ export const NavLink = styled.a`
     }
   }
   ${media.tablet} {
-    justify-content: space-between;
-    min-width: 11rem;
+    display: inline-block;
+    position: relative;
+    height: auto;
     width: auto;
-    height: 6rem;
-    transition: all 0.2s;
+    font-size: 2.2rem;
+    font-family: ${theme.Oxanium};
+    font-weight: 500;
+    transition: all 0.3s;
     ${focusStyles};
+    ${media.desktop} {
+      font-size: 2.4rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.2rem;
+      transform-origin: left;
+      width: 102%;
+      height: 110%;
+      background-color: #f72405ba;
+      transform: scaleX(0) translateX(-0.3rem);
+      border-radius: 0.2rem;
+      transition: all 0.2s ease-out;
+      z-index: -5;
+    }
     &:hover {
-      height: 6.3rem;
-      &:active {
-        height: 5.9rem;
-      }
-      span {
-        font-size: 2rem;
-        color: ${theme.Red};
-        ${media.desktop} {
-          font-size: 2.4rem;
-        }
-      }
-      .icon-nav {
-        fill: ${theme.Orange};
-        width: 3.2rem;
-        height: 3.2rem;
-        path {
-          fill: ${theme.Orange};
-        }
+      transform: scale(1.05);
+      &::after {
+        transform: scaleX(1) translateX(-0.1rem) rotate(-1deg);
       }
     }
   }
