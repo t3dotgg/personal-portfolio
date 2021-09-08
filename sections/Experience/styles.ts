@@ -130,7 +130,7 @@ export const AccordionButton = styled.button`
     &[aria-expanded="false"] {
       &:hover {
         box-shadow: 0 0.3rem 0.2rem black;
-        transform: translateY(-0.2rem);
+        transform: translateY(-0.4rem);
       }
     }
   }
