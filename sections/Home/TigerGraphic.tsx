@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { media } from "../../theme/media";
+import { theme } from "../../theme/theme";
 
 const fadeUp = keyframes`
 from {
@@ -20,6 +21,7 @@ export const TigerSVG = styled.svg`
   top: 80%;
   left: 70%;
   opacity: 0;
+  filter: drop-shadow(0 0.1rem 0.2rem ${theme.Orange});
   animation: ${fadeUp} 0.3s 1s forwards;
   ${media.custom(360)} {
     top: 80%;

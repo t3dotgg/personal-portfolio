@@ -159,7 +159,7 @@ export const HomeLink = styled.a`
     padding: 1.7rem 3rem;
     font-size: 2rem;
     position: relative;
-    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-out;
     &:hover {
       color: ${theme.DarkBrown};
       background-color: ${theme.Orange};
@@ -175,10 +175,29 @@ export const DescriptionLink = styled.a`
   text-decoration: underline;
   ${secondFocusStyles}
   ${media.tablet} {
+    display: inline-block;
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    position: relative;
+    transition: all 0.2s ease-out;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.35rem;
+      transform-origin: left;
+      width: 102%;
+      height: 105%;
+      background-color: #f72405ba;
+      transform: scaleX(0) translateX(-0.1rem);
+      border-radius: 0.2rem;
+      transition: all 0.2s ease-out;
+      z-index: -5;
+    }
     &:hover {
-      text-decoration: underline;
+      transform: scale(1.01);
+      &::after {
+        transform: scaleX(1) translateX(-0.1rem) rotate(-1deg);
+      }
     }
   }
 `;
