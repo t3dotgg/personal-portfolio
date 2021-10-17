@@ -34,7 +34,7 @@ export const Navigation = ({ mainRef }: MainRefProps) => {
   const { isVisible, setIntersectingElement } = useOnScreen();
   const isTabletLayout = useMedia("min", "768");
 
-  const focusOnId = (id: Ids) => {
+  const focusOnSection = (id: Ids) => {
     const focusTarget = document.querySelector(`#${id}`) as HTMLElement;
     focusTarget.focus();
   };
@@ -54,18 +54,20 @@ export const Navigation = ({ mainRef }: MainRefProps) => {
         {isTabletLayout && (
           <NavigationTabletWrapper>
             <Link href="#about" passHref>
-              <NavLink onClick={() => focusOnId("about")}>About.</NavLink>
+              <NavLink onClick={() => focusOnSection("about")}>About.</NavLink>
             </Link>
             <Link href="#experience" passHref>
-              <NavLink onClick={() => focusOnId("experience")}>
+              <NavLink onClick={() => focusOnSection("experience")}>
                 Experience.
               </NavLink>
             </Link>
             <Link href="#work" passHref>
-              <NavLink onClick={() => focusOnId("work")}>Work.</NavLink>
+              <NavLink onClick={() => focusOnSection("work")}>Work.</NavLink>
             </Link>
             <Link href="#contact" passHref>
-              <NavLink onClick={() => focusOnId("contact")}>Contact.</NavLink>
+              <NavLink onClick={() => focusOnSection("contact")}>
+                Contact.
+              </NavLink>
             </Link>
           </NavigationTabletWrapper>
         )}
