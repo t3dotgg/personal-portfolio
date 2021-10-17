@@ -18,7 +18,7 @@ const fadeUp = keyframes`
 
 export const NavigationWrapper = styled.nav<{ shouldShowShadow: boolean }>`
   width: 100%;
-  height: 6rem;
+  height: 7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,7 +33,7 @@ export const NavigationWrapper = styled.nav<{ shouldShowShadow: boolean }>`
       box-shadow: 0 0.3rem 0.2rem black;
     `};
   ${media.tablet} {
-    height: 9rem;
+    height: 11rem;
   }
 `;
 
@@ -70,7 +70,7 @@ export const LogoLink = styled.a`
 export const NarutoFace = styled(NarutoFaceSVG)`
   height: 4.2rem;
   width: 4.2rem;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   filter: drop-shadow(0 0 0.1rem ${theme.Red});
   ${media.tablet} {
     width: 5.5rem;
