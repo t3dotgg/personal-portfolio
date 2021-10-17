@@ -12,7 +12,6 @@ import {
   RightArrow,
   TechnologiesList,
 } from "./styles";
-import FaceImage from "../../assets/avatar.jpeg";
 import { useOnScreen } from "../../hooks/useOnScreen";
 import { firstTechnologyList, secondTechnologyList } from "./technologies";
 
@@ -21,7 +20,7 @@ export const About = () => {
 
   return (
     <AboutSection ref={setIntersectingElement} shouldFadeIn={isVisible}>
-      <AboutImage src={FaceImage.src} alt="Tiger, smiling brightly." />
+      <AboutImage src="/assets/avatar.jpeg" alt="Tiger, smiling brightly." />
       <AboutTitle id="about" tabIndex={-1}>
         About Me.
       </AboutTitle>
