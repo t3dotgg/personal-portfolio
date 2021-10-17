@@ -135,7 +135,7 @@ export const ItemDescription = styled.p`
   }
 `;
 
-export const ItemDemo = styled.img`
+export const ItemDemo = styled.video`
   grid-area: demo;
   width: 20rem;
   height: 13rem;

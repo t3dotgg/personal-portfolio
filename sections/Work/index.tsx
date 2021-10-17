@@ -41,10 +41,9 @@ export const Work = () => {
             <WorkItem key={id}>
               <ItemTitle>{title}</ItemTitle>
               <ItemDescription>{description}</ItemDescription>
-              <ItemDemo
-                alt="Demo showcasing the project, what it does and the problem it solves for people."
-                src={demoSource}
-              />
+              <ItemDemo autoPlay loop muted>
+                <source src={demoSource} />
+              </ItemDemo>
               <Link href={sourceCodeLink} passHref>
                 <ItemCodeLink target="_blank" rel="noopener noreferrer">
                   <Github aria-hidden="true" />
