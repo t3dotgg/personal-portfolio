@@ -14,6 +14,7 @@ import {
 } from "./styles";
 import FaceImage from "../../assets/avatar.jpeg";
 import { useOnScreen } from "../../hooks/useOnScreen";
+import { firstTechnologyList, secondTechnologyList } from "./technologies";
 
 export const About = () => {
   const { isVisible, setIntersectingElement } = useOnScreen();
@@ -45,73 +46,21 @@ export const About = () => {
         </TechnologiesText>
         <TechnologiesContainer>
           <TechnologiesList>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>React</TechnologyText>
-            </TechnologyItem>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>GraphQL (URQL)</TechnologyText>
-            </TechnologyItem>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>TypeScript</TechnologyText>
-            </TechnologyItem>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>Jest</TechnologyText>
-            </TechnologyItem>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>Cypress</TechnologyText>
-            </TechnologyItem>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>TDD</TechnologyText>
-            </TechnologyItem>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>NextJS</TechnologyText>
-            </TechnologyItem>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>XP Practices</TechnologyText>
-            </TechnologyItem>
+            {firstTechnologyList.map(({ text, id }) => (
+              <TechnologyItem key={id}>
+                <RightArrow aria-hidden="true" />
+                <TechnologyText>{text}</TechnologyText>
+              </TechnologyItem>
+            ))}
           </TechnologiesList>
 
           <TechnologiesList>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>Storybook</TechnologyText>
-            </TechnologyItem>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>Puppeteer</TechnologyText>
-            </TechnologyItem>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>Firebase</TechnologyText>
-            </TechnologyItem>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>Styled Components</TechnologyText>
-            </TechnologyItem>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>Interviewing</TechnologyText>
-            </TechnologyItem>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>Accessibility</TechnologyText>
-            </TechnologyItem>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>Figma</TechnologyText>
-            </TechnologyItem>
-            <TechnologyItem>
-              <RightArrow aria-hidden="true" />
-              <TechnologyText>Testing Library</TechnologyText>
-            </TechnologyItem>
+            {secondTechnologyList.map(({ text, id }) => (
+              <TechnologyItem key={id}>
+                <RightArrow aria-hidden="true" />
+                <TechnologyText>{text}</TechnologyText>
+              </TechnologyItem>
+            ))}
           </TechnologiesList>
         </TechnologiesContainer>
       </TechnologiesWrapper>
