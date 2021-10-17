@@ -24,7 +24,7 @@ export const Home = () => (
           </DescriptionLink>
         </Link>{" "}
         contributing to Open Source, volunteering in communities (KCD, OSRG,
-        Testing Library) and{" "}
+        Testing Library, Mock Service Worker) and{" "}
         <Link
           href="https://www.goodreads.com/review/list/127384537-tiger-abrodi?ref=nav_mybooks&shelf=read"
           passHref
