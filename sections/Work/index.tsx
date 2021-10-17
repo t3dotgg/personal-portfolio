@@ -37,11 +37,12 @@ export const Work = () => {
             sourceCodeLink,
             liveVersionLink,
             id,
+            ariaLabel,
           }) => (
             <WorkItem key={id}>
               <ItemTitle>{title}</ItemTitle>
               <ItemDescription>{description}</ItemDescription>
-              <ItemDemo autoPlay loop muted>
+              <ItemDemo autoPlay loop muted aria-label={ariaLabel}>
                 <source src={demoSource} />
               </ItemDemo>
               <Link href={sourceCodeLink} passHref>

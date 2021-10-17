@@ -6,6 +6,7 @@ export const projects = [
     sourceCodeLink: "https://github.com/tigerabrodi/Madara",
     liveVersionLink: "https://tigerabrodi-madara.netlify.app/",
     id: "1",
+    ariaLabel: "Show casing my project Madara",
   },
   {
     title: "Raveny",
@@ -15,6 +16,7 @@ export const projects = [
     sourceCodeLink: "https://github.com/tigerabrodi/Raveny",
     liveVersionLink: "https://raveny.netlify.app/",
     id: "2",
+    ariaLabel: "Show casing my project Raveny",
   },
   {
     title: "Konoha",
@@ -23,5 +25,6 @@ export const projects = [
     sourceCodeLink: "https://github.com/tigerabrodi/konoha",
     liveVersionLink: "https://tigerabrodi-konoha.netlify.app/",
     id: "3",
+    ariaLabel: "Show casing my project Konoha",
   },
 ];
