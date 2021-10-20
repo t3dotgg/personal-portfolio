@@ -87,13 +87,13 @@ export const WorkItem = styled.li`
   grid-template-areas: "title title" "description description" "demo demo" "code live";
   border-bottom: 0.2rem solid ${theme.Orange};
   box-shadow: 0 0.3rem 1rem black;
-  padding-bottom: 1rem;
+  padding-bottom: 10px;
   width: 25rem;
   ${media.tablet} {
     width: 55rem;
     border-bottom: 0.3rem solid ${theme.Orange};
     box-shadow: 0 0.3rem 1rem black;
-    padding-bottom: 2rem;
+    padding-bottom: 20px;
   }
   ${media.desktop} {
     width: 60rem;

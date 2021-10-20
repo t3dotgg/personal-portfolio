@@ -195,7 +195,7 @@ export const AccordionButtonTextWrapper = styled.div`
 `;
 
 export const AccordionButtonText = styled.span`
-  padding-left: 0.75rem;
+  padding-left: 7.5px;
 `;
 
 export const AccordionOpenArrow = styled(DownArrowSVG)`
@@ -232,9 +232,9 @@ export const AccordionContentItem = styled.li`
   align-items: flex-start;
   justify-content: space-between;
   width: auto;
-  padding-left: 1rem;
+  padding-left: 10px;
   ${media.tablet} {
-    padding-left: 2rem;
+    padding-left: 20px;
   }
 `;
 
@@ -255,7 +255,7 @@ export const AccordionContentText = styled.p`
   font-family: ${theme.Montserrat};
   color: ${theme.Orange};
   font-weight: 500;
-  padding-left: 0.5rem;
+  padding-left: 5px;
   font-size: 0.8rem;
   align-self: center;
   max-width: 43ch;

@@ -185,10 +185,10 @@ export const TechnologyText = styled.span`
   font-weight: 500;
   font-family: ${theme.Oxanium};
   color: ${theme.Orange};
-  padding-left: 0.5rem;
+  padding-left: 5px;
   ${media.tablet} {
     font-size: 1.7rem;
-    padding-left: 1rem;
+    padding-left: 10px;
   }
   ${media.desktop} {
     font-size: 1.9rem;
