@@ -31,12 +31,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  border-radius: 0.3rem;
+  border-radius: 3px;
   background-color: transparent;
 }
 
 body::-webkit-scrollbar-thumb {
-  border-radius: 0.3rem;
+  border-radius: 3px;
   background-color: var(--orange);
 }
 

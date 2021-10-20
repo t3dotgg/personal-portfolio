@@ -102,7 +102,7 @@ export const AccordionButton = styled.button`
   height: 5rem;
   position: relative;
   z-index: 5;
-  border-radius: 0.7rem;
+  border-radius: 7px;
   background-color: ${theme.Orange};
   display: grid;
   grid-template-areas: "text arrow";
@@ -123,7 +123,7 @@ export const AccordionButton = styled.button`
   ${focusStyles}
   ${media.tablet} {
     font-weight: 500;
-    border-radius: 0.5rem;
+    border-radius: 5px;
     grid-template-columns: 73% 27%;
     height: 6.3rem;
     cursor: pointer;
@@ -160,8 +160,8 @@ export const AccordionContent = styled.ul`
     height: 23rem;
     width: 100%;
     border: 2px solid ${theme.Orange};
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     box-shadow: 0 0.2rem 0.2rem black;
     transition: all 0.2s ease-in-out;
     ${media.tablet} {

@@ -85,7 +85,7 @@ export const DescriptionLink = styled.a`
       height: 108%;
       background-color: #f72405ba;
       transform: scaleX(0) translateX(-0.1rem);
-      border-radius: 0.2rem;
+      border-radius: 2px;
       transition: all 0.2s ease-out;
       z-index: -5;
     }
@@ -101,7 +101,7 @@ export const ContactLink = styled.a`
   grid-area: link;
   color: ${theme.Orange};
   text-decoration: none;
-  border-radius: 0.3rem;
+  border-radius: 3px;
   padding: 10px 15px;
   border: 1px solid ${theme.Orange};
   font-family: ${theme.Oxanium};

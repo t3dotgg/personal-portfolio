@@ -175,7 +175,7 @@ export const MobileNavigationWrapper = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  border-top: 0.2rem solid ${theme.Orange};
+  border-top: 2px solid ${theme.Orange};
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -232,7 +232,7 @@ export const NavLink = styled.a`
       height: 110%;
       background-color: #f72405ba;
       transform: scaleX(0) translateX(-0.3rem);
-      border-radius: 0.2rem;
+      border-radius: 2px;
       transition: all 0.2s ease-out;
       z-index: -5;
     }
