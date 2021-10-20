@@ -144,7 +144,7 @@ export const HomeLink = styled.a`
   text-decoration: none;
   border-radius: 0.3rem;
   padding: 10px 15px;
-  border: 0.1rem solid ${theme.Orange};
+  border: 1px solid ${theme.Orange};
   font-family: ${theme.Oxanium};
   font-weight: 500;
   font-size: 1.2rem;
@@ -154,7 +154,7 @@ export const HomeLink = styled.a`
   ${focusStyles}
   ${media.tablet} {
     font-weight: 600;
-    border: 0.2rem solid ${theme.Orange};
+    border: 2px solid ${theme.Orange};
     box-shadow: 0 0.2rem 0.2rem black;
     align-self: center;
     padding: 17px 30px;

@@ -103,7 +103,7 @@ export const ContactLink = styled.a`
   text-decoration: none;
   border-radius: 0.3rem;
   padding: 10px 15px;
-  border: 0.1rem solid ${theme.Orange};
+  border: 1px solid ${theme.Orange};
   font-family: ${theme.Oxanium};
   font-weight: 500;
   font-size: 1.2rem;
@@ -112,7 +112,7 @@ export const ContactLink = styled.a`
   ${media.tablet} {
     font-size: 2.5rem;
     padding: 20px 40px;
-    border: 0.2rem solid ${theme.Orange};
+    border: 2px solid ${theme.Orange};
     transition: all 0.2s ease-in;
     &:hover {
       background-color: ${theme.Orange};

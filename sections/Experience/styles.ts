@@ -159,14 +159,14 @@ export const AccordionContent = styled.ul`
     justify-content: space-evenly;
     height: 23rem;
     width: 100%;
-    border: 0.2rem solid ${theme.Orange};
+    border: 2px solid ${theme.Orange};
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
     box-shadow: 0 0.2rem 0.2rem black;
     transition: all 0.2s ease-in-out;
     ${media.tablet} {
       height: 45rem;
-      border: 0.3rem solid ${theme.Orange};
+      border: 3px solid ${theme.Orange};
     }
     ${media.desktopL} {
       height: 51rem;
