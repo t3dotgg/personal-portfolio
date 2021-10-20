@@ -35,11 +35,11 @@ export const FooterText = styled.p`
 export const Heart = styled(HeartSVG)`
   height: 2rem;
   width: 2rem;
-  margin: 0 0.5rem;
+  margin: 0 5px;
   ${media.tablet} {
     width: 4rem;
     height: 4rem;
-    margin: 0 0.75rem;
+    margin: 0 7.5px;
   }
 `;
 
