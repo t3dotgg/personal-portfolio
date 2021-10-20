@@ -113,6 +113,7 @@ export const HomeSubtitle = styled.h2`
 `;
 
 export const HomeDescription = styled.p`
+  line-height: 1.3;
   grid-area: description;
   font-family: ${theme.Montserrat};
   font-size: 1.1rem;

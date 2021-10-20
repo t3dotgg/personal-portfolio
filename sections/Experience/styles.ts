@@ -51,6 +51,7 @@ export const ExperienceTitle = styled.h1`
 `;
 
 export const ExperienceDescription = styled.p`
+  line-height: 1.5;
   grid-area: description;
   font-family: ${theme.Oxanium};
   font-size: 1.4rem;

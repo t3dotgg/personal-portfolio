@@ -48,6 +48,7 @@ export const WorkTitle = styled.h1`
 `;
 
 export const WorkDescription = styled.p`
+  line-height: 1.4;
   font-weight: 400;
   font-size: 1.4rem;
   font-family: ${theme.Montserrat};
