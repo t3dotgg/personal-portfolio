@@ -143,7 +143,7 @@ export const HomeLink = styled.a`
   color: ${theme.Orange};
   text-decoration: none;
   border-radius: 0.3rem;
-  padding: 1rem 1.5rem;
+  padding: 10px 15px;
   border: 0.1rem solid ${theme.Orange};
   font-family: ${theme.Oxanium};
   font-weight: 500;
@@ -157,7 +157,7 @@ export const HomeLink = styled.a`
     border: 0.2rem solid ${theme.Orange};
     box-shadow: 0 0.2rem 0.2rem black;
     align-self: center;
-    padding: 1.7rem 3rem;
+    padding: 17px 30px;
     font-size: 2rem;
     position: relative;
     transition: all 0.2s ease-out;

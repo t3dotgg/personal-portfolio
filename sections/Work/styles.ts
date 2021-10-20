@@ -126,7 +126,7 @@ export const ItemDescription = styled.p`
   margin-top: 0.5rem;
   text-align: center;
   color: ${theme.Orange};
-  padding: 0 2rem;
+  padding: 0 20px;
   ${media.tablet} {
     font-size: 2.3rem;
     margin-top: 1rem;
