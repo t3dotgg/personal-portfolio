@@ -13,7 +13,7 @@ export const FooterWrapper = styled.footer`
   align-items: flex-start;
   ${media.tablet} {
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 100px;
   }
   ${media.desktop} {
     height: 17rem;
@@ -47,10 +47,10 @@ export const FooterLink = styled.a`
   color: ${theme.Pink};
   position: relative;
   text-decoration: underline;
-  margin-left: 0.5rem;
+  margin-left: 5px;
   ${focusStyles}
   ${media.tablet} {
-    margin-left: 0.75rem;
+    margin-left: 7.5px;
   }
 `;
 

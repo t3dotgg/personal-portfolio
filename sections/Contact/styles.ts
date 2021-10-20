@@ -16,7 +16,7 @@ export const ContactSection = styled.section<{ shouldFadeIn: boolean }>`
       "description"
       "link";
     grid-template-rows: 7rem 21rem 22rem;
-    margin-top: 16rem;
+    margin-top: 160px;
   }
   ${media.desktop} {
     grid-template-rows: 10rem 23rem 26rem;

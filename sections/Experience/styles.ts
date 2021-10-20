@@ -20,7 +20,7 @@ export const ExperienceSection = styled.section<{ shouldFadeIn: boolean }>`
       "."
       "items";
     grid-template-rows: 10rem 7rem 5rem auto;
-    margin-top: 15rem;
+    margin-top: 150px;
   }
   ${media.desktop} {
     grid-template-rows: 13rem 8rem 8rem auto;
@@ -75,7 +75,7 @@ export const ExperienceItemList = styled.ul`
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 40px;
   ${media.tablet} {
     margin: 0;
   }

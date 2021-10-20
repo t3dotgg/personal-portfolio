@@ -16,7 +16,7 @@ export const AboutSection = styled.section<{ shouldFadeIn: boolean }>`
     "technologies"
     ".";
   grid-template-rows: 12rem 5rem 29rem 40rem 8rem;
-  margin-top: 4rem;
+  margin-top: 40px;
   ${media.tablet} {
     margin-top: 0;
     align-items: center;
@@ -115,7 +115,7 @@ export const TechnologiesWrapper = styled.div`
   justify-content: space-evenly;
   height: 100%;
   ${media.tablet} {
-    margin-top: 7rem;
+    margin-top: 70px;
     width: 100%;
   }
 `;

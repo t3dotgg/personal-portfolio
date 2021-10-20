@@ -13,7 +13,7 @@ export const WorkSection = styled.section<{ shouldFadeIn: boolean }>`
   grid-template-areas: "title" "description" "list" ".";
   grid-template-rows: 5rem 5rem auto 8rem;
   ${media.tablet} {
-    margin-top: 15rem;
+    margin-top: 150px;
     grid-template-rows: 10rem 10rem auto;
     grid-template-areas:
       "title"
@@ -69,13 +69,13 @@ export const WorkList = styled.ul`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 3rem;
+  margin-top: 30px;
   row-gap: 2rem;
   ${media.tablet} {
     row-gap: 8rem;
   }
   ${media.desktop} {
-    margin-top: 5rem;
+    margin-top: 50px;
     row-gap: 10rem;
   }
 `;
@@ -108,10 +108,10 @@ export const ItemTitle = styled.h2`
   font-size: 2rem;
   color: ${theme.Pink};
   text-decoration: underline;
-  margin-top: 1rem;
+  margin-top: 10px;
   ${media.tablet} {
     font-size: 4.5rem;
-    margin-top: 2rem;
+    margin-top: 20px;
   }
   ${media.desktop} {
     font-size: 5rem;
@@ -123,13 +123,13 @@ export const ItemDescription = styled.p`
   font-weight: 400;
   font-family: ${theme.Montserrat};
   font-size: 1.2rem;
-  margin-top: 0.5rem;
+  margin-top: 5px;
   text-align: center;
   color: ${theme.Orange};
   padding: 0 20px;
   ${media.tablet} {
     font-size: 2.3rem;
-    margin-top: 1rem;
+    margin-top: 10px;
   }
   ${media.desktop} {
     font-size: 2.5rem;
@@ -141,11 +141,11 @@ export const ItemDemo = styled.video`
   width: 20rem;
   height: 13rem;
   box-shadow: 0 0.2rem 0.4rem black;
-  margin-top: 2rem;
+  margin-top: 20px;
   ${media.tablet} {
     width: 47rem;
     height: 30rem;
-    margin-top: 5rem;
+    margin-top: 50px;
   }
   ${media.desktop} {
     width: 49rem;
@@ -160,11 +160,11 @@ const linkStyles = css`
   color: ${theme.Pink};
   text-decoration: none;
   position: relative;
-  margin-top: 3rem;
+  margin-top: 30px;
   ${focusStyles}
   ${media.tablet} {
     font-size: 3rem;
-    margin-top: 6rem;
+    margin-top: 60px;
     transition: all 0.2s ease-out;
     &:hover {
       transform: translateY(-0.2rem);
@@ -181,7 +181,7 @@ const linkStyles = css`
   }
   ${media.desktop} {
     font-size: 3.5rem;
-    margin-top: 7rem;
+    margin-top: 70px;
   }
 `;
 

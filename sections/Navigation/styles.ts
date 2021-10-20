@@ -53,16 +53,16 @@ export const LogoLink = styled.a`
   font-family: ${theme.Oxanium};
   font-weight: 700;
   font-size: 2.5rem;
-  margin-left: 1rem;
+  margin-left: 10px;
   text-shadow: 0 0.1rem hsl(18, 21%, 23%), 0 0.2rem hsl(18, 21%, 23%),
     0 0.3rem hsl(18, 21%, 23%), 0 0 1rem #f72405ba;
   ${focusStyles};
   ${media.tablet} {
     font-size: 3.5rem;
-    margin-left: 3rem;
+    margin-left: 30px;
   }
   ${media.desktopL} {
-    margin-left: 4rem;
+    margin-left: 40px;
     font-size: 3.8rem;
   }
 `;
@@ -70,16 +70,16 @@ export const LogoLink = styled.a`
 export const NarutoFace = styled(NarutoFaceSVG)`
   height: 4.2rem;
   width: 4.2rem;
-  margin-right: 1.5rem;
+  margin-right: 15px;
   filter: drop-shadow(0 0 0.1rem ${theme.Red});
   ${media.tablet} {
     width: 5.5rem;
     height: 5.5rem;
-    margin-right: 2rem;
+    margin-right: 20px;
     position: relative;
   }
   ${media.desktopL} {
-    margin-right: 3rem;
+    margin-right: 30px;
     height: 6rem;
     width: 6rem;
   }
