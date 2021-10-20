@@ -9,17 +9,17 @@ export const ContactSection = styled.section<{ shouldFadeIn: boolean }>`
   justify-items: center;
   align-items: center;
   grid-template-areas: "title" "description" "link" ".";
-  grid-template-rows: 5rem 13rem 13rem 2rem;
+  grid-template-rows: 5rem 15rem 13rem 2rem;
   ${media.tablet} {
     grid-template-areas:
       "title"
       "description"
       "link";
-    grid-template-rows: 7rem 19rem 22rem;
+    grid-template-rows: 7rem 21rem 22rem;
     margin-top: 16rem;
   }
   ${media.desktop} {
-    grid-template-rows: 10rem 21rem 26rem;
+    grid-template-rows: 10rem 23rem 26rem;
   }
   transition: transform 1s, opacity 2s;
   opacity: 0;
@@ -51,7 +51,7 @@ export const ContactDescription = styled.p`
   font-family: ${theme.Montserrat};
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 1.3;
+  line-height: 1.5;
   text-align: center;
   color: ${theme.Orange};
   width: 26ch;
