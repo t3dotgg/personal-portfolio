@@ -8,22 +8,12 @@ import { media } from "../../theme/media";
 
 export const ExperienceSection = styled.section<{ shouldFadeIn: boolean }>`
   width: 100%;
-  display: grid;
-  grid-template-areas: "title" "description" "items" ".";
-  grid-template-rows: 5rem 4rem auto 10rem;
+  display: flex;
   align-items: center;
-  justify-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
   ${media.tablet} {
-    grid-template-areas:
-      "title"
-      "description"
-      "."
-      "items";
-    grid-template-rows: 10rem 7rem 5rem auto;
     margin-top: 150px;
-  }
-  ${media.desktop} {
-    grid-template-rows: 13rem 8rem 8rem auto;
   }
   transition: transform 1s, opacity 2s;
   opacity: 0;
@@ -37,7 +27,6 @@ export const ExperienceSection = styled.section<{ shouldFadeIn: boolean }>`
 `;
 
 export const ExperienceTitle = styled.h1`
-  grid-area: title;
   font-family: ${theme.Oxanium};
   font-size: 3rem;
   font-weight: 600;
@@ -52,7 +41,6 @@ export const ExperienceTitle = styled.h1`
 
 export const ExperienceDescription = styled.p`
   line-height: 1.5;
-  grid-area: description;
   font-family: ${theme.Oxanium};
   font-size: 1.4rem;
   font-weight: 400;
@@ -70,7 +58,6 @@ export const ExperienceDescription = styled.p`
 `;
 
 export const ExperienceItemList = styled.ul`
-  grid-area: items;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -102,7 +89,7 @@ export const AccordionButton = styled.button`
   height: 5rem;
   position: relative;
   z-index: 5;
-  border-radius: 7px;
+  border-radius: 5px;
   background-color: ${theme.Orange};
   display: grid;
   grid-template-areas: "text arrow";
@@ -123,7 +110,6 @@ export const AccordionButton = styled.button`
   ${focusStyles}
   ${media.tablet} {
     font-weight: 500;
-    border-radius: 5px;
     grid-template-columns: 73% 27%;
     height: 6.3rem;
     cursor: pointer;
@@ -157,7 +143,7 @@ export const AccordionContent = styled.ul`
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    height: 23rem;
+    height: 33rem;
     width: 100%;
     border: 2px solid ${theme.Orange};
     border-bottom-right-radius: 10px;
@@ -239,11 +225,15 @@ export const AccordionContentItem = styled.li`
 `;
 
 export const AccordionRightArrow = styled(RightArrowSVG)`
-  width: 1rem;
+  min-height: 1rem;
+  min-width: 1rem;
   height: 1rem;
+  width: 1rem;
   ${media.tablet} {
     width: 1.5rem;
     height: 1.5rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
   }
   ${media.desktop} {
     width: 1.7rem;
@@ -256,13 +246,15 @@ export const AccordionContentText = styled.p`
   color: ${theme.Orange};
   font-weight: 500;
   padding-left: 5px;
+  padding-right: 5px;
   font-size: 0.8rem;
   align-self: center;
+  font-size: 1rem;
   max-width: 43ch;
   ${media.tablet} {
     position: relative;
     bottom: 0.2rem;
-    padding-left: 1rem;
+    padding-left: 10px;
     font-size: 1.4rem;
   }
   ${media.desktop} {
