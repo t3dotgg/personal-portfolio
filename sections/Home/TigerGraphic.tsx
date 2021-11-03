@@ -35,19 +35,9 @@ export const TigerSVG = styled.svg`
     left: 26.7rem;
   }
   ${media.tablet} {
-    top: 60%;
-    height: 47rem;
-    left: 73%;
-  }
-  ${media.desktop} {
-    height: 65rem;
-    top: 46%;
-    left: 76%;
-  }
-  ${media.desktopL} {
-    height: 80rem;
-    top: 46%;
-    left: 73%;
+    top: 65%;
+    left: 68%;
+    height: 53rem;
   }
 `;
 
