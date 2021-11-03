@@ -18,7 +18,8 @@ export const ContactSection = styled.section<{ shouldFadeIn: boolean }>`
     height: 34rem;
   }
   ${media.tablet} {
-    margin-top: 160px;
+    padding-bottom: 0;
+    height: 50rem;
   }
   ${(props) =>
     props.shouldFadeIn &&
