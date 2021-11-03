@@ -57,6 +57,11 @@ export const HomeWrapper = styled.div`
     width: 57rem;
     height: 52rem;
   }
+  ${media.desktop} {
+    width: 65rem;
+    height: 56rem;
+    left: 11%;
+  }
 `;
 
 export const HomeTitle = styled.h1`
@@ -109,7 +114,6 @@ export const HomeDescription = styled.p`
   margin-top: 1.5rem;
   ${media.custom(360)} {
     font-size: 1.2rem;
-    align-self: center;
     margin-top: 2.2rem;
   }
   ${media.custom(375)} {
@@ -122,14 +126,12 @@ export const HomeDescription = styled.p`
   }
   ${media.tablet} {
     font-size: 1.8rem;
-    align-self: center;
   }
   ${media.desktop} {
-    font-size: 2.1rem;
-    width: 43ch;
-  }
-  ${media.desktopL} {
-    width: 47ch;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    width: 52vw;
   }
 `;
 
