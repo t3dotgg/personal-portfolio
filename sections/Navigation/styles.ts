@@ -50,7 +50,7 @@ export const NavigationTabletWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
     height: 100%;
   }
 `;
@@ -81,7 +81,7 @@ export const NarutoFace = styled(NarutoFaceSVG)`
     height: 5.5rem;
     position: relative;
   }
-  ${media.desktopL} {
+  ${media.desktop} {
     height: 6rem;
     width: 6rem;
   }
@@ -119,6 +119,11 @@ export const IconsWrapper = styled.div`
     height: 40rem;
     left: 1.8rem;
     top: -2%;
+  }
+  ${media.desktop} {
+    height: 45rem;
+    left: 2.2rem;
+    top: -3%;
   }
 `;
 
