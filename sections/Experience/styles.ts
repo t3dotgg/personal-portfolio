@@ -78,7 +78,7 @@ export const ExperienceItem = styled.li`
     width: 55rem;
   }
   ${media.desktop} {
-    width: 50rem;
+    width: 65rem;
   }
 `;
 
@@ -120,7 +120,7 @@ export const AccordionButton = styled.button`
     }
   }
   ${media.desktop} {
-    height: 8rem;
+    height: 9rem;
     grid-template-rows: 85%;
   }
 `;
@@ -152,8 +152,8 @@ export const AccordionContent = styled.ul`
       border: 3px solid ${theme.Orange};
       height: 56rem;
     }
-    ${media.desktopL} {
-      height: 51rem;
+    ${media.desktop} {
+      height: 65rem;
     }
     li {
       visibility: visible;
@@ -256,6 +256,7 @@ export const AccordionContentText = styled.p`
     font-size: 1.7rem;
   }
   ${media.desktop} {
-    font-size: 1.5rem;
+    max-width: 55ch;
+    font-size: 1.7rem;
   }
 `;
