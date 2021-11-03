@@ -17,6 +17,12 @@ export const AboutSection = styled.section<{ shouldFadeIn: boolean }>`
     height: auto;
     padding-bottom: 160px;
   }
+  ${media.desktop} {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+  }
   transition: transform 1s, opacity 2s;
   opacity: 0;
   transform: translateY(2rem);
@@ -104,6 +110,10 @@ export const TechnologiesWrapper = styled.div`
   ${media.tablet} {
     margin-top: 70px;
     width: 100%;
+  }
+  ${media.desktop} {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
   }
 `;
 
