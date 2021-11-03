@@ -7,22 +7,10 @@ import { media } from "../../theme/media";
 
 export const WorkSection = styled.section<{ shouldFadeIn: boolean }>`
   width: 100%;
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  grid-template-areas: "title" "description" "list" ".";
-  grid-template-rows: 5rem 5rem auto 8rem;
-  ${media.tablet} {
-    margin-top: 150px;
-    grid-template-rows: 10rem 10rem auto;
-    grid-template-areas:
-      "title"
-      "description"
-      "list";
-  }
-  ${media.desktop} {
-    grid-template-rows: 9rem 14rem auto;
-  }
+  padding-bottom: 80px;
   transition: transform 1s, opacity 2s;
   opacity: 0;
   transform: translateY(2rem);
@@ -55,6 +43,10 @@ export const WorkDescription = styled.p`
   color: ${theme.Orange};
   text-align: center;
   width: 28ch;
+  margin-top: 5px;
+  ${media.custom(360)} {
+    width: 30ch;
+  }
   ${media.tablet} {
     font-size: 2.5rem;
     width: 30ch;
