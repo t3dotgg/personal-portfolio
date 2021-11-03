@@ -70,7 +70,9 @@ export const WorkList = styled.ul`
   align-items: center;
   justify-content: space-evenly;
   margin-top: 30px;
-  row-gap: 2rem;
+  row-gap: 5rem;
+  position: relative;
+  left: 0.5rem;
   ${media.tablet} {
     row-gap: 8rem;
   }
@@ -87,13 +89,14 @@ export const WorkItem = styled.li`
   grid-template-areas: "title title" "description description" "demo demo" "code live";
   border-bottom: 2px solid ${theme.Orange};
   box-shadow: 0 0.3rem 1rem black;
-  padding-bottom: 10px;
-  width: 25rem;
+  padding: 15px 0;
+  width: 80vw;
+  max-width: 28rem;
   ${media.tablet} {
     width: 55rem;
     border-bottom: 3px solid ${theme.Orange};
     box-shadow: 0 0.3rem 1rem black;
-    padding-bottom: 20px;
+    padding-bottom: 20px 0;
   }
   ${media.desktop} {
     width: 60rem;
@@ -105,13 +108,14 @@ export const ItemTitle = styled.h2`
   grid-area: title;
   font-weight: 600;
   font-family: ${theme.Oxanium};
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: ${theme.Pink};
   text-decoration: underline;
-  margin-top: 10px;
+  ${media.custom(360)} {
+    font-size: 2.5rem;
+  }
   ${media.tablet} {
     font-size: 4.5rem;
-    margin-top: 20px;
   }
   ${media.desktop} {
     font-size: 5rem;
@@ -123,7 +127,7 @@ export const ItemDescription = styled.p`
   font-weight: 400;
   font-family: ${theme.Montserrat};
   font-size: 1.2rem;
-  margin-top: 5px;
+  margin-top: 10px;
   text-align: center;
   color: ${theme.Orange};
   padding: 0 20px;
@@ -138,10 +142,10 @@ export const ItemDescription = styled.p`
 
 export const ItemDemo = styled.video`
   grid-area: demo;
-  width: 20rem;
+  width: auto;
   height: 13rem;
   box-shadow: 0 0.2rem 0.4rem black;
-  margin-top: 20px;
+  margin-top: 25px;
   ${media.tablet} {
     width: 47rem;
     height: 30rem;
@@ -160,7 +164,7 @@ const linkStyles = css`
   color: ${theme.Pink};
   text-decoration: none;
   position: relative;
-  margin-top: 30px;
+  margin-top: 35px;
   ${focusStyles}
   ${media.tablet} {
     font-size: 3rem;
