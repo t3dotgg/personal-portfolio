@@ -26,40 +26,35 @@ export const HomeSection = styled.section`
 `;
 
 export const HomeWrapper = styled.div`
-  height: 28rem;
+  height: 27rem;
   width: 26rem;
-  top: 41%;
-  left: 53%;
   position: absolute;
-  transform: translate(-50%, -50%);
-  display: grid;
-  grid-template-areas:
-    "title"
-    "subtitle"
-    "description"
-    "."
-    "link";
-  grid-template-rows: 20% 10% 40% 5% 20%;
-  align-items: flex-end;
-  justify-items: flex-start;
-  justify-content: space-between;
+  left: 3.7rem;
+  top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   ${media.custom(360)} {
-    height: 35rem;
-    top: 41%;
-    grid-template-rows: 20% 10% 45% 1% 18%;
-    left: 51%;
+    left: 4.3rem;
+    width: 28rem;
+    top: 3.5rem;
+  }
+  ${media.custom(375)} {
+    height: 31.5rem;
+    top: 4.2rem;
+    left: 4.5rem;
+  }
+  ${media.custom(410)} {
+    left: 5rem;
+    width: 30rem;
+    height: 33rem;
+    top: 5.5rem;
   }
   ${media.tablet} {
-    grid-template-areas:
-      "title"
-      "subtitle"
-      "description"
-      "link";
     height: 50rem;
     top: 35%;
     left: 40%;
     width: 52rem;
-    grid-template-rows: 20% 10% 40% 23%;
   }
   ${media.desktop} {
     height: 63rem;
@@ -76,7 +71,6 @@ export const HomeWrapper = styled.div`
 `;
 
 export const HomeTitle = styled.h1`
-  grid-area: title;
   font-family: ${theme.Montserrat};
   font-weight: bold;
   font-size: 4rem;
@@ -94,13 +88,16 @@ export const HomeTitle = styled.h1`
 `;
 
 export const HomeSubtitle = styled.h2`
-  grid-area: subtitle;
   font-size: 2rem;
   font-family: ${theme.Montserrat};
   font-weight: 600;
   color: ${theme.Pink};
+  margin-top: 0.5rem;
   opacity: 0;
   animation: ${fadeUp} 0.3s 0.2s forwards;
+  ${media.custom(360)} {
+    margin-top: 1rem;
+  }
   ${media.tablet} {
     font-size: 4rem;
   }
@@ -114,16 +111,25 @@ export const HomeSubtitle = styled.h2`
 
 export const HomeDescription = styled.p`
   line-height: 1.3;
-  grid-area: description;
   font-family: ${theme.Montserrat};
   font-size: 1.1rem;
   font-weight: 500;
   color: ${theme.Orange};
   opacity: 0;
   animation: ${fadeUp} 0.3s 0.4s forwards;
+  margin-top: 1.5rem;
   ${media.custom(360)} {
     font-size: 1.2rem;
     align-self: center;
+    margin-top: 2.2rem;
+  }
+  ${media.custom(375)} {
+    margin-top: 2.7rem;
+  }
+  ${media.custom(410)} {
+    margin-top: 2.7rem;
+    font-size: 1.3rem;
+    line-height: 1.4;
   }
   ${media.tablet} {
     font-size: 1.8rem;
@@ -139,7 +145,6 @@ export const HomeDescription = styled.p`
 `;
 
 export const HomeLink = styled.a`
-  grid-area: link;
   color: ${theme.Orange};
   text-decoration: none;
   border-radius: 3px;
@@ -149,9 +154,17 @@ export const HomeLink = styled.a`
   font-weight: 500;
   font-size: 1.2rem;
   box-shadow: 0 0.1rem 0.2rem black;
+  margin-top: auto;
   opacity: 0;
   animation: ${fadeUp} 0.3s 0.6s forwards;
   ${focusStyles}
+  ${media.custom(360)} {
+    font-size: 1.4rem;
+  }
+  ${media.custom(410)} {
+    font-size: 1.5rem;
+    padding: 12px 19px;
+  }
   ${media.tablet} {
     font-weight: 600;
     border: 2px solid ${theme.Orange};
