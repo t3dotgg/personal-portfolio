@@ -15,7 +15,7 @@ export const ContactSection = styled.section<{ shouldFadeIn: boolean }>`
   height: 32rem;
   padding-bottom: 2rem;
   ${media.custom(360)} {
-    height: 31rem;
+    height: 34rem;
   }
   ${media.tablet} {
     margin-top: 160px;
