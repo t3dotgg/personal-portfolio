@@ -14,6 +14,9 @@ export const WorkSection = styled.section<{ shouldFadeIn: boolean }>`
   transition: transform 1s, opacity 2s;
   opacity: 0;
   transform: translateY(2rem);
+  ${media.tablet} {
+    padding-bottom: 200px;
+  }
   ${(props) =>
     props.shouldFadeIn &&
     css`
@@ -28,7 +31,7 @@ export const WorkTitle = styled.h1`
   font-size: 3rem;
   color: ${theme.Pink};
   ${media.tablet} {
-    font-size: 7rem;
+    font-size: 6rem;
   }
   ${media.desktop} {
     font-size: 8rem;
@@ -85,7 +88,7 @@ export const WorkItem = styled.li`
   width: 80vw;
   max-width: 28rem;
   ${media.tablet} {
-    width: 55rem;
+    max-width: 55rem;
     border-bottom: 3px solid ${theme.Orange};
     box-shadow: 0 0.3rem 1rem black;
     padding-bottom: 20px 0;
@@ -139,7 +142,6 @@ export const ItemDemo = styled.video`
   box-shadow: 0 0.2rem 0.4rem black;
   margin-top: 25px;
   ${media.tablet} {
-    width: 47rem;
     height: 30rem;
     margin-top: 50px;
   }
