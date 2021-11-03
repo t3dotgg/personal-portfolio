@@ -113,19 +113,12 @@ export const IconsWrapper = styled.div`
   ${media.custom(410)} {
     left: 1rem;
     top: -10%;
-    height: 26 rem;
+    height: 26rem;
   }
   ${media.tablet} {
-    width: 4rem;
-    left: 4%;
-    height: 30%;
-    top: 50%;
-  }
-  ${media.desktop} {
-    left: 3%;
-  }
-  ${media.desktopL} {
-    left: 2%;
+    height: 40rem;
+    left: 1.8rem;
+    top: -2%;
   }
 `;
 
