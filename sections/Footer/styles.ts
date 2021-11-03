@@ -11,6 +11,9 @@ export const FooterWrapper = styled.footer`
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  ${media.custom(410)} {
+    height: 14rem;
+  }
   ${media.tablet} {
     align-items: center;
     margin-top: 100px;
