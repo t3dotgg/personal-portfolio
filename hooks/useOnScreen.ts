@@ -7,7 +7,7 @@ type Options = {
 };
 
 export const useOnScreen = (
-  { root = null, rootMargin = "0px", threshold = 0 } = {} as Options
+  { root = null, rootMargin = "0px", threshold = 0.2 } = {} as Options
 ) => {
   const [isVisible, setIsVisible] = useState(true);
   const [intersectingElement, setIntersectingElement] =
