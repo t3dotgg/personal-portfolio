@@ -5,25 +5,21 @@ import { theme } from "../../theme/theme";
 
 export const ContactSection = styled.section<{ shouldFadeIn: boolean }>`
   width: 100%;
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  grid-template-areas: "title" "description" "link" ".";
-  grid-template-rows: 5rem 15rem 13rem 2rem;
-  ${media.tablet} {
-    grid-template-areas:
-      "title"
-      "description"
-      "link";
-    grid-template-rows: 7rem 21rem 22rem;
-    margin-top: 160px;
-  }
-  ${media.desktop} {
-    grid-template-rows: 10rem 23rem 26rem;
-  }
+  align-items: center;
   transition: transform 1s, opacity 2s;
   opacity: 0;
   transform: translateY(2rem);
+  height: 32rem;
+  padding-bottom: 2rem;
+  ${media.custom(360)} {
+    height: 31rem;
+  }
+  ${media.tablet} {
+    margin-top: 160px;
+  }
   ${(props) =>
     props.shouldFadeIn &&
     css`
@@ -51,10 +47,11 @@ export const ContactDescription = styled.p`
   font-family: ${theme.Montserrat};
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 1.5;
+  line-height: 1.4;
   text-align: center;
   color: ${theme.Orange};
   width: 26ch;
+  margin-top: 2rem;
   ${media.custom(360)} {
     width: 28ch;
   }
@@ -108,7 +105,12 @@ export const ContactLink = styled.a`
   font-weight: 500;
   font-size: 1.2rem;
   box-shadow: 0 0.1rem 0.2rem black;
+  margin-top: auto;
   ${focusStyles}
+  ${media.custom(360)} {
+    font-size: 1.4rem;
+    padding: 10px 20px;
+  }
   ${media.tablet} {
     font-size: 2.5rem;
     padding: 20px 40px;
