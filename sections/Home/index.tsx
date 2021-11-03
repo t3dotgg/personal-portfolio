@@ -8,6 +8,7 @@ import {
   HomeTitle,
   HomeWrapper,
   DescriptionLink,
+  LinkWrapper,
 } from "./styles";
 
 export const Home = () => (
@@ -16,7 +17,7 @@ export const Home = () => (
       <HomeTitle id="home">Hi, I&apos;m Tiger.</HomeTitle>
       <HomeSubtitle>I craft things for the web.</HomeSubtitle>
       <HomeDescription>
-        I’m a Frontend Craftsman based in Germany who is heavily into
+        I’m a Software Craftsman based in Germany who is heavily into
         Accessibility and Testing. I like building side projects,{" "}
         <Link href="https://tigerabrodi.hashnode.dev/" passHref>
           <DescriptionLink target="_blank" rel="noopener noreferrer">
@@ -34,9 +35,11 @@ export const Home = () => (
           </DescriptionLink>
         </Link>{" "}
       </HomeDescription>
-      <Link href="mailto:tigerabrodi@gmail.com" passHref>
-        <HomeLink>Get In Touch</HomeLink>
-      </Link>
+      <LinkWrapper>
+        <Link href="mailto:tigerabrodi@gmail.com" passHref>
+          <HomeLink>Get In Touch</HomeLink>
+        </Link>
+      </LinkWrapper>
     </HomeWrapper>
     <TigerGraphic />
   </HomeSection>
