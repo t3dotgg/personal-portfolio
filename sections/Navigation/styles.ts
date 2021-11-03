@@ -67,7 +67,7 @@ export const LogoLink = styled.a`
   ${media.tablet} {
     font-size: 3.5rem;
   }
-  ${media.desktopL} {
+  ${media.laptop} {
     font-size: 3.8rem;
   }
 `;
@@ -311,7 +311,7 @@ export const SkipLink = styled.a`
       font-size: 1.8rem;
       left: 2%;
     }
-    ${media.desktopL} {
+    ${media.laptop} {
       width: 24rem;
     }
   }

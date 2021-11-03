@@ -76,7 +76,7 @@ export const HomeTitle = styled.h1`
   ${media.desktop} {
     font-size: 7rem;
   }
-  ${media.desktopL} {
+  ${media.laptop} {
     font-size: 8rem;
   }
 `;
@@ -98,7 +98,7 @@ export const HomeSubtitle = styled.h2`
   ${media.desktop} {
     font-size: 5rem;
   }
-  ${media.desktopL} {
+  ${media.laptop} {
     font-size: 5.5rem;
   }
 `;
