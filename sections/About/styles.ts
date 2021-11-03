@@ -14,6 +14,8 @@ export const AboutSection = styled.section<{ shouldFadeIn: boolean }>`
   ${media.tablet} {
     margin-top: 0;
     width: 85%;
+    height: auto;
+    padding-bottom: 160px;
   }
   transition: transform 1s, opacity 2s;
   opacity: 0;
@@ -53,10 +55,10 @@ export const AboutTitle = styled.h1`
   margin-top: 10px;
   ${media.tablet} {
     font-size: 6rem;
-    align-self: flex-end;
+    margin-top: 30px;
   }
   ${media.desktop} {
-    font-size: 7rem;
+    font-size: 8rem;
   }
 `;
 
@@ -77,11 +79,11 @@ export const AboutTextWrapper = styled.p`
   row-gap: 25px;
   ${media.tablet} {
     font-size: 2rem;
-    align-self: flex-start;
     justify-content: space-evenly;
     height: 80%;
-    line-height: 1.5;
-    width: 27ch;
+    margin-top: 40px;
+    width: 80%;
+    line-height: 1.7;
   }
   ${media.desktop} {
     font-size: 2.3rem;
@@ -114,9 +116,10 @@ export const TechnologiesText = styled.p`
   line-height: 1.5;
   font-size: 1.5rem;
   ${media.tablet} {
-    font-size: 2.2rem;
     font-family: ${theme.Oxanium};
     line-height: 1.5;
+    font-size: 2.7rem;
+    width: 40ch;
   }
   ${media.desktop} {
     font-size: 2.5rem;
@@ -148,7 +151,10 @@ export const TechnologiesList = styled.ul`
   row-gap: 20px;
   margin-top: 50px;
   ${media.tablet} {
+    row-gap: 60px;
     align-items: center;
+    width: auto;
+    margin-top: 70px;
   }
 `;
 
@@ -175,7 +181,7 @@ export const TechnologyText = styled.span`
   padding-left: 5px;
   font-size: 1.2rem;
   ${media.tablet} {
-    font-size: 1.7rem;
+    font-size: 2rem;
     padding-left: 10px;
   }
   ${media.desktop} {
