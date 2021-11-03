@@ -62,6 +62,11 @@ export const HomeWrapper = styled.div`
     height: 56rem;
     left: 11%;
   }
+  ${media.laptop} {
+    width: 72rem;
+    height: 63rem;
+    top: 10%;
+  }
 `;
 
 export const HomeTitle = styled.h1`
@@ -77,7 +82,7 @@ export const HomeTitle = styled.h1`
     font-size: 7rem;
   }
   ${media.laptop} {
-    font-size: 8rem;
+    font-size: 9rem;
   }
 `;
 
@@ -100,6 +105,7 @@ export const HomeSubtitle = styled.h2`
   }
   ${media.laptop} {
     font-size: 5.5rem;
+    margin-top: 1.5rem;
   }
 `;
 
@@ -132,6 +138,10 @@ export const HomeDescription = styled.p`
     font-size: 2rem;
     line-height: 1.5;
     width: 52vw;
+  }
+  ${media.laptop} {
+    width: 73rem;
+    margin-top: 4rem;
   }
 `;
 
