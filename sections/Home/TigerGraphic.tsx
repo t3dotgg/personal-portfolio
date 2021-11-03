@@ -15,21 +15,24 @@ to {
 `;
 
 export const TigerSVG = styled.svg`
-  position: absolute;
-  height: 20rem;
-  transform: translate(-50%, -50%);
-  top: 80%;
-  left: 70%;
-  opacity: 0;
   filter: drop-shadow(0 0.1rem 0.2rem ${theme.Orange});
   animation: ${fadeUp} 0.3s 1s forwards;
+  transform: translate(-50%, 100%);
+  opacity: 0;
+  position: absolute;
+  top: 78%;
+  height: 20rem;
+  left: 21.5rem;
   ${media.custom(360)} {
-    top: 80%;
-    left: 69%;
+    left: 23.7rem;
+    height: 25.5rem;
   }
   ${media.custom(375)} {
-    top: 78%;
-    left: 69%;
+    left: 24.4rem;
+  }
+  ${media.custom(410)} {
+    top: 76%;
+    left: 26.7rem;
   }
   ${media.tablet} {
     top: 60%;
