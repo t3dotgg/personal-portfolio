@@ -22,7 +22,7 @@ import {
 export const Experience = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const { isVisible, setIntersectingElement } = useOnScreen();
+  const { isVisible, setIntersectingElement } = useOnScreen({ threshold: 0.5 });
 
   const toggleOpenState = () => setIsOpen(!isOpen);
 
