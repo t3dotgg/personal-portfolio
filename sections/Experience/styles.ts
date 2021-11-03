@@ -259,4 +259,7 @@ export const AccordionContentText = styled.p`
     max-width: 55ch;
     font-size: 1.7rem;
   }
+  ${media.laptop} {
+    line-height: 1.5;
+  }
 `;
