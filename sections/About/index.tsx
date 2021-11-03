@@ -35,8 +35,9 @@ export const About = () => {
           since, it has been a wonderful adventure for me.
         </AboutText>
         <AboutText>
-          If I’m not doing anything coding-related, I enjoy lifting weights,
-          doing kickboxing, watching anime or spending time with my family.
+          If I’m not doing anything coding-related, I enjoy doing calisthenics,
+          running, doing kickboxing, watching anime or spending time with my
+          family.
         </AboutText>
       </AboutTextWrapper>
       <TechnologiesWrapper>
