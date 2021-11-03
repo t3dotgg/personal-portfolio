@@ -94,7 +94,8 @@ export const WorkItem = styled.li`
     padding-bottom: 20px 0;
   }
   ${media.desktop} {
-    width: 60rem;
+    max-width: 60rem;
+    padding: 30px 0;
     border-bottom: 5px solid ${theme.Orange};
   }
 `;
