@@ -125,6 +125,9 @@ export const IconsWrapper = styled.div`
     left: 2.2rem;
     top: -3%;
   }
+  ${media.laptop} {
+    left: 2.5rem;
+  }
 `;
 
 export const IconLink = styled.a`
