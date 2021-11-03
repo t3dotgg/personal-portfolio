@@ -12,9 +12,6 @@ export const ExperienceSection = styled.section<{ shouldFadeIn: boolean }>`
   align-items: center;
   flex-direction: column;
   padding-bottom: 50px;
-  ${media.tablet} {
-    margin-top: 150px;
-  }
   transition: transform 1s, opacity 2s;
   opacity: 0;
   transform: translateY(2rem);
@@ -50,6 +47,7 @@ export const ExperienceDescription = styled.p`
   ${media.tablet} {
     font-size: 3rem;
     width: 29ch;
+    margin-top: 15px;
   }
   ${media.desktop} {
     font-size: 3rem;
@@ -64,7 +62,7 @@ export const ExperienceItemList = styled.ul`
   width: 100%;
   margin-top: 40px;
   ${media.tablet} {
-    margin: 0;
+    margin-top: 80px;
   }
 `;
 
@@ -77,7 +75,7 @@ export const ExperienceItem = styled.li`
   position: relative;
   left: 0.75rem;
   ${media.tablet} {
-    width: 47rem;
+    width: 55rem;
   }
   ${media.desktop} {
     width: 50rem;
@@ -111,7 +109,7 @@ export const AccordionButton = styled.button`
   ${media.tablet} {
     font-weight: 500;
     grid-template-columns: 73% 27%;
-    height: 6.3rem;
+    height: 8rem;
     cursor: pointer;
     transition: all 0.2s ease-out;
     &[aria-expanded="false"] {
@@ -151,8 +149,8 @@ export const AccordionContent = styled.ul`
     box-shadow: 0 0.2rem 0.2rem black;
     transition: all 0.2s ease-in-out;
     ${media.tablet} {
-      height: 45rem;
       border: 3px solid ${theme.Orange};
+      height: 56rem;
     }
     ${media.desktopL} {
       height: 51rem;
@@ -173,7 +171,7 @@ export const AccordionButtonTextWrapper = styled.div`
   height: 100%;
   justify-content: space-between;
   ${media.tablet} {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   ${media.desktop} {
     font-size: 1.7rem;
@@ -230,10 +228,10 @@ export const AccordionRightArrow = styled(RightArrowSVG)`
   height: 1rem;
   width: 1rem;
   ${media.tablet} {
-    width: 1.5rem;
-    height: 1.5rem;
-    min-height: 1.5rem;
-    min-width: 1.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    min-height: 1.8rem;
+    min-width: 1.8rem;
   }
   ${media.desktop} {
     width: 1.7rem;
@@ -255,7 +253,7 @@ export const AccordionContentText = styled.p`
     position: relative;
     bottom: 0.2rem;
     padding-left: 10px;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
   ${media.desktop} {
     font-size: 1.5rem;
