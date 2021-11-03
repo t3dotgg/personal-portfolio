@@ -18,7 +18,8 @@ const fadeUp = keyframes`
 
 export const NavigationWrapper = styled.nav<{ shouldShowShadow: boolean }>`
   width: 100%;
-  height: 7rem;
+  flex: 0 0 7rem;
+  padding: 0 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,8 +33,15 @@ export const NavigationWrapper = styled.nav<{ shouldShowShadow: boolean }>`
     css`
       box-shadow: 0 0.3rem 0.2rem black;
     `};
+  ${media.custom(410)} {
+    flex: 0 0 8rem;
+  }
   ${media.tablet} {
-    height: 11rem;
+    flex: 0 0 11rem;
+    padding: 0 20px;
+  }
+  ${media.desktop} {
+    padding: 0 30px;
   }
 `;
 
@@ -53,16 +61,13 @@ export const LogoLink = styled.a`
   font-family: ${theme.Oxanium};
   font-weight: 700;
   font-size: 2.5rem;
-  margin-left: 10px;
   text-shadow: 0 0.1rem hsl(18, 21%, 23%), 0 0.2rem hsl(18, 21%, 23%),
     0 0.3rem hsl(18, 21%, 23%), 0 0 1rem #f72405ba;
   ${focusStyles};
   ${media.tablet} {
     font-size: 3.5rem;
-    margin-left: 30px;
   }
   ${media.desktopL} {
-    margin-left: 40px;
     font-size: 3.8rem;
   }
 `;
@@ -70,16 +75,13 @@ export const LogoLink = styled.a`
 export const NarutoFace = styled(NarutoFaceSVG)`
   height: 4.2rem;
   width: 4.2rem;
-  margin-right: 15px;
   filter: drop-shadow(0 0 0.1rem ${theme.Red});
   ${media.tablet} {
     width: 5.5rem;
     height: 5.5rem;
-    margin-right: 20px;
     position: relative;
   }
   ${media.desktopL} {
-    margin-right: 30px;
     height: 6rem;
     width: 6rem;
   }
@@ -88,24 +90,35 @@ export const NarutoFace = styled(NarutoFaceSVG)`
 export const IconsWrapper = styled.div`
   position: fixed;
   z-index: 10;
-  height: 15rem;
+  height: 16rem;
   width: 2rem;
-  top: 46%;
-  left: 5%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+  top: -7%;
+  left: 0.7rem;
   background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   ${media.custom(360)} {
-    left: 6%;
-    height: 17rem;
+    height: 20rem;
+    left: 0.85rem;
+  }
+  ${media.custom(375)} {
+    height: 22rem;
+    top: -10%;
+  }
+  ${media.custom(410)} {
+    left: 1rem;
+    top: -10%;
+    height: 26 rem;
   }
   ${media.tablet} {
     width: 4rem;
     left: 4%;
-    height: 30vh;
+    height: 30%;
     top: 50%;
   }
   ${media.desktop} {
@@ -125,6 +138,10 @@ export const IconLink = styled.a`
   align-items: center;
   justify-content: center;
   opacity: 0;
+  ${media.custom(410)} {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
   &:nth-of-type(1) {
     animation: ${fadeUp} 0.3s 1.2s forwards;
   }
@@ -168,7 +185,7 @@ export const IconLink = styled.a`
 `;
 
 export const MobileNavigationWrapper = styled.div`
-  width: 100vw;
+  width: 100%;
   z-index: 10;
   height: 8rem;
   position: fixed;
@@ -181,6 +198,10 @@ export const MobileNavigationWrapper = styled.div`
   justify-content: space-evenly;
   box-shadow: 0 -0.5rem 1rem black;
   background-color: ${theme.DarkBrown};
+  opacity: 1;
+  ${media.custom(410)} {
+    height: 9rem;
+  }
   ${media.tablet} {
     display: none;
   }
@@ -299,7 +320,7 @@ export const SkipLink = styled.a`
 `;
 
 export const IntersectingElement = styled.div`
-  height: 0.1rem;
+  height: 0.2rem;
   width: 100%;
   position: absolute;
   top: 0;
