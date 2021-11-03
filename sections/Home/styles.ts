@@ -26,7 +26,7 @@ export const HomeSection = styled.section`
 `;
 
 export const HomeWrapper = styled.div`
-  height: 27rem;
+  height: 31.5rem;
   width: 26rem;
   position: absolute;
   left: 3.7rem;
@@ -37,36 +37,25 @@ export const HomeWrapper = styled.div`
   ${media.custom(360)} {
     left: 4.3rem;
     width: 28rem;
+    height: 33.5rem;
     top: 3.5rem;
   }
   ${media.custom(375)} {
-    height: 31.5rem;
+    height: 34.5rem;
     top: 4.2rem;
     left: 4.5rem;
   }
   ${media.custom(410)} {
     left: 5rem;
     width: 30rem;
-    height: 33rem;
+    height: 36rem;
     top: 5.5rem;
   }
   ${media.tablet} {
-    height: 50rem;
-    top: 35%;
-    left: 40%;
-    width: 52rem;
-  }
-  ${media.desktop} {
-    height: 63rem;
-    top: 40%;
-    left: 35%;
-    width: 65rem;
-  }
-  ${media.desktopL} {
-    width: 72rem;
-    height: 68rem;
-    left: 30%;
-    top: 42%;
+    top: 90px;
+    left: 10%;
+    width: 57rem;
+    height: 52rem;
   }
 `;
 
@@ -144,6 +133,20 @@ export const HomeDescription = styled.p`
   }
 `;
 
+export const LinkWrapper = styled.div`
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  height: 10rem;
+  ${media.tablet} {
+    height: 12rem;
+    transition: all 0.2s ease;
+    &:hover {
+      transform: translateY(-0.2rem);
+    }
+  }
+`;
+
 export const HomeLink = styled.a`
   color: ${theme.Orange};
   text-decoration: none;
@@ -154,7 +157,6 @@ export const HomeLink = styled.a`
   font-weight: 500;
   font-size: 1.2rem;
   box-shadow: 0 0.1rem 0.2rem black;
-  margin-top: auto;
   opacity: 0;
   animation: ${fadeUp} 0.3s 0.6s forwards;
   ${focusStyles}
@@ -169,7 +171,6 @@ export const HomeLink = styled.a`
     font-weight: 600;
     border: 2px solid ${theme.Orange};
     box-shadow: 0 0.2rem 0.2rem black;
-    align-self: center;
     padding: 17px 30px;
     font-size: 2rem;
     position: relative;
