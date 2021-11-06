@@ -1,4 +1,5 @@
 import type { AppProps } from "next/app";
+import "../theme/fonts.css";
 import "../theme/globalStyles.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
