@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import RightArrowSVG from "../../assets/right-arrow.svg";
+import { RightArrowIcon } from "../../icons/RightArrow";
 import { media } from "../../theme/media";
 import { theme } from "../../theme/theme";
 
@@ -175,7 +175,7 @@ export const TechnologyItem = styled.li`
   align-items: center;
 `;
 
-export const RightArrow = styled(RightArrowSVG)`
+export const RightArrow = styled(RightArrowIcon)`
   height: 1rem;
   width: 1rem;
   ${media.tablet} {

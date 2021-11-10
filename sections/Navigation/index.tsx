@@ -1,9 +1,7 @@
 import * as React from "react";
 import Link from "next/link";
-import LinkedinSVG from "../../assets/linkedin.svg";
 import GithubSVG from "../../assets/github.svg";
 import PenSVG from "../../assets/pen.svg";
-import TwitterSVG from "../../assets/twitter.svg";
 import HammerSVG from "../../assets/hammer.svg";
 import FaceSVG from "../../assets/face.svg";
 import TimelineSVG from "../../assets/timeline.svg";
@@ -23,6 +21,8 @@ import {
 } from "./styles";
 import { useOnScreen } from "../../hooks/useOnScreen";
 import { useMedia } from "../../hooks/useMedia";
+import { LinkedInIcon } from "../../icons/LinkedIn";
+import { TwitterIcon } from "../../icons/Twitter";
 
 type MainRefProps = {
   mainRef: React.MutableRefObject<HTMLElement | null>;
@@ -82,7 +82,7 @@ export const Navigation = ({ mainRef }: MainRefProps) => {
               rel="noopener noreferrer"
               aria-label="Linked In Profile"
             >
-              <LinkedinSVG aria-hidden="true" />
+              <LinkedInIcon />
             </IconLink>
           </Link>
           <Link href="https://twitter.com/TAbrodi" passHref>
@@ -91,7 +91,7 @@ export const Navigation = ({ mainRef }: MainRefProps) => {
               rel="noopener noreferrer"
               aria-label="Twitter Profile"
             >
-              <TwitterSVG aria-hidden="true" />
+              <TwitterIcon />
             </IconLink>
           </Link>
           <Link href="https://github.com/tigerabrodi" passHref>

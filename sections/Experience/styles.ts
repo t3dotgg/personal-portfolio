@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
 import { focusStyles } from "../../theme/sharedStyles";
 import { theme } from "../../theme/theme";
-import RightArrowSVG from "../../assets/right-arrow.svg";
 import DownArrowSVG from "../../assets/down-arrow.svg";
 import UpArrowSVG from "../../assets/up-arrow.svg";
 import { media } from "../../theme/media";
+import { RightArrowIcon } from "../../icons/RightArrow";
 
 export const ExperienceSection = styled.section<{ shouldFadeIn: boolean }>`
   width: 100%;
@@ -222,7 +222,7 @@ export const AccordionContentItem = styled.li`
   }
 `;
 
-export const AccordionRightArrow = styled(RightArrowSVG)`
+export const AccordionRightArrow = styled(RightArrowIcon)`
   min-height: 1rem;
   min-width: 1rem;
   height: 1rem;
