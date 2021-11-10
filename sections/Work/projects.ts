@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: "Vinland Saga",
+    description:
+      "A platform where chefs can write their recipes and connect with each other.",
+    demoSource: "/assets/vinland-saga.mp4",
+    sourceCodeLink: "https://github.com/tigerabrodi/vinland-saga",
+    liveVersionLink: "https://vinland-saga.vercel.app/",
+    id: "4",
+    ariaLabel: "Show casing my project Vinland Saga",
+  },
+  {
     title: "Madara",
     description: "A way for people to manage their tasks.",
     demoSource: "/assets/madara.mp4",
