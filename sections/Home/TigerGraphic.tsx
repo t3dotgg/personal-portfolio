@@ -22,17 +22,17 @@ export const TigerSVG = styled.svg`
   position: absolute;
   top: 78%;
   height: 20rem;
-  left: 21.5rem;
+  left: 22.5rem;
   ${media.custom(360)} {
-    left: 23.7rem;
-    height: 25.5rem;
+    left: 24.5rem;
+    height: 25rem;
   }
   ${media.custom(375)} {
-    left: 24.4rem;
+    left: 25.5rem;
   }
   ${media.custom(410)} {
     top: 76%;
-    left: 26.7rem;
+    left: 28rem;
   }
   ${media.tablet} {
     top: 65%;
