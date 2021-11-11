@@ -1,7 +1,5 @@
-import { v4 as uuidv4 } from "uuid";
-
 export const RightArrowIcon = ({ className }: { className?: string }) => {
-  const uniqueId = uuidv4();
+  const uniqueId = "right";
 
   return (
     <svg

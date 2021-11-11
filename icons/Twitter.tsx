@@ -1,7 +1,5 @@
-import { v4 as uuidv4 } from "uuid";
-
 export const TwitterIcon = () => {
-  const uniqueId = uuidv4();
+  const uniqueId = "twitter";
 
   return (
     <svg
