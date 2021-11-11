@@ -28,11 +28,11 @@ export const TigerSVG = styled.svg`
     height: 25rem;
   }
   ${media.custom(375)} {
-    left: 25.5rem;
+    left: 25.3rem;
   }
   ${media.custom(410)} {
     top: 76%;
-    left: 28rem;
+    left: 27.8rem;
   }
   ${media.tablet} {
     top: 65%;
