@@ -16,7 +16,7 @@ const fadeUp = keyframes`
 `;
 
 export const HomeSection = styled.section`
-  height: calc(calc(var(--vh) * 100) - 14rem);
+  height: calc(calc(var(--vh, 1vh) * 100) - 14rem);
   width: 100%;
   background-color: ${theme.DarkBrown};
   position: relative;
