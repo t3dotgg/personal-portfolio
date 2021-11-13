@@ -75,6 +75,7 @@ export const HomeTitle = styled.h1`
   font-size: 4rem;
   color: ${theme.Red};
   animation: ${fadeUp} 0.4s forwards ease-out;
+  will-change: transform;
   ${media.tablet} {
     font-size: 6rem;
   }
@@ -94,6 +95,7 @@ export const HomeSubtitle = styled.h2`
   margin-top: 0.5rem;
   opacity: 0;
   animation: ${fadeUp} 0.3s 0.2s forwards ease-out;
+  will-change: transform;
   ${media.custom(360)} {
     margin-top: 1rem;
   }
@@ -117,6 +119,7 @@ export const HomeDescription = styled.p`
   color: ${theme.Orange};
   opacity: 0;
   animation: ${fadeUp} 0.3s 0.4s forwards ease-out;
+  will-change: transform;
   margin-top: 1.5rem;
   ${media.custom(360)} {
     font-size: 1.2rem;
@@ -171,6 +174,7 @@ export const HomeLink = styled.a`
   box-shadow: 0 0.1rem 0.2rem black;
   opacity: 0;
   animation: ${fadeUp} 0.3s 0.6s forwards ease-out;
+  will-change: transform;
   ${focusStyles}
   ${media.custom(360)} {
     font-size: 1.4rem;
