@@ -155,6 +155,7 @@ export const LinkWrapper = styled.div`
   ${media.tablet} {
     height: 12rem;
     transition: all 0.2s ease;
+    will-change: transform;
     &:hover {
       transform: translateY(-0.2rem);
     }
@@ -208,6 +209,7 @@ export const DescriptionLink = styled.a`
     text-decoration: none;
     position: relative;
     transition: all 0.2s ease-out;
+    will-change: transform;
     &::after {
       content: "";
       position: absolute;
