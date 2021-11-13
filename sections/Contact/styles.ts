@@ -9,7 +9,7 @@ export const ContactSection = styled.section<{ shouldFadeIn: boolean }>`
   flex-direction: column;
   align-items: center;
   align-items: center;
-  transition: transform 1s, opacity 2s;
+  transition: transform 1s ease-out, opacity 2s ease-out;
   opacity: 0;
   transform: translateY(2rem);
   height: 32rem;
@@ -116,7 +116,7 @@ export const ContactLink = styled.a`
     font-size: 2.5rem;
     padding: 20px 40px;
     border: 2px solid ${theme.Orange};
-    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-out;
     &:hover {
       background-color: ${theme.Orange};
       color: ${theme.DarkBrown};

@@ -144,19 +144,19 @@ export const IconLink = styled.a`
     height: 2.4rem;
   }
   &:nth-of-type(1) {
-    animation: ${fadeUp} 0.3s 1.2s forwards;
+    animation: ${fadeUp} 0.3s 1.2s forwards ease-out;
   }
 
   &:nth-of-type(2) {
-    animation: ${fadeUp} 0.3s 1.3s forwards;
+    animation: ${fadeUp} 0.3s 1.3s forwards ease-out;
   }
 
   &:nth-of-type(3) {
-    animation: ${fadeUp} 0.3s 1.5s forwards;
+    animation: ${fadeUp} 0.3s 1.5s forwards ease-out;
   }
 
   &:nth-of-type(4) {
-    animation: ${fadeUp} 0.3s 1.6s forwards;
+    animation: ${fadeUp} 0.3s 1.6s forwards ease-out;
   }
   .icon {
     width: 80%;

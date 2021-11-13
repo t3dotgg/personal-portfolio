@@ -74,7 +74,7 @@ export const HomeTitle = styled.h1`
   font-weight: bold;
   font-size: 4rem;
   color: ${theme.Red};
-  animation: ${fadeUp} 0.4s forwards;
+  animation: ${fadeUp} 0.4s forwards ease-out;
   ${media.tablet} {
     font-size: 6rem;
   }
@@ -93,7 +93,7 @@ export const HomeSubtitle = styled.h2`
   color: ${theme.Pink};
   margin-top: 0.5rem;
   opacity: 0;
-  animation: ${fadeUp} 0.3s 0.2s forwards;
+  animation: ${fadeUp} 0.3s 0.2s forwards ease-out;
   ${media.custom(360)} {
     margin-top: 1rem;
   }
@@ -116,7 +116,7 @@ export const HomeDescription = styled.p`
   font-weight: 500;
   color: ${theme.Orange};
   opacity: 0;
-  animation: ${fadeUp} 0.3s 0.4s forwards;
+  animation: ${fadeUp} 0.3s 0.4s forwards ease-out;
   margin-top: 1.5rem;
   ${media.custom(360)} {
     font-size: 1.2rem;
@@ -170,7 +170,7 @@ export const HomeLink = styled.a`
   font-size: 1.2rem;
   box-shadow: 0 0.1rem 0.2rem black;
   opacity: 0;
-  animation: ${fadeUp} 0.3s 0.6s forwards;
+  animation: ${fadeUp} 0.3s 0.6s forwards ease-out;
   ${focusStyles}
   ${media.custom(360)} {
     font-size: 1.4rem;

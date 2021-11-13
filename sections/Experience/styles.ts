@@ -12,7 +12,7 @@ export const ExperienceSection = styled.section<{ shouldFadeIn: boolean }>`
   align-items: center;
   flex-direction: column;
   padding-bottom: 50px;
-  transition: transform 1s, opacity 2s;
+  transition: transform 1s ease-out, opacity 2s ease-out;
   opacity: 0;
   transform: translateY(2rem);
   ${(props) =>
@@ -131,7 +131,7 @@ export const AccordionContent = styled.ul`
   bottom: 0.5rem;
   height: 2rem;
   overflow: hidden;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-out;
   li {
     visibility: hidden;
   }
@@ -147,7 +147,7 @@ export const AccordionContent = styled.ul`
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     box-shadow: 0 0.2rem 0.2rem black;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
     ${media.tablet} {
       border: 3px solid ${theme.Orange};
       height: 56rem;

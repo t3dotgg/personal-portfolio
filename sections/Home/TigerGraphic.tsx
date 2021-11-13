@@ -16,7 +16,7 @@ to {
 
 export const TigerSVG = styled.svg`
   filter: drop-shadow(0 0.1rem 0.2rem ${theme.Orange});
-  animation: ${fadeUp} 0.3s 1s forwards;
+  animation: ${fadeUp} 0.3s 1s forwards ease-out;
   transform: translate(-50%, 100%);
   opacity: 0;
   position: absolute;

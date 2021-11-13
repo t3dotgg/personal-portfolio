@@ -23,7 +23,7 @@ export const AboutSection = styled.section<{ shouldFadeIn: boolean }>`
     grid-template-rows: auto auto auto;
     justify-items: center;
   }
-  transition: transform 1s, opacity 2s;
+  transition: transform 1s ease-out, opacity 2s ease-out;
   opacity: 0;
   transform: translateY(2rem);
   ${(props) =>

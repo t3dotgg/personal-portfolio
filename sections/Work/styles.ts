@@ -11,7 +11,7 @@ export const WorkSection = styled.section<{ shouldFadeIn: boolean }>`
   flex-direction: column;
   align-items: center;
   padding-bottom: 80px;
-  transition: transform 1s, opacity 2s;
+  transition: transform 1s ease-out, opacity 2s ease-out;
   opacity: 0;
   transform: translateY(2rem);
   ${media.tablet} {
