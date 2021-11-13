@@ -16,6 +16,7 @@ const fadeUp = keyframes`
 `;
 
 export const HomeSection = styled.section`
+  /* Calculate height on mobile */
   height: calc(calc(var(--vh, 1vh) * 100) - 14rem);
   width: 100%;
   background-color: ${theme.DarkBrown};
