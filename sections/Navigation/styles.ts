@@ -18,7 +18,7 @@ const fadeUp = keyframes`
 
 export const NavigationWrapper = styled.nav<{ shouldShowShadow: boolean }>`
   width: 100%;
-  flex: 0 0 7rem;
+  flex: 0 0 70px;
   padding: 0 15px;
   display: flex;
   align-items: center;
@@ -31,7 +31,7 @@ export const NavigationWrapper = styled.nav<{ shouldShowShadow: boolean }>`
   ${(props) =>
     props.shouldShowShadow &&
     css`
-      box-shadow: 0 0.3rem 0.2rem black;
+      box-shadow: 0 3px 2px black;
     `};
   ${media.custom(410)} {
     flex: 0 0 8rem;
@@ -62,7 +62,7 @@ export const LogoLink = styled.a`
   font-weight: 700;
   font-size: 2.5rem;
   text-shadow: 0 0.1rem hsl(18, 21%, 23%), 0 0.2rem hsl(18, 21%, 23%),
-    0 0.3rem hsl(18, 21%, 23%), 0 0 1rem #f72405ba;
+    0 0.3rem hsl(18, 21%, 23%), 0 0 10px #f72405ba;
   ${focusStyles};
   ${media.tablet} {
     font-size: 3.5rem;
@@ -75,58 +75,58 @@ export const LogoLink = styled.a`
 export const NarutoFace = styled(NarutoFaceSVG)`
   height: 4.2rem;
   width: 4.2rem;
-  filter: drop-shadow(0 0 0.1rem ${theme.Red});
+  filter: drop-shadow(0 0 1px ${theme.Red});
   ${media.tablet} {
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 55px;
+    height: 55px;
     position: relative;
   }
   ${media.desktop} {
-    height: 6rem;
-    width: 6rem;
+    height: 60px;
+    width: 60px;
   }
 `;
 
 export const IconsWrapper = styled.div`
   position: fixed;
   z-index: 10;
-  height: 16rem;
-  width: 2rem;
+  height: 160px;
+  width: 20px;
   bottom: 0;
   right: 0;
   margin: auto 0;
   top: -7%;
-  left: 0.7rem;
+  left: 7px;
   background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   ${media.custom(360)} {
-    height: 20rem;
-    left: 0.85rem;
+    height: 200px;
+    left: 8.5px;
   }
   ${media.custom(375)} {
-    height: 22rem;
+    height: 220px;
     top: -10%;
   }
   ${media.custom(410)} {
-    left: 1rem;
+    left: 10px;
     top: -10%;
-    height: 26rem;
+    height: 260px;
   }
   ${media.tablet} {
-    height: 40rem;
-    left: 1.8rem;
+    height: 400px;
+    left: 18px;
     top: -2%;
   }
   ${media.desktop} {
-    height: 45rem;
-    left: 2.2rem;
+    height: 450px;
+    left: 22px;
     top: -3%;
   }
   ${media.laptop} {
-    left: 2.5rem;
+    left: 25px;
   }
 `;
 
@@ -164,25 +164,34 @@ export const IconLink = styled.a`
   .icon {
     width: 80%;
     height: 80%;
-    transition: all 0.2s;
+    transition: all 0.2s ease-in-out;
     fill: currentColor;
     path {
       fill: currentColor;
+      transition: all 0.2s ease-in-out;
     }
   }
   ${focusStyles}
   ${media.tablet} {
-    width: 3.3rem;
-    height: 3.3rem;
-    transition: all 0.2s;
+    width: 33px;
+    height: 33px;
+    transition: color 0.2s ease-in-out;
+    will-change: transform;
     &:hover {
       .icon {
+        transition: all 0.2s ease-in-out;
+        transform: translateY(-3px);
+      }
+
+      path {
+        transition: all 0.15s ease-in-out;
         fill: ${theme.Pink};
-        transform: scale(1.02) translateY(-0.2rem);
-        filter: drop-shadow(0 0.1rem 0.1rem ${theme.Pink});
-        path {
-          fill: ${theme.Pink};
-        }
+      }
+    }
+    &:active {
+      .icon {
+        transition: all 0.1s ease-in-out;
+        transform: scale(0.95) translateY(-3px);
       }
     }
   }
@@ -242,7 +251,9 @@ export const NavLink = styled.a`
     font-size: 2.2rem;
     font-family: ${theme.Oxanium};
     font-weight: 500;
-    transition: all 0.3s;
+    transition: transform 0.3s ease-out;
+    will-change: transform;
+    transform-origin: top left;
     ${focusStyles};
     ${media.desktop} {
       font-size: 2.4rem;
@@ -258,14 +269,20 @@ export const NavLink = styled.a`
       background-color: #f72405ba;
       transform: scaleX(0) translateX(-0.3rem);
       border-radius: 2px;
-      transition: all 0.2s ease-out;
+      transition: transform 0.3s ease-out;
       z-index: -5;
     }
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.02);
+      transition: transform 0.2s ease-out;
       &::after {
         transform: scaleX(1) translateX(-0.1rem) rotate(-1deg);
+        transition: transform 0.2s ease-out;
       }
+    }
+    &:active {
+      transform: scale(0.97);
+      transition: transform 0.1s ease-out;
     }
   }
 `;
