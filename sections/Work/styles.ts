@@ -164,18 +164,19 @@ const linkStyles = css`
   ${media.tablet} {
     font-size: 3rem;
     margin-top: 60px;
-    transition: all 0.2s ease-out;
+    transition: all 0.25s ease-out;
     &:hover {
-      transform: translateY(-0.2rem);
+      transition: all 0.15s ease-out;
+      transform: translateY(-3px);
       filter: brightness(1.2);
-      text-shadow: 0 0.4rem 0.2rem black;
+      text-shadow: 0 2px 10px black;
       svg {
-        filter: drop-shadow(0 0.2rem 0.2rem black);
+        filter: drop-shadow(0 2px 2px black);
       }
     }
     &:active {
-      transform: translateY(0);
-      text-shadow: 0 0.2rem 0.2rem black;
+      transition: all 0.1s ease-out;
+      transform: translateY(-1px) scale(0.99);
     }
   }
   ${media.desktop} {
