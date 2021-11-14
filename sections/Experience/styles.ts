@@ -111,11 +111,18 @@ export const AccordionButton = styled.button`
     grid-template-columns: 73% 27%;
     height: 8rem;
     cursor: pointer;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease;
     &[aria-expanded="false"] {
       &:hover {
-        box-shadow: 0 0.3rem 0.2rem black;
-        transform: translateY(-0.4rem);
+        transition: all 0.15s ease-in-out;
+        box-shadow: 0 6px 4px black;
+        transform: translateY(-5px) rotateX(6deg);
+      }
+
+      &:active {
+        transition: all 0.1s ease-in-out;
+        box-shadow: 0 3px 3px black;
+        transform: translateY(-3px) rotateX(4deg) scale(0.99);
       }
     }
   }
@@ -129,10 +136,14 @@ export const AccordionContent = styled.ul`
   visibility: hidden;
   position: relative;
   bottom: 0.5rem;
-  height: 2rem;
-  overflow: hidden;
-  transition: all 0.2s ease-out;
+  height: 10rem;
+  transition: all 0.25s ease-in;
+  border: 2px solid ${theme.Orange};
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 2px 2px black;
   li {
+    transition: visibility 0.1s ease-in;
     visibility: hidden;
   }
   &[aria-hidden="false"] {
@@ -141,22 +152,24 @@ export const AccordionContent = styled.ul`
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    height: 33rem;
+    max-height: revert;
+    height: 330px;
     width: 100%;
     border: 2px solid ${theme.Orange};
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     box-shadow: 0 0.2rem 0.2rem black;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-out;
     ${media.tablet} {
       border: 3px solid ${theme.Orange};
-      height: 56rem;
+      height: 560px;
     }
     ${media.desktop} {
-      height: 65rem;
+      height: 650px;
     }
     li {
       visibility: visible;
+      transition: visibility 0.1s ease-out;
     }
   }
 `;
