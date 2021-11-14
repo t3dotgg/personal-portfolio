@@ -148,16 +148,27 @@ export const HomeDescription = styled.p`
 `;
 
 export const LinkWrapper = styled.div`
+  cursor: pointer;
   margin-top: auto;
   display: flex;
   align-items: center;
-  height: 10rem;
+  height: 100px;
   ${media.tablet} {
-    height: 12rem;
-    transition: all 0.2s ease;
+    height: 70px;
+    transition: transform 0.35s ease-in-out;
     will-change: transform;
     &:hover {
-      transform: translateY(-0.2rem);
+      transform: translateY(-3px);
+      transition: transform 0.2s ease-out;
+      a {
+        color: ${theme.DarkBrown};
+        background-color: ${theme.Orange};
+        transition: all 0.2s ease-out;
+      }
+    }
+    &:active {
+      transform: translateY(2px);
+      transition: transform 0.1s ease-out;
     }
   }
 `;
@@ -189,11 +200,7 @@ export const HomeLink = styled.a`
     padding: 17px 30px;
     font-size: 2rem;
     position: relative;
-    transition: all 0.2s ease-out;
-    &:hover {
-      color: ${theme.DarkBrown};
-      background-color: ${theme.Orange};
-    }
+    transition: all 0.3s ease-out;
   }
   ${media.desktop} {
     font-size: 2.3rem;
@@ -210,6 +217,7 @@ export const DescriptionLink = styled.a`
     position: relative;
     transition: all 0.2s ease-out;
     will-change: transform;
+    transform-origin: left top;
     &::after {
       content: "";
       position: absolute;
