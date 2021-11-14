@@ -73,6 +73,8 @@ export const DescriptionLink = styled.a`
     display: inline-block;
     text-decoration: none;
     position: relative;
+    transition: transform 0.3s ease-out;
+    transform-origin: top left;
     &::after {
       content: "";
       position: absolute;
@@ -84,13 +86,20 @@ export const DescriptionLink = styled.a`
       background-color: #f72405ba;
       transform: scaleX(0) translateX(-0.1rem);
       border-radius: 2px;
-      transition: all 0.2s ease-out;
+      transition: all 0.3s ease-out;
       z-index: -5;
     }
     &:hover {
+      transition: transform 0.2s ease-out;
+      transform: scale(1.01);
       &::after {
+        transition: all 0.2s ease-out;
         transform: scaleX(1) translateX(-0.1rem) rotate(-1deg);
       }
+    }
+    &:active {
+      transform: scale(0.98);
+      transition: transform 0.1s ease-out;
     }
   }
 `;
@@ -105,7 +114,7 @@ export const ContactLink = styled.a`
   font-family: ${theme.Oxanium};
   font-weight: 500;
   font-size: 1.2rem;
-  box-shadow: 0 0.1rem 0.2rem black;
+  box-shadow: 0 1px 2px black;
   margin-top: auto;
   ${focusStyles}
   ${media.custom(360)} {
@@ -116,16 +125,18 @@ export const ContactLink = styled.a`
     font-size: 2.5rem;
     padding: 20px 40px;
     border: 2px solid ${theme.Orange};
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-out;
     &:hover {
       background-color: ${theme.Orange};
       color: ${theme.DarkBrown};
-      transform: translateY(-0.3rem);
-      box-shadow: 0 0.3rem 0.2rem black;
-      &:active {
-        transform: translateY(-0.1rem);
-        box-shadow: 0 0.1rem 0.2rem black;
-      }
+      box-shadow: 0 3px 2px black;
+      transform: translateY(-3px);
+      transition: all 0.2s ease-out;
+    }
+    &:active {
+      transform: translateY(-1px) scale(0.99);
+      transition: all 0.1s ease;
+      box-shadow: 0 2px 2px black;
     }
   }
 `;
