@@ -182,7 +182,7 @@ export const HomeLink = styled.a`
   font-family: ${theme.Oxanium};
   font-weight: 500;
   font-size: 1.2rem;
-  box-shadow: 0 0.1rem 0.2rem black;
+  box-shadow: 0 2px 2px black, 0 2px 4px black, 0 2px 5px black;
   animation: ${fadeUp} 0.3s 0.6s both ease-out;
   will-change: transform;
   ${focusStyles}

@@ -116,6 +116,7 @@ export const ContactLink = styled.a`
   font-size: 1.2rem;
   box-shadow: 0 1px 2px black;
   margin-top: auto;
+  box-shadow: 0 2px 2px black, 0 2px 4px black, 0 2px 5px black;
   ${focusStyles}
   ${media.custom(360)} {
     font-size: 1.4rem;

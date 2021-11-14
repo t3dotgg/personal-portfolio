@@ -93,6 +93,7 @@ export const AccordionButton = styled.button`
   grid-template-areas: "text arrow";
   grid-template-columns: 70% 30%;
   grid-template-rows: 80%;
+  box-shadow: 0 2px 2px black, 0 2px 3px black, 0 2px 4px black;
   align-content: center;
   justify-content: space-between;
   align-items: center;
@@ -104,6 +105,7 @@ export const AccordionButton = styled.button`
   border: none;
   &[aria-expanded="true"] {
     font-weight: bold;
+    box-shadow: none;
   }
   ${focusStyles}
   ${media.tablet} {
@@ -141,7 +143,7 @@ export const AccordionContent = styled.ul`
   border: 2px solid ${theme.Orange};
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  box-shadow: 0 2px 2px black;
+  box-shadow: 0 2px 5px black;
   li {
     transition: visibility 0.1s ease-in;
     visibility: hidden;
@@ -158,7 +160,7 @@ export const AccordionContent = styled.ul`
     border: 2px solid ${theme.Orange};
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    box-shadow: 0 0.2rem 0.2rem black;
+    box-shadow: 0 2px 5px black;
     transition: all 0.3s ease-out;
     ${media.tablet} {
       border: 3px solid ${theme.Orange};
