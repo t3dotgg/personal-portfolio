@@ -11,7 +11,7 @@ import { Work } from "../sections/Work";
 
 const title = "Tiger Abrodi's Portfolio";
 const description =
-  "About Tiger Abrodi, his experience, his work and how to contact him.";
+  "Tiger Abrodi's work, story, and contact information. Naruto's Sage Mode is on!";
 
 const Page: NextPage = () => {
   const mainRef = React.useRef<null | HTMLElement>(null);
@@ -24,9 +24,11 @@ const Page: NextPage = () => {
         <meta name="twitter:site" content="@TAbrodi" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content="/public/assets/avatar.jpeg" />
 
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
+        <meta property="og:image" content="/public/assets/avatar.jpeg" />
       </Head>
       <Navigation mainRef={mainRef} />
       <main id="main" ref={mainRef} tabIndex={-1}>
